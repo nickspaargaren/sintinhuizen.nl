@@ -1,0 +1,13 @@
+.houder {
+  display: flex;
+  background: #fff;
+  color: #222;
+}
+.houder a {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+.houder a.actief {color: red;}
+.houder a span {}
