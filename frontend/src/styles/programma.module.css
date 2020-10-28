@@ -1,0 +1,36 @@
+
+.programma {
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 40px auto 50px;
+  padding: 0;
+  box-shadow: 0 10px 120px 5px rgba(0,0,0,.1);
+  background: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.programma tr td {
+  box-sizing: border-box;
+  color: #505050;
+  padding: 20px;
+  font-size: 15px;
+  vertical-align: top;
+  border-bottom: 1px dashed #ddd;
+}
+
+.programma tr td:first-child {
+  white-space: nowrap;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  border-right: 1px solid #de960d;
+  background: #e2a531;
+  border-bottom: 1px dashed #de960d;
+  color: #fff;
+}
+
+.programma tr:nth-child(even) {
+  background: #fff8f8;
+}
