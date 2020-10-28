@@ -8,6 +8,9 @@
   text-align: center;
   padding: 20px;
   text-decoration: none;
+  transition: .3s all ease;
 }
-.houder a.actief {color: red;}
+
+.houder a:hover,
+.houder a.actief {color: red; background: #f1f1f1;}
 .houder a span {}
