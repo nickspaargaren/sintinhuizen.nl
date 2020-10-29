@@ -21,7 +21,7 @@ export default function Programma({data}) {
 
 export const query = graphql`
 query {
-  tijdslots: allSanityProgramma {
+  tijdslots: allSanityProgramma(sort: {fields: tijd}) {
       nodes {
         id
         tijd
