@@ -31,6 +31,8 @@
   color: #fff;
 }
 
+.programma tr td:first-child svg {margin-right: 8px;}
+
 .programma tr:nth-child(even) {
   background: #fff8f8;
 }

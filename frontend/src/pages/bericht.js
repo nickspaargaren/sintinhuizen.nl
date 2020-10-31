@@ -3,7 +3,7 @@ import Layout from "../components/layout/layout.js";
 
 export default function Bericht() {
   return <>
-          <Layout title="Bericht title" description="Bericht description">
+          <Layout title="Bericht" description="Bericht van Sinterklaas">
           <div className="grid-2x">
             <div>
             <p>Zaterdag 16 november kwam ik met mijn Pieten vanuit Spanje aan in de gemeente Apeldoorn. Daar waren ook mensen van de TV aanwezig om verslag te doen. Heel Nederland kon ons zien! Heb je ook naar de TV gekeken</p>
