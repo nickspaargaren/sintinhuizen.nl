@@ -10,7 +10,6 @@ const Navigatie = () => {
       <div className={styles.logo}><img src={logo} alt="Logo" /></div>
       <nav>
           <Link activeClassName={styles.actief} to="/"><RiHome2Line/><span>Home</span></Link>
-          <Link activeClassName={styles.actief} to="/programma"><RiCalendar2Line/><span>Programma</span></Link>
           <Link activeClassName={styles.actief} to="/fotos"><RiImage2Line/><span>Fotos</span></Link>
           <Link activeClassName={styles.actief} to="/bericht"><RiFileList3Line/><span>Bericht van Sinterklaas</span></Link>
           <Link activeClassName={styles.actief} to="/sponsoren"><RiHeartLine/><span>Sponsoren</span></Link>
