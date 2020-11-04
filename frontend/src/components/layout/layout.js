@@ -13,8 +13,8 @@ const Layout = ({ children, title, description }) => {
           <meta name="description" content={description} />
       </Helmet>
       <GlobalStyles/>
-      <Navigatie/>
       <main>{children}</main>
+      <Navigatie/>
     </div>
   )
   

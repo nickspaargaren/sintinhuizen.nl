@@ -1,0 +1,31 @@
+.programma {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.programma .row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  color: #505050;
+  font-size: 15px;
+  background: #fff;
+}
+.programma .row div {padding: 20px;}
+
+
+.programma .row div:first-child {
+  white-space: nowrap;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  background: #e2a531;
+  color: #fff;
+}
+
+.programma .row div:first-child svg {margin-right: 8px;}
+
+.programma .row:nth-child(even) {
+  background: #fff8f8;
+}
