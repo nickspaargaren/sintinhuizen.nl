@@ -15,17 +15,16 @@ body {
   background-repeat: repeat;
 }
 
-.page {
-  outline: none;
-  display: grid;
-  grid-template-columns: 300px 1fr;
+main section {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
-main {padding: 60px;}
+main section > div {margin: auto; padding: 20px;}
 
 /* Grid Templates */
-div[class*="grid"] {hyphens: auto; -webkit-hyphens: auto; display: grid; grid-gap: 30px;}
+div[class*="grid"] {hyphens: auto; -webkit-hyphens: auto; display: grid; grid-gap: 30px; box-sizing: border-box;}
 div[class*="grid"].vertical-align-middle > div {margin: auto 0;}
 div[class*="grid"] img {max-width: 100%; height: auto !important;}
 .grid-2x {grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));}
