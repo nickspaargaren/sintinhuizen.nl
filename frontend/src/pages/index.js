@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout/layout.js";
 import Header from "../components/header/Header.js";
 import Programma from "../components/programma/Programma.js";
+import Sponsoren from "../components/sponsoren/Sponsoren.js";
 
 export default function Home() {
   return <>
@@ -13,6 +14,12 @@ export default function Home() {
                 <Programma/>
               </div>
             </section>
+            
+            <section>
+              <Sponsoren/>
+            </section>
+
+            <footer>Footer</footer>
 
           </Layout>
         </>

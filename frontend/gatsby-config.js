@@ -9,6 +9,8 @@ module.exports = {
         watchMode: true,
         token: process.env.GATSBY_SANITY_TOKEN,
       }
-    }
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
   ],
 }
