@@ -14,7 +14,7 @@ const Layout = ({ children, title, description }) => {
       </Helmet>
       <GlobalStyles/>
       <main>{children}</main>
-      <Navigatie/>
+      {/* <Navigatie/> */}
     </div>
   )
   
