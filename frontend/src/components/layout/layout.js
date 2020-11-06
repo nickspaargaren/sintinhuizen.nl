@@ -8,6 +8,7 @@ const Layout = ({ children, title, description }) => {
   return (
     <div className="page">
       <Helmet>
+          <html lang="nl" />
           <meta charSet="utf-8" />
           <title>{title} | Stichting Intocht Sint Nicolaas Huizen</title>
           <meta name="description" content={description} />
