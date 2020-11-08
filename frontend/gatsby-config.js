@@ -20,5 +20,14 @@ module.exports = {
         ignore: [`**/\.*`], // ignore files starting with a dot
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Alfa Slab One`
+        ],
+        display: 'swap'
+      }
+    },
   ],
 }
