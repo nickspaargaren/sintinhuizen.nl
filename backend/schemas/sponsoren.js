@@ -25,4 +25,11 @@ export default {
       }
     }
   ],
+  preview: {
+    select: {
+      title: 'bedrijfsnaam',
+      subtitle: 'bedrijfswebsite',
+      media: 'logo',
+    }
+  }
 }
