@@ -1,5 +1,4 @@
-.sponsoren {
-  display: flex;
-}
-
-.sponsoren .item {}
+.sponsoren {display: flex; width: 100%;}
+.sponsoren a.item {display: block; flex: 1; padding: 0 5px; position: relative;}
+.sponsoren a.item:after {content: ""; padding-bottom: 100%; display: block;}
+.sponsoren a.item img {position: absolute; top: 0; right: 0; left: 0; bottom: 0; max-height: 90px; max-width: 100%; margin: auto;}
