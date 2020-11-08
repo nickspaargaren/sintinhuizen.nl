@@ -1,7 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet";
 import GlobalStyles from "../../styles/GlobalStyles.js";
-import Navigatie from "../navigatie/Navigatie.js";
 
 const Layout = ({ children, title, description }) => {
 
@@ -15,7 +14,6 @@ const Layout = ({ children, title, description }) => {
       </Helmet>
       <GlobalStyles/>
       <main>{children}</main>
-      {/* <Navigatie/> */}
     </div>
   )
   
