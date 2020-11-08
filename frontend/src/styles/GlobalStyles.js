@@ -15,6 +15,19 @@ body {
   background-repeat: repeat;
 }
 
+h1 {
+  font-family: 'Alfa Slab One';
+  font-size: 50px;
+  letter-spacing: .05em;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1;
+  hyphens: none;
+}
+h1 span {white-space: nowrap;}
+h1 small {font-size: 60%;}
+h1 strong {color: #dc1f26;}
+
 a {color: inherit;}
 p {
   margin: 0 0 1em 0;

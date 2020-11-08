@@ -14,7 +14,6 @@ const Sponsoren = () => {
           logo {
             asset {
               id
-              url
               fluid {
                 aspectRatio
                 sizes
