@@ -30,11 +30,9 @@ const Sponsoren = () => {
         <div className={styles.sponsoren} cellSpacing="0">
           <Trail items={sponsoren.nodes} keys={item => item.id} from={{opacity: 0, transform: 'scale(0.5)'}} to={{opacity: 1, transform: 'scale(1)'}}>
             {item => props => 
-              <div style={props} key={item.id} className={styles.item}>
-                <a rel="noopener noreferrer" href={item.bedrijfswebsite} target="_blank">
-                  <img src={item.logo.asset.url} alt={item.bedrijfsnaam} />
-                </a>
-              </div>
+              <a style={props} key={item.id} className={styles.item} rel="noopener noreferrer" href={item.bedrijfswebsite} target="_blank">
+                <img src={item.logo.asset.url} alt={item.bedrijfsnaam} />
+              </a>
             }
           </Trail>
         </div>
