@@ -13,25 +13,22 @@ const Fotos = () => {
           id
           childImageSharp {
             fluid(maxWidth: 1000, maxHeight: 750) {
-              aspectRatio
-              sizes
-              base64
               src
-              srcSet
-              srcSetWebp
-              srcWebp
+            }
+            fixed(height: 260, width: 350) {
+              src
             }
           }
         }
       }
-    }      
+    }
     `
   )
 
   return (
         <div className={styles.fotos}>
           {fotos.nodes.map((item) =>
-            <ModalImage key={item.id} className={styles.item} small={item.childImageSharp.fluid.src} large={item.childImageSharp.fluid.src} />
+            <ModalImage key={item.id} className={styles.item} small={item.childImageSharp.fixed.src} large={item.childImageSharp.fluid.src} />
           )}
         </div>
   )
