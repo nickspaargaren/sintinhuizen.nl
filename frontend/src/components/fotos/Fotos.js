@@ -15,7 +15,7 @@ const Fotos = () => {
             fluid(maxWidth: 1000, maxHeight: 750) {
               src
             }
-            fixed(height: 260, width: 350) {
+            fixed(width: 270, height: 200) {
               src
             }
           }
