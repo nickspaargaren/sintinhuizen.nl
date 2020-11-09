@@ -8,7 +8,7 @@ const Fotos = () => {
   const { fotos } = useStaticQuery(
     graphql`
     query fotos {
-      fotos: allFile {
+      fotos: allFile(sort: {fields: relativePath}) {
         nodes {
           id
           childImageSharp {
@@ -24,7 +24,7 @@ const Fotos = () => {
           }
         }
       }
-    }    
+    }      
     `
   )
 
