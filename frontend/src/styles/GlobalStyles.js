@@ -88,6 +88,8 @@ footer {background: #b72322; text-align: center; padding: 20px;}
   h1 span, h2 span {white-space: normal;}
   h1 {font-size: 34px;}
   h2 {font-size: 22px;}
+
+  main section > div {padding: 15px;}
 }
 
 `;
