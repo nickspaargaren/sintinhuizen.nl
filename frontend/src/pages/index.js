@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout/layout.js";
 import Header from "../components/header/Header.js";
-import Programma from "../components/programma/Programma.js";
+// import Programma from "../components/programma/Programma.js";
 import Fotos from "../components/fotos/Fotos.js";
 import Sponsoren from "../components/sponsoren/Sponsoren.js";
 
@@ -14,8 +14,10 @@ export default function Home() {
             <section><Header/></section>
             <section>
               <div>
-                <h3 style={{textAlign: 'center'}}>Programma en foto's van de aankomst van Sint Nicolaas in 2019</h3>
-                <Programma/>
+                {/* <h3 style={{textAlign: 'center'}}>Programma en foto's van de aankomst van Sint Nicolaas in 2019</h3> */}
+                {/* <Programma/> */}
+                <p style={{textAlign: 'center'}}>Op deze plaats zal <strong>zaterdag om 14.00 uur</strong> meer te zien zijn over</p>
+                <h3 style={{textAlign: 'center'}}>De aankomst van Sint Nicolaas in Huizen</h3>
               </div>
             </section>
 
