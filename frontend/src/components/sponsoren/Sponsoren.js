@@ -39,7 +39,7 @@ const Sponsoren = () => {
           <Trail items={sponsoren.nodes} keys={item => item.id} from={{opacity: 0, transform: 'scale(0.5)'}} to={{opacity: 1, transform: 'scale(1)'}}>
             {item => props => 
               <a style={props} key={item.id} className={styles.item} rel="noopener noreferrer" href={item.bedrijfswebsite} target="_blank">
-                <Img fluid={item.logo.asset.fluid} />
+                <Img fluid={item.logo.asset.fluid} loading="lazy" />
               </a>
             }
           </Trail>
