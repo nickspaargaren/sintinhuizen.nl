@@ -67,6 +67,7 @@ main section {
 }
 
 main section.sponsoren {background: #fff; min-height: 0;}
+main section.sponsoren > div {padding: 20px 50px;}
 main section.fotos {width: 100%;}
 
 main section > div {margin: auto; padding: 50px;}
