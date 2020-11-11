@@ -18,11 +18,11 @@ const Header = () => {
               </h1>
               <h2>Je kunt dit zien op zaterdag <span><strong>14 november</strong></span> vanaf <strong>14:00</strong> uur op deze site</h2>
             </div>
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="Logo" style={{width: '300px', height: '195px'}} loading="lazy" />
           </div>
           
           <div style={{display: 'flex'}}>
-            <img style={{marginTop: 'auto', width: '100%', maxHeight: '80vh'}} src={sinterklaas} alt="Sinterklaas" width="415px" height="440px" />
+            <img style={{marginTop: 'auto', width: '100%', maxHeight: '80vh'}} src={sinterklaas} alt="Sinterklaas" width="415px" height="440px" loading="lazy" />
           </div>
         </div>
   )

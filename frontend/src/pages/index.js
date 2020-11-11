@@ -60,7 +60,7 @@ export default function Home() {
                   <p className="handtekening">Erico</p>
                 </div>
                 <div>
-                  <div style={{textAlign: 'center', position: '-webkit-sticky',  position: 'sticky', top: '60px'}}><img src={berichtafbeelding} alt="Intocht Sinterklaas"/></div>
+                  <div style={{textAlign: 'center', position: 'sticky', top: '60px'}}><img src={berichtafbeelding} alt="Intocht Sinterklaas" loading="lazy" /></div>
                 </div>
               </div>
             </section>
@@ -73,7 +73,7 @@ export default function Home() {
               <p>De jaarlijkse intocht van de Sint in Huizen wordt georganiseerd door de St. Intocht Sint Nicolaas Huizen<br/>
               Bestuur: Roeland Bijlard, Hans Borremans, Laura Toele, Jurgen van Wessel. Gelieerd bestuurslid: Eric Dinkla</p>
               <p>Bankrek. NL63 RABO 0344 4312 74 | Tel. woordvoerder 0651 98 92 18 | <a href="mailto:info@sintinhuizen.nl">info@sintinhuizen.nl</a> | postadres: Slangekruid 6, 1273 VM Huizen | KvK 75336707</p>
-              <p><img className="knopHome" alt="mijter" src={mijter} style={{height: '35px', width: '30px', verticalAlign: 'middle'}} /></p>
+              <p><img className="knopHome" alt="mijter" src={mijter} style={{height: '35px', width: '30px', verticalAlign: 'middle'}} loading="lazy" /></p>
             </footer>
 
           </Layout>
