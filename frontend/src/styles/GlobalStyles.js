@@ -54,6 +54,12 @@ p {
   margin: 0 0 1em 0;
 }
 
+p.handtekening {
+  font-family: 'Courgette';
+  font-size: 25px;
+  line-height: 1.25em;
+}
+
 main section {
   min-height: 100vh;
   display: flex;
@@ -63,7 +69,7 @@ main section {
 main section.sponsoren {background: #fff; min-height: 0;}
 main section.fotos {width: 100%;}
 
-main section > div {margin: auto; padding: 20px;}
+main section > div {margin: auto; padding: 50px;}
 
 /* Grid Templates */
 div[class*="grid"] {hyphens: auto; -webkit-hyphens: auto; display: grid; grid-gap: 30px; box-sizing: border-box;}
