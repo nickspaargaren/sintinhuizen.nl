@@ -24,7 +24,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Alfa Slab One`
+          `Alfa Slab One`,
+          `Courgette`
         ],
         display: 'swap'
       }
