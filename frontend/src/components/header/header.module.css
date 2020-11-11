@@ -7,3 +7,13 @@
   background-position: bottom;
   background-size: 825px 175px;
 }
+
+.header .headertekst {display: flex; flex-direction: column}
+.header .headertekst > div {margin-bottom: 20px;}
+.header .headertekst > img {margin: auto auto 0 0; max-width: 300px;}
+
+@media screen and (max-width: 768px) {
+  .header .headertekst {flex-direction: column-reverse;}
+  .header .headertekst > div {margin-bottom: auto;}
+  .header .headertekst > img {margin-bottom: 20px;}
+}

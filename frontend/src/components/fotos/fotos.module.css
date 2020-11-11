@@ -15,3 +15,12 @@
   padding: 3px;
   transition: .3s all ease;}
 .fotos .item > div {width: 100%; margin: auto 0;}
+
+
+@media screen and (max-width: 1024px) {
+  .fotos .item {width: calc(25% - 10px);}
+}
+
+@media screen and (max-width: 768px) {
+  .fotos .item {width: calc(33.333% - 10px);}
+}

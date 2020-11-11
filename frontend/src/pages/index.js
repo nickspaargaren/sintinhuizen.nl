@@ -14,7 +14,7 @@ export default function Home() {
             <section><Header/></section>
             <section>
               <div>
-                <h2>Programma en foto's van de aankomst van Sint Nicolaas in 2019</h2>
+                <h3>Programma en foto's van de aankomst van Sint Nicolaas in 2019</h3>
                 <Programma/>
               </div>
             </section>

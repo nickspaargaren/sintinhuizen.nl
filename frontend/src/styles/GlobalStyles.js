@@ -15,18 +15,39 @@ body {
   background-repeat: repeat;
 }
 
+h1, h2, h3 {line-height: 1.25em; margin: 0 0 20px; text-shadow: 0px 2px 0px rgba(0,0,0,.15);}
+
 h1 {
   font-family: 'Alfa Slab One';
   font-size: 50px;
   letter-spacing: .05em;
   font-weight: normal;
   text-transform: uppercase;
-  line-height: 1;
+  hyphens: none;
+  line-height: 1.1em;
+}
+
+h2 {
+  font-family: 'Alfa Slab One';
+  font-size: 32px;
+  letter-spacing: .05em;
+  font-weight: normal;
+  text-transform: uppercase;
   hyphens: none;
 }
-h1 span {white-space: nowrap;}
-h1 small {font-size: 60%;}
-h1 strong {color: #dc1f26;}
+
+h3 {
+  font-family: 'Alfa Slab One';
+  font-size: 22px;
+  letter-spacing: .05em;
+  font-weight: normal;
+  text-transform: uppercase;
+  hyphens: none;
+}
+
+h1 span, h2 span {white-space: nowrap;}
+h1 small, h2 small {font-size: 60%;}
+h1 strong, h2 strong {color: #dc1f26;}
 
 a {color: inherit;}
 p {
@@ -54,6 +75,13 @@ div[class*="grid"] img {max-width: 100%; height: auto !important;}
 /* Einde Grid Templates */
 
 footer {background: #b72322; text-align: center; padding: 20px;}
+
+
+@media screen and (max-width: 768px) {
+  h1 span, h2 span {white-space: normal;}
+  h1 {font-size: 34px;}
+  h2 {font-size: 22px;}
+}
 
 `;
 
