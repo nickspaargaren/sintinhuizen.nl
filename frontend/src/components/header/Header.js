@@ -24,40 +24,11 @@ const Header = () => {
             <img src={logo} alt="Logo" style={{width: '300px', height: '195px'}} loading="lazy" />
           </div>
           
-          <div style={{display: 'flex'}}>
-            <img style={{marginTop: 'auto', width: '100%', maxHeight: '80vh'}} src={sinterklaas} alt="Sinterklaas" width="415px" height="440px" loading="lazy" />
+          <div className={styles.illustratie}>
+            <img src={sinterklaas} alt="Sinterklaas" width="415px" height="440px" loading="lazy" />
           </div>
         </div>
   )
 }
 
 export default Header
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -73,7 +73,6 @@ main section {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  overflow: hidden;
 }
 
 main section > div {margin: auto 0; width: 100%; padding: 50px;}
@@ -86,9 +85,9 @@ main section.sponsoren > div {padding: 20px 50px;}
 div[class*="grid"] {hyphens: auto; -webkit-hyphens: auto; display: grid; grid-gap: 30px; box-sizing: border-box;}
 div[class*="grid"].vertical-align-middle > div {margin: auto 0;}
 div[class*="grid"] img {max-width: 100%; height: auto !important;}
-.grid-2x {grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));}
-.grid-3x {grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));}
-.grid-4x {grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));}
+.grid-2x {grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));}
+.grid-3x {grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));}
+.grid-4x {grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));}
 /* Einde Grid Templates */
 
 footer {background: #b72322; text-align: center; padding: 20px;}

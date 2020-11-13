@@ -7,8 +7,8 @@ import styles from './fotos.module.css';
 const Fotos = () => {
   const { fotos } = useStaticQuery(
     graphql`
-    query fotos {
-      fotos: allFile(sort: {fields: relativePath}) {
+    query fotos2019 {
+      fotos: allFile(filter: {relativeDirectory: {eq: "fotos-2019"}}, sort: {fields: relativePath}) {
         nodes {
           id
           childImageSharp {
@@ -27,7 +27,8 @@ const Fotos = () => {
 
   return (
       <div className={styles.fotos}>
-        <h3 style={{textAlign: 'center'}}>Alle foto's van de intocht op <strong>14 november</strong> en <strong>2019</strong></h3>
+        <h3 style={{textAlign: 'center'}}>Alle foto's van de intocht <strong>2019</strong></h3>
+        <p style={{textAlign: 'center', margin: '-15px 0 40px'}}>Klik op de foto voor een vergroting</p>
         <div>
           {fotos.nodes.map((item) =>
             <ModalImage key={item.id} className={styles.item} small={item.childImageSharp.fixed.src} large={item.childImageSharp.fluid.src} />

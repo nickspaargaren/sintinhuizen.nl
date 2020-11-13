@@ -2,7 +2,8 @@ import React from "react"
 import Layout from "../components/layout/layout.js";
 import Header from "../components/header/Header.js";
 // import Programma from "../components/programma/Programma.js";
-import Fotos from "../components/fotos/Fotos.js";
+import Fotos2020 from "../components/fotos-2020/Fotos-2020.js";
+import Fotos2019 from "../components/fotos-2019/Fotos-2019.js";
 import Sponsoren from "../components/sponsoren/Sponsoren.js";
 
 import mijter from "../assets/images/mijter.png";
@@ -15,7 +16,8 @@ export default function Home() {
             <section><Header/></section>
             <section id="aankomst"><Aankomst/></section>
 
-            <section className="fotos"><Fotos/></section>
+            <section className="fotos"><Fotos2020/></section>
+            <section className="fotos"><Fotos2019/></section>
 
             <section className="bericht">
               <div className="grid-2x">

@@ -31,3 +31,7 @@ border: 2px solid #f1cb19;
   transform: perspective(3000px) rotateY(19deg) rotateX(4deg) rotate(-1deg);
   box-shadow: 0px 50px 30px -30px rgba(0,0,0,.2);
   border: 2px solid #f1cb19;}
+
+  @media screen and (max-width: 768px) {
+    .brief, .tekst {transform: none;}
+  }
