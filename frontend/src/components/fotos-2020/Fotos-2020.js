@@ -27,7 +27,7 @@ const Fotos = () => {
 
   return (
       <div className={styles.fotos}>
-        <h3 style={{textAlign: 'center'}}>Alle foto's van de intocht op <strong>14 november</strong> 2020</h3>
+        <h3 style={{textAlign: 'center'}}>Foto's van de intocht op <strong>14 november</strong> 2020</h3>
         <p style={{textAlign: 'center', margin: '-15px 0 40px'}}>Klik op de foto voor een vergroting</p>
         <div>
           {fotos.nodes.map((item) =>

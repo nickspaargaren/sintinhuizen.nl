@@ -7,7 +7,7 @@ import Fotos2019 from "../components/fotos-2019/Fotos-2019.js";
 import Sponsoren from "../components/sponsoren/Sponsoren.js";
 
 import mijter from "../assets/images/mijter.png";
-import berichtafbeelding from "../assets/images/sinterklaas-2020.png";
+import berichtafbeelding from "../assets/images/sinterklaas-2020.jpg";
 import Aankomst from "../components/aankomst/Aankomst.js";
 
 export default function Home() {
@@ -54,7 +54,7 @@ export default function Home() {
                   <p className="handtekening">Erico</p>
                 </div>
                 <div>
-                  <div style={{textAlign: 'center', position: 'sticky', top: '60px'}}><img src={berichtafbeelding} alt="Intocht Sinterklaas" loading="lazy" /></div>
+                  <div style={{textAlign: 'center', position: 'sticky', top: '0', height: '100vh', display: 'flex'}}><img style={{margin: 'auto'}} src={berichtafbeelding} alt="Intocht Sinterklaas" loading="lazy" /></div>
                 </div>
               </div>
             </section>

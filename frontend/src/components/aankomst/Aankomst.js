@@ -7,13 +7,12 @@ import SintOpKade from "../../assets/images/sint-op-kade.jpg";
 const Aankomst = () => {
   return (
         <div>
-        <h3 style={{textAlign: 'center'}}>Aankomst van Sint Nicolaas in Huizen op <strong>14 november</strong> 2020</h3>
+        <h3 style={{textAlign: 'center'}}>Intocht van Sint Nicolaas in Huizen op <strong>14 november</strong> 2020</h3>
         <p style={{textAlign: 'center', margin: '-15px 0 40px'}}>Welkomstwoord van de Burgemeester bij de aankomst van Sint en Pieten in Huizen</p>
 
         <div className="grid-3x">
             <div className={styles.brief}>
             
-
             <h3>Dag Sint Nicolaas,</h3>
 
             <p>Heel hartelijk welkom in Huizen, fijn dat u er weer bent!<br/>
