@@ -13,8 +13,9 @@
 .header .headertekst > img {margin: auto auto 0 0; max-width: 300px;}
 
 .header .headertekst > div .knop {
+  display: inline-block;
   background-color: #f1cb19;
-  color: #71aebd;
+  color: #fff;
   padding: 10px 13px;
   border-radius: 3px;
   font-family: 'Alfa Slab One';
