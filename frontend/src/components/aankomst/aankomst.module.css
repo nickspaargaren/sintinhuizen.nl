@@ -1,0 +1,33 @@
+
+.brief {
+  padding: 30px 30px 10px;
+background-color: #fff;
+color: #333;
+transform: perspective(3000px) rotateY(19deg) rotateX(4deg) rotate(-1deg);
+box-shadow: 0px 50px 30px -30px rgba(0,0,0,.2);
+border: 2px solid #f1cb19;
+}
+
+.brief h3 {color: #c32c2b}
+
+.afbeelding {
+  box-shadow: 0 10px 39px -5px rgba(0,0,0,.2);
+  line-height: 0;
+  margin: 0 0 30px;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(255,255,255,.7);
+  transform: rotate(-2deg);
+  padding: 3px;
+  transition: .3s all ease;
+}
+
+.tekst {padding: 20px; 
+  background-color: #fff;
+  color: #333;
+  transform: perspective(3000px) rotateY(19deg) rotateX(4deg) rotate(-1deg);
+  box-shadow: 0px 50px 30px -30px rgba(0,0,0,.2);
+  border: 2px solid #f1cb19;}

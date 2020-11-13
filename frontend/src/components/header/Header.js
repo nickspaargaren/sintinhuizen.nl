@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-scroll";
 
 import styles from './header.module.css';
 import logo from "../../assets/images/logo.svg";
@@ -16,7 +17,9 @@ const Header = () => {
               <h1>
               <strong>Aankomst</strong> <br/><span>Sint Nicolaas</span> <br/><small>in</small> <strong>Huizen</strong>
               </h1>
-              <h2>Je kunt dit zien op zaterdag <span><strong>14 november</strong></span> vanaf <strong>14:00</strong> uur op deze site</h2>
+
+              <Link className={styles.knop} to="aankomst" smooth={true}>Bekijk de aankomst op 14 november!</Link>
+
             </div>
             <img src={logo} alt="Logo" style={{width: '300px', height: '195px'}} loading="lazy" />
           </div>

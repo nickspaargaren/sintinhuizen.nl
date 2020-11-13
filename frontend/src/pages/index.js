@@ -7,23 +7,15 @@ import Sponsoren from "../components/sponsoren/Sponsoren.js";
 
 import mijter from "../assets/images/mijter.png";
 import berichtafbeelding from "../assets/images/sinterklaas-2020.png";
+import Aankomst from "../components/aankomst/Aankomst.js";
 
 export default function Home() {
   return <>
           <Layout title="Home" description="Informatie over de aankomst Sint Nicolaas in de werkhaven van het Nautisch Kwartier!">
             <section><Header/></section>
-            <section>
-              <div>
-                {/* <h3 style={{textAlign: 'center'}}>Programma en foto's van de aankomst van Sint Nicolaas in 2019</h3> */}
-                {/* <Programma/> */}
-                <p style={{textAlign: 'center'}}>Op deze plaats zal <strong>zaterdag om 14.00 uur</strong> meer te zien zijn over</p>
-                <h3 style={{textAlign: 'center'}}>De aankomst van Sint Nicolaas in Huizen</h3>
-              </div>
-            </section>
+            <section id="aankomst"><Aankomst/></section>
 
-            <section className="fotos">
-              <Fotos/>
-            </section>
+            <section className="fotos"><Fotos/></section>
 
             <section className="bericht">
               <div className="grid-2x">

@@ -27,7 +27,7 @@ const Fotos = () => {
 
   return (
       <div className={styles.fotos}>
-        <h3 style={{textAlign: 'center'}}>Foto's van de intocht op zaterdag 16 november 2019</h3>
+        <h3 style={{textAlign: 'center'}}>Alle foto's van de intocht op <strong>14 november</strong> en <strong>2019</strong></h3>
         <div>
           {fotos.nodes.map((item) =>
             <ModalImage key={item.id} className={styles.item} small={item.childImageSharp.fixed.src} large={item.childImageSharp.fluid.src} />
