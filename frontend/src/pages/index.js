@@ -2,28 +2,22 @@ import React from "react"
 import Layout from "../components/layout/layout.js";
 import Header from "../components/header/Header.js";
 // import Programma from "../components/programma/Programma.js";
-import Fotos from "../components/fotos/Fotos.js";
+import Fotos2020 from "../components/fotos-2020/Fotos-2020.js";
+import Fotos2019 from "../components/fotos-2019/Fotos-2019.js";
 import Sponsoren from "../components/sponsoren/Sponsoren.js";
 
 import mijter from "../assets/images/mijter.png";
-import berichtafbeelding from "../assets/images/sinterklaas-2020.png";
+import berichtafbeelding from "../assets/images/sinterklaas-2020.jpg";
+import Aankomst from "../components/aankomst/Aankomst.js";
 
 export default function Home() {
   return <>
           <Layout title="Home" description="Informatie over de aankomst Sint Nicolaas in de werkhaven van het Nautisch Kwartier!">
             <section><Header/></section>
-            <section>
-              <div>
-                {/* <h3 style={{textAlign: 'center'}}>Programma en foto's van de aankomst van Sint Nicolaas in 2019</h3> */}
-                {/* <Programma/> */}
-                <p style={{textAlign: 'center'}}>Op deze plaats zal <strong>zaterdag om 14.00 uur</strong> meer te zien zijn over</p>
-                <h3 style={{textAlign: 'center'}}>De aankomst van Sint Nicolaas in Huizen</h3>
-              </div>
-            </section>
+            <section id="aankomst"><Aankomst/></section>
 
-            <section className="fotos">
-              <Fotos/>
-            </section>
+            <section className="fotos"><Fotos2020/></section>
+            <section className="fotos"><Fotos2019/></section>
 
             <section className="bericht">
               <div className="grid-2x">
@@ -60,7 +54,7 @@ export default function Home() {
                   <p className="handtekening">Erico</p>
                 </div>
                 <div>
-                  <div style={{textAlign: 'center', position: 'sticky', top: '60px'}}><img src={berichtafbeelding} alt="Intocht Sinterklaas" loading="lazy" /></div>
+                  <div style={{textAlign: 'center', position: 'sticky', top: '0', height: '100vh', display: 'flex'}}><img style={{margin: 'auto'}} src={berichtafbeelding} alt="Intocht Sinterklaas" loading="lazy" /></div>
                 </div>
               </div>
             </section>

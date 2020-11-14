@@ -47,11 +47,13 @@ h3 {
 
 h1 span, h2 span {white-space: nowrap;}
 h1 small, h2 small {font-size: 60%;}
-h1 strong, h2 strong {color: #dc1f26;}
+h1 strong {font-weight: normal; color: #dc1f26;}
+h2 strong {font-weight: normal; color: #f1cb19;}
+h3 strong {font-weight: normal; color: #f1cb19;}
 
 a {color: inherit;}
 p {
-  margin: 0 0 1em 0;
+  margin: 0 0 20px 0;
 }
 
 p.handtekening {
@@ -60,25 +62,32 @@ p.handtekening {
   line-height: 1.25em;
 }
 
+p.handtekening span {
+  opacity: .7;
+  font-size: 60%;
+  display: block;
+  margin-top: -5px;  
+}
+
 main section {
   min-height: 100vh;
   display: flex;
   justify-content: center;
 }
 
+main section > div {margin: auto 0; width: 100%; padding: 50px;}
+
 main section.sponsoren {background: #fff; min-height: 0;}
 main section.sponsoren > div {padding: 20px 50px;}
-main section.fotos {width: 100%;}
 
-main section > div {margin: auto; padding: 50px;}
 
 /* Grid Templates */
 div[class*="grid"] {hyphens: auto; -webkit-hyphens: auto; display: grid; grid-gap: 30px; box-sizing: border-box;}
 div[class*="grid"].vertical-align-middle > div {margin: auto 0;}
 div[class*="grid"] img {max-width: 100%; height: auto !important;}
-.grid-2x {grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));}
-.grid-3x {grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));}
-.grid-4x {grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));}
+.grid-2x {grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));}
+.grid-3x {grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));}
+.grid-4x {grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));}
 /* Einde Grid Templates */
 
 footer {background: #b72322; text-align: center; padding: 20px;}
