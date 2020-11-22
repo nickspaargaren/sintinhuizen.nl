@@ -34,32 +34,3 @@ const Programma = () => {
 }
 
 export default Programma
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

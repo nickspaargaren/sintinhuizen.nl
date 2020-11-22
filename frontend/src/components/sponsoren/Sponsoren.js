@@ -48,32 +48,3 @@ const Sponsoren = () => {
 }
 
 export default Sponsoren
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
