@@ -45,32 +45,3 @@ const Aankomst = () => {
 }
 
 export default Aankomst
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout/layout.js";
 import Header from "../components/header/Header.js";
-// import Programma from "../components/programma/Programma.js";
 import Fotos2020 from "../components/fotos-2020/Fotos-2020.js";
 import Fotos2019 from "../components/fotos-2019/Fotos-2019.js";
 import Sponsoren from "../components/sponsoren/Sponsoren.js";
@@ -10,7 +9,7 @@ import mijter from "../assets/images/mijter.png";
 import berichtafbeelding from "../assets/images/sinterklaas-2020.jpg";
 import Aankomst from "../components/aankomst/Aankomst.js";
 
-export default function Home() {
+const Home = () => {
   return <>
           <Layout title="Home" description="Informatie over de aankomst Sint Nicolaas in de werkhaven van het Nautisch Kwartier!">
             <section><Header/></section>
@@ -73,3 +72,4 @@ export default function Home() {
           </Layout>
         </>
 }
+export default Home
