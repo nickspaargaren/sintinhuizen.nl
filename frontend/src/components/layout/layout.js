@@ -1,6 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet";
-import GlobalStyles from "../../styles/GlobalStyles.js";
+import '../../styles/index.css';
 
 const Layout = ({ children, title, description }) => {
 
@@ -12,7 +12,6 @@ const Layout = ({ children, title, description }) => {
           <title>{title} | Stichting Intocht Sint Nicolaas Huizen</title>
           <meta name="description" content={description} />
       </Helmet>
-      <GlobalStyles/>
       <main>{children}</main>
     </div>
   )
