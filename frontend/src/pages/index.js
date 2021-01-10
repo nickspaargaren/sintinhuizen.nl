@@ -1,4 +1,6 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image"
 import Layout from "../components/layout/layout.js";
 import Header from "../components/header/Header.js";
 import Fotos2020 from "../components/fotos-2020/Fotos-2020.js";
@@ -6,10 +8,28 @@ import Fotos2019 from "../components/fotos-2019/Fotos-2019.js";
 import Sponsoren from "../components/sponsoren/Sponsoren.js";
 
 import mijter from "../assets/images/mijter.png";
-import berichtafbeelding from "../assets/images/sinterklaas-2020.jpg";
 import Aankomst from "../components/aankomst/Aankomst.js";
 
 const Home = () => {
+
+  const sinterklaas2020 = useStaticQuery(
+    graphql`
+    query  {
+      file(relativePath: { eq: "sinterklaas-2020.jpg" }) {
+        childImageSharp {
+          fluid {
+            base64
+            aspectRatio
+            src
+            srcSet
+            sizes
+          }
+        }
+      }
+    }`)
+
+    
+
   return <>
           <Layout title="Home" description="Informatie over de aankomst Sint Nicolaas in de werkhaven van het Nautisch Kwartier!">
             <section><Header/></section>
@@ -53,7 +73,9 @@ const Home = () => {
                   <p className="handtekening">Erico</p>
                 </div>
                 <div>
-                  <div style={{textAlign: 'center', position: 'sticky', top: '0', height: '100vh', display: 'flex'}}><img style={{margin: 'auto'}} src={berichtafbeelding} alt="Intocht Sinterklaas" loading="lazy" /></div>
+                  <div style={{textAlign: 'center', position: 'sticky', top: '0', height: '100vh', display: 'flex'}}>
+                    <Img style={{margin: 'auto', width: '100%', position: 'relative', maxWidth: '321px'}} fluid={sinterklaas2020.file.childImageSharp.fluid} alt="Intocht Sinterklaas" loading="lazy" />
+                  </div>
                 </div>
               </div>
             </section>
