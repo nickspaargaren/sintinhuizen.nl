@@ -15,8 +15,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `data`,
-        path: `${__dirname}/src/data/`,
+        name: `images`,
+        path: `${__dirname}/src/assets/images`,
         ignore: [`**/\.*`], // ignore files starting with a dot
       },
     },
