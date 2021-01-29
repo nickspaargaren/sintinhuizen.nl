@@ -13,8 +13,10 @@
   background: rgba(255,255,255,.7);
   transform: rotate(-2deg);
   padding: 3px;
-  transition: .3s all ease;}
-.fotos .item > div {width: 100%; margin: auto 0;}
+  transition: .3s all ease;
+  cursor: pointer;
+}
+.fotos .item > div {width: 100%; margin: auto 0; padding-bottom: 80%;}
 
 
 @media screen and (max-width: 1024px) {
