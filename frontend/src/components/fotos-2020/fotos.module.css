@@ -16,7 +16,7 @@
   transition: .3s all ease;
   cursor: pointer;
 }
-.fotos .item > div {width: 100%; margin: auto 0; padding-bottom: 80%;}
+.fotos .item img {width: 100%;}
 
 
 @media screen and (max-width: 1024px) {
