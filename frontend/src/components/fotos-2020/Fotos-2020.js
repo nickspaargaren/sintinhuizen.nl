@@ -1,7 +1,8 @@
-import React, { useState } from 'react'; 
+import React from 'react'; 
 import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image"
-import FsLightbox from 'fslightbox-react';
+import { Gallery, Item } from 'react-photoswipe-gallery'
+import 'photoswipe/dist/photoswipe.css'
+import 'photoswipe/dist/default-skin/default-skin.css'
 
 import styles from './fotos.module.css';
 
@@ -33,20 +34,27 @@ const Fotos = () => {
     `
   )
 
-  const [toggler, setToggler] = useState(false);
-
   return (
       <div className={styles.fotos}>
         <h3 style={{textAlign: 'center'}}>Foto's van de aankomst op <strong>14 november</strong> 2020</h3>
         <p style={{textAlign: 'center', margin: '-15px 0 40px'}}>Klik op de foto voor een vergroting</p>
         <div>
+        <Gallery>
           {fotos.nodes.map((item) =>
-            <div key={item.id} className={styles.item} aria-hidden="true" onClick={() => setToggler(!toggler)}>
-              <Img fixed={item.childImageSharp.fixed}/>
+            <div key={item.id} className={styles.item}>
+              <Item
+                original={item.childImageSharp.fluid.src}
+                thumbnail={item.childImageSharp.fluid.src}
+                width="1200"
+                height="800"
+              >
+                {({ ref, open }) => (
+                  <img ref={ref} onClick={open} onKeyDown={open} src={item.childImageSharp.fixed.src} />
+                )}
+              </Item>
             </div>
           )}
-
-          <FsLightbox toggler={toggler} sources={fotos.nodes.map((item) => item.childImageSharp.fluid.src )} /> 
+        </Gallery>
         </div>
       </div>
   )
