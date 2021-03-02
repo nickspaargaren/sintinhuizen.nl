@@ -4,13 +4,14 @@ import { Link } from "react-scroll";
 import logo from "../../assets/images/logo.svg";
 
 import sinterklaas from "../../assets/images/sinterklaas.svg";
+import gebouwen from "../../assets/images/gebouwen.svg";
 
 import styled from 'styled-components';
 
 const StyledHeader = styled.div`
 
   background-color: #84cdde;
-  background-image: url('../../assets/images/gebouwen.svg');
+  background-image: url(${gebouwen});
   min-height: inherit;
   width: 100%;
   background-repeat: repeat-x;
