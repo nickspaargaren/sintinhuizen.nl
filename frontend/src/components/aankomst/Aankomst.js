@@ -1,17 +1,59 @@
 import React from "react"
-import styles from './aankomst.module.css';
+import styled from 'styled-components';
 import SintEnPieten from "../../assets/images/sint-en-pieten-op-pakjesboot.jpg";
 import SintOpKade from "../../assets/images/sint-op-kade.jpg";
 
 
+const StyledAankomst = styled.div`
+
+.brief {
+  padding: 30px 30px 10px;
+  background-color: #fff;
+  color: #333;
+  transform: perspective(3000px) rotateY(19deg) rotateX(4deg) rotate(-1deg);
+  box-shadow: 0px 50px 30px -30px rgba(0,0,0,.2);
+  border: 2px solid #f1cb19;
+}
+
+.brief h3 {color: #c32c2b}
+
+.afbeelding {
+  box-shadow: 0 10px 39px -5px rgba(0,0,0,.2);
+  line-height: 0;
+  margin: 0 0 30px;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(255,255,255,.7);
+  transform: rotate(-2deg);
+  padding: 3px;
+  transition: .3s all ease;
+}
+
+.tekst {padding: 20px; 
+  background-color: #fff;
+  color: #333;
+  transform: perspective(3000px) rotateY(19deg) rotateX(4deg) rotate(-1deg);
+  box-shadow: 0px 50px 30px -30px rgba(0,0,0,.2);
+  border: 2px solid #f1cb19;}
+
+  @media screen and (max-width: 768px) {
+    .brief, .tekst {transform: none;}
+  }
+`;
+
+
+
 const Aankomst = () => {
   return (
-        <div>
+        <StyledAankomst>
         <h3 style={{textAlign: 'center'}}>Intocht van Sint Nicolaas in Huizen op <strong>14 november</strong> 2020</h3>
         <p style={{textAlign: 'center', margin: '-15px 0 40px'}}>Welkomstwoord van de Burgemeester bij de aankomst van Sint en Pieten in Huizen</p>
 
         <div className="grid-3x">
-            <div className={styles.brief}>
+            <div className="brief">
             
             <h3>Dag Sint Nicolaas,</h3>
 
@@ -28,19 +70,19 @@ const Aankomst = () => {
 
             </div>
             <div>
-              <div className={styles.afbeelding}>
+              <div className="afbeelding">
                 <img src={SintEnPieten} alt=""/>
               </div>
-              <div className={styles.tekst}>De Sint bezoekt het winkelcentrum Hart van Huizen in het Oude Dorp. Op <a href="https://hartvanhuizen.nl" rel="noopener noreferrer" target="_blank">HartvanHuizen.nl</a> kun je hier alles over lezen.</div>
+              <div className="tekst">De Sint bezoekt het winkelcentrum Hart van Huizen in het Oude Dorp. Op <a href="https://hartvanhuizen.nl" rel="noopener noreferrer" target="_blank">HartvanHuizen.nl</a> kun je hier alles over lezen.</div>
             </div>
             <div>
-            <div className={styles.afbeelding}>
+            <div className="afbeelding">
               <img src={SintOpKade} alt="sint-op-kade"/>
             </div>
-              <div className={styles.tekst}>Ook bezoekt de Sint het winkelcentrum Oostermeent. Wanneer en wat hij daar doet kun je lezen op <a href="https://www.winkelcentrumoostermeent.nl" rel="noopener noreferrer" target="_blank">Winkelcentrumoostermeent.nl</a></div>
+              <div className="tekst">Ook bezoekt de Sint het winkelcentrum Oostermeent. Wanneer en wat hij daar doet kun je lezen op <a href="https://www.winkelcentrumoostermeent.nl" rel="noopener noreferrer" target="_blank">Winkelcentrumoostermeent.nl</a></div>
             </div>
         </div>
-        </div>
+        </StyledAankomst>
   )
 }
 
