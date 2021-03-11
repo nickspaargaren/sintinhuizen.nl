@@ -10,6 +10,7 @@ module.exports = {
         token: process.env.GATSBY_SANITY_TOKEN,
       }
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

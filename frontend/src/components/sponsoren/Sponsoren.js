@@ -26,7 +26,6 @@ const Sponsoren = () => {
         nodes {
           logo {
             asset {
-              id
               fluid {
                 aspectRatio
                 sizes
@@ -40,7 +39,6 @@ const Sponsoren = () => {
           }
           id
           bedrijfswebsite
-          bedrijfsnaam
         }
       }
     }
@@ -51,7 +49,7 @@ const Sponsoren = () => {
         <StyledSponsoren>
             {sponsoren.nodes.map((item) =>
               <a key={item.id} className="item" rel="noopener noreferrer" href={item.bedrijfswebsite} target="_blank">
-                <Img fluid={item.logo.asset.fluid} loading="lazy" />
+                <Img fluid={item.logo.asset.fluid} />
               </a>
             )}
         </StyledSponsoren>
