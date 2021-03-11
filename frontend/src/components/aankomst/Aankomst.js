@@ -1,8 +1,6 @@
 import React from "react"
 import styled from 'styled-components';
-import SintEnPieten from "../../assets/images/sint-en-pieten-op-pakjesboot.jpg";
-import SintOpKade from "../../assets/images/sint-op-kade.jpg";
-
+import { StaticImage } from "gatsby-plugin-image"
 
 const StyledAankomst = styled.div`
 
@@ -71,13 +69,13 @@ const Aankomst = () => {
             </div>
             <div>
               <div className="afbeelding">
-                <img src={SintEnPieten} alt=""/>
+                <StaticImage src="../../assets/images/sint-en-pieten-op-pakjesboot.jpg"  alt="Sint en pieten op de boot" />
               </div>
               <div className="tekst">De Sint bezoekt het winkelcentrum Hart van Huizen in het Oude Dorp. Op <a href="https://hartvanhuizen.nl" rel="noopener noreferrer" target="_blank">HartvanHuizen.nl</a> kun je hier alles over lezen.</div>
             </div>
             <div>
             <div className="afbeelding">
-              <img src={SintOpKade} alt="sint-op-kade"/>
+              <StaticImage src="../../assets/images/sint-op-kade.jpg" alt="Sint op de kade in de haven van Huizen" />
             </div>
               <div className="tekst">Ook bezoekt de Sint het winkelcentrum Oostermeent. Wanneer en wat hij daar doet kun je lezen op <a href="https://www.winkelcentrumoostermeent.nl" rel="noopener noreferrer" target="_blank">Winkelcentrumoostermeent.nl</a></div>
             </div>

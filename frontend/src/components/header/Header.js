@@ -54,18 +54,12 @@ const Header = () => {
   return (
         <StyledHeader className="grid-2x">
           <div className="headertekst">
-
             <div>
-              <h1>
-              <strong>Aankomst</strong> <br/><span>Sint Nicolaas</span> <br/><small>in</small> <strong>Huizen</strong>
-              </h1>
-
+              <h1><strong>Aankomst</strong> <br/><span>Sint Nicolaas</span> <br/><small>in</small> <strong>Huizen</strong></h1>
               <Link className="knop" to="aankomst" smooth={true}>Bekijk de aankomst op 14 november!</Link>
-
             </div>
             <img src={logo} alt="Logo" style={{width: '300px', height: '195px'}} loading="lazy" />
           </div>
-          
           <div className="illustratie">
             <img src={sinterklaas} alt="Sinterklaas" width="415px" height="440px" loading="lazy" />
           </div>
