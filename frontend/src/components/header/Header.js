@@ -1,7 +1,9 @@
 import React from "react"
 import { Link } from "react-scroll";
-import { StaticImage } from "gatsby-plugin-image"
 
+import logo from "../../assets/images/logo.svg";
+
+import sinterklaas from "../../assets/images/sinterklaas.svg";
 import gebouwen from "../../assets/images/gebouwen.svg";
 
 import styled from 'styled-components';
@@ -21,7 +23,7 @@ const StyledHeader = styled.div`
   .headertekst > img {margin: auto auto 0 0; max-width: 300px;}
 
   .illustratie {display: flex;}
-  .illustratie > div {margin: auto 0 0 auto;}
+  .illustratie img {margin-top: auto; width: 100%; max-height: 80vh;}
 
   .headertekst > div .knop {
     display: inline-block;
@@ -42,6 +44,8 @@ const StyledHeader = styled.div`
     .headertekst > img {margin-bottom: 20px;}
 
     .headertekst > div .knop {font-size: 12px;}
+
+    .illustratie img {max-height: 300px;}
   }
 `;
 
@@ -54,10 +58,10 @@ const Header = () => {
               <h1><strong>Aankomst</strong> <br/><span>Sint Nicolaas</span> <br/><small>in</small> <strong>Huizen</strong></h1>
               <Link className="knop" to="aankomst" smooth={true}>Bekijk de aankomst op 14 november!</Link>
             </div>
-            <StaticImage src="../../assets/images/logo.svg" alt="Logo" style={{width: '300px', height: '195px'}} />
+            <img src={logo} alt="Logo" style={{width: '300px', height: '195px'}} loading="lazy" />
           </div>
           <div className="illustratie">
-            <StaticImage src="../../assets/images/sinterklaas.svg" alt="Sinterklaas en Amerigo" />
+            <img src={sinterklaas} alt="Sinterklaas" width="415px" height="440px" loading="lazy" />
           </div>
         </StyledHeader>
   )
