@@ -1,6 +1,7 @@
 import React from 'react'; 
 import { useStaticQuery, graphql } from "gatsby";
 import { Gallery, Item } from 'react-photoswipe-gallery'
+import {GatsbyImage} from 'gatsby-plugin-image'
 import 'photoswipe/dist/photoswipe.css'
 import 'photoswipe/dist/default-skin/default-skin.css'
 
@@ -44,6 +45,7 @@ const Fotos = () => {
       fotos: allFile(filter: {relativeDirectory: {eq: "fotos-2020"}}, sort: {fields: relativePath}) {
         nodes {
           id
+          relativePath
           childImageSharp {
             fluid(maxWidth: 1200) {
               base64
@@ -52,12 +54,7 @@ const Fotos = () => {
               srcSet
               sizes
             }
-            fixed(width: 270, height: 200) {
-              src
-              srcWebp
-              srcSetWebp
-              srcSet
-            }
+            gatsbyImageData(width: 270, height: 200)
           }
         }
       }
@@ -80,7 +77,9 @@ const Fotos = () => {
                 height="800"
               >
                 {({ ref, open }) => (
-                  <img ref={ref} onClick={open} onKeyDown={open} src={item.childImageSharp.fixed.src} />
+                  <div ref={ref} onClick={open} onKeyDown={open}>
+                    <GatsbyImage image={item.childImageSharp.gatsbyImageData} alt={item.relativePath} />
+                  </div>
                 )}
               </Item>
             </div>
