@@ -47,7 +47,7 @@ const StyledAankomst = styled.div`
 const Aankomst = () => {
   return (
         <StyledAankomst>
-        <h3 style={{textAlign: 'center'}}>Intocht van Sint Nicolaas in Huizen op <strong>14 november</strong> 2020</h3>
+        <h2 style={{textAlign: 'center'}}>Intocht van Sint Nicolaas in Huizen op <strong>14 november</strong> 2020</h2>
         <p style={{textAlign: 'center', margin: '-15px 0 40px'}}>Welkomstwoord van de Burgemeester bij de aankomst van Sint en Pieten in Huizen</p>
 
         <div className="grid-3x">

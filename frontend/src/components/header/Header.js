@@ -27,7 +27,7 @@ const StyledHeader = styled.div`
 
   .headertekst > div .knop {
     display: inline-block;
-    background-color: #f1cb19;
+    background-color: #c32c2b;
     color: #fff;
     padding: 10px 13px;
     border-radius: 3px;
