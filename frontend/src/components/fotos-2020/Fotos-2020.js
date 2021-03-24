@@ -46,14 +46,8 @@ const Fotos = () => {
         nodes {
           id
           relativePath
+          publicURL
           childImageSharp {
-            fluid(maxWidth: 1200) {
-              base64
-              aspectRatio
-              src
-              srcSet
-              sizes
-            }
             gatsbyImageData(width: 270, height: 200)
           }
         }
@@ -71,13 +65,13 @@ const Fotos = () => {
           {fotos.nodes.map((item) =>
             <div key={item.id} className="item">
               <Item
-                original={item.childImageSharp.fluid.src}
-                thumbnail={item.childImageSharp.fluid.src}
+                original={item.publicURL}
+                thumbnail={item.publicURL}
                 width="1200"
                 height="800"
               >
                 {({ ref, open }) => (
-                  <div ref={ref} onClick={open} onKeyDown={open}>
+                  <div ref={ref} onClick={open} onKeyDown={open} role="button" tabIndex="0">
                     <GatsbyImage image={item.childImageSharp.gatsbyImageData} alt={item.relativePath} />
                   </div>
                 )}
