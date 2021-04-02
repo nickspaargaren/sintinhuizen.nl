@@ -1,22 +1,62 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image"
-import Layout from "../components/layout/layout.js";
-import Header from "../components/header/Header.js";
-import Fotos2020 from "../components/fotos-2020/Fotos-2020.js";
-import Fotos2019 from "../components/fotos-2019/Fotos-2019.js";
-import Sponsoren from "../components/sponsoren/Sponsoren.js";
+import Layout from "../components/Layout.js";
+import Header from "../components/Header.js";
+import Fotoalbum from "../components/Fotoalbum.js";
+import Sponsoren from "../components/Sponsoren.js";
 
-import Aankomst from "../components/aankomst/Aankomst.js";
+import Aankomst from "../components/Aankomst.js";
 
 const Home = () => {
+
+  const { fotos2020, fotos2019 } = useStaticQuery(
+    graphql`
+    query {
+      fotos2020: allFile(filter: {relativeDirectory: {eq: "fotos-2020"}}, sort: {fields: relativePath}) {
+        nodes {
+          id
+          relativePath
+          publicURL
+          childImageSharp {
+            gatsbyImageData(width: 270, height: 200)
+          }
+        }
+      }
+
+    fotos2019: allFile(filter: {relativeDirectory: {eq: "fotos-2019"}}, sort: {fields: relativePath}) {
+      nodes {
+        id
+        relativePath
+        publicURL
+        childImageSharp {
+          gatsbyImageData(width: 270, height: 200)
+        }
+      }
+    }
+  }
+    `
+  )
   return (
     <>
       <Layout title="Home" description="Informatie over de aankomst Sint Nicolaas in de werkhaven van het Nautisch Kwartier!">
         <section><Header/></section>
         <section id="aankomst"><Aankomst/></section>
 
-        <section className="fotos"><Fotos2020/></section>
-        <section className="fotos"><Fotos2019/></section>
+        <section className="fotos">
+          <div>
+            <h3 style={{textAlign: 'center'}}>Foto's van de aankomst op <strong>14 november</strong> 2020</h3>
+            <p style={{textAlign: 'center', margin: '-15px 0 40px'}}>Klik op de foto voor een vergroting</p>
+            <Fotoalbum fotos={fotos2020}/>
+          </div>
+        </section>
+        <section className="fotos">
+          <div>
+            <h3 style={{textAlign: 'center'}}>Foto's van de intocht <strong>2019</strong></h3>
+            <p style={{textAlign: 'center', margin: '-15px 0 40px'}}>Klik op de foto voor een vergroting</p>
+            <Fotoalbum fotos={fotos2019}/>
+          </div>
+        </section>
 
         <section className="bericht">
           <div className="grid-2x">

@@ -1,11 +1,12 @@
 import React from "react"
 import { Helmet } from "react-helmet";
-import '../../styles/index.css';
+import GlobalStyle from "../styles/globalStyles";
 
 const Layout = ({ children, title, description }) => {
 
   return (
     <div className="page">
+      <GlobalStyle />
       <Helmet>
           <html lang="nl" />
           <meta charSet="utf-8" />

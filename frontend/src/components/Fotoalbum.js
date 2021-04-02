@@ -1,7 +1,6 @@
 import React from 'react'; 
-import { useStaticQuery, graphql } from "gatsby";
 import { Gallery, Item } from 'react-photoswipe-gallery'
-import {GatsbyImage} from 'gatsby-plugin-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import 'photoswipe/dist/photoswipe.css'
 import 'photoswipe/dist/default-skin/default-skin.css'
 
@@ -10,12 +9,12 @@ import styled from 'styled-components';
 const StyledFotos = styled.div`
   margin: auto 0; width: 100%;
   ::after {clear: both; content: ""; float: none; display: block;}
+
    .item {
     box-shadow: 0 10px 39px -5px rgba(0,0,0,.2);
     float: left;
     line-height: 0;
     margin: 5px;
-    position: relative;
     text-align: center;
     overflow: hidden;
     width: calc(16.666% - 10px);
@@ -23,11 +22,9 @@ const StyledFotos = styled.div`
     background: rgba(255,255,255,.7);
     transform: rotate(-2deg);
     padding: 3px;
-    transition: .3s all ease;
     cursor: pointer;
   }
-   .item img {width: 100%;}
-
+  .item img {width: 100%;}
 
   @media screen and (max-width: 1024px) {
     .item {width: calc(25% - 10px);}
@@ -38,32 +35,13 @@ const StyledFotos = styled.div`
   }
 `;
 
-const Fotos = () => {
-  const { fotos } = useStaticQuery(
-    graphql`
-    query fotos2019 {
-      fotos: allFile(filter: {relativeDirectory: {eq: "fotos-2019"}}, sort: {fields: relativePath}) {
-        nodes {
-          id
-          relativePath
-          publicURL
-          childImageSharp {
-            gatsbyImageData(width: 270, height: 200)
-          }
-        }
-      }
-    }
-    `
-  )
+const Fotoalbum = ({fotos}) => {
 
   return (
       <StyledFotos>
-        <h3 style={{textAlign: 'center'}}>Foto's van de intocht <strong>2019</strong></h3>
-        <p style={{textAlign: 'center', margin: '-15px 0 40px'}}>Klik op de foto voor een vergroting</p>
-        <div>
         <Gallery>
-          {fotos.nodes.map((item) =>
-            <div key={item.id} className="item">
+          {fotos.nodes.map((item, key) =>
+            <div key={key} className="item">
               <Item
                 original={item.publicURL}
                 thumbnail={item.publicURL}
@@ -79,9 +57,8 @@ const Fotos = () => {
             </div>
           )}
         </Gallery>
-        </div>
       </StyledFotos>
   )
 }
 
-export default Fotos
+export default Fotoalbum
