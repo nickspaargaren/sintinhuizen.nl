@@ -12,9 +12,7 @@
     "@sanity/components",
     "@sanity/default-layout",
     "@sanity/default-login",
-    "@sanity/desk-tool",
-    "media",
-    "@sanity/dashboard"
+    "@sanity/desk-tool"
   ],
   "env": {
     "development": {
@@ -25,16 +23,8 @@
   },
   "parts": [
     {
-      "implements": "part:@sanity/dashboard/config",
-      "path": "./dashboardConfig.js"
-    },
-    {
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema"
-    },
-    {
-      "implements": "part:@sanity/form-builder/input/image/asset-sources",
-      "path": "./parts/assetSources.js"
     }
   ]
 }
