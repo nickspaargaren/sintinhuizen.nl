@@ -1,10 +1,10 @@
 import React from "react"
 import { Link } from "react-scroll";
 
-import logo from "../../assets/images/logo.svg";
+import logo from "../assets/images/logo.svg";
 
-import sinterklaas from "../../assets/images/sinterklaas.svg";
-import gebouwen from "../../assets/images/gebouwen.svg";
+import sinterklaas from "../assets/images/sinterklaas.svg";
+import gebouwen from "../assets/images/gebouwen.svg";
 
 import styled from 'styled-components';
 
