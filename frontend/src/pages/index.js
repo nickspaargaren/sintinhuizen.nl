@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby";
+import useFotoalbum from "../hooks/useFotoalbum.js";
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout.js";
 import Header from "../components/Header.js";
@@ -10,33 +10,8 @@ import Aankomst from "../components/Aankomst.js";
 
 const Home = () => {
 
-  const { fotos2020, fotos2019 } = useStaticQuery(
-    graphql`
-    query {
-      fotos2020: allFile(filter: {relativeDirectory: {eq: "fotos-2020"}}, sort: {fields: relativePath}) {
-        nodes {
-          id
-          relativePath
-          publicURL
-          childImageSharp {
-            gatsbyImageData(width: 270, height: 200)
-          }
-        }
-      }
+  const { fotos2020, fotos2019 } = useFotoalbum();
 
-    fotos2019: allFile(filter: {relativeDirectory: {eq: "fotos-2019"}}, sort: {fields: relativePath}) {
-      nodes {
-        id
-        relativePath
-        publicURL
-        childImageSharp {
-          gatsbyImageData(width: 270, height: 200)
-        }
-      }
-    }
-  }
-    `
-  )
   return (
     <>
       <Layout title="Home" description="Informatie over de aankomst Sint Nicolaas in de werkhaven van het Nautisch Kwartier!">
