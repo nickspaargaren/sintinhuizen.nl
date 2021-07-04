@@ -1,12 +1,11 @@
-import React from "react"
-import { Link } from "react-scroll";
-
-import logo from "../assets/images/logo.svg";
-
-import sinterklaas from "../assets/images/sinterklaas.svg";
-import gebouwen from "../assets/images/gebouwen.svg";
+import React from 'react';
+import { Link } from 'react-scroll';
 
 import styled from 'styled-components';
+import logo from '../assets/images/logo.svg';
+
+import sinterklaas from '../assets/images/sinterklaas.svg';
+import gebouwen from '../assets/images/gebouwen.svg';
 
 const StyledHeader = styled.div`
 
@@ -49,22 +48,29 @@ const StyledHeader = styled.div`
   }
 `;
 
-const Header = () => {
+const Header = () => (
+  <StyledHeader className="grid-2x">
+    <div className="headertekst">
+      <div>
+        <h1>
+          <strong>Aankomst</strong>
+          {' '}
+          <br />
+          <span>Sint Nicolaas</span>
+          {' '}
+          <br />
+          <small>in</small>
+          {' '}
+          <strong>Huizen</strong>
+        </h1>
+        <Link className="knop" to="aankomst" smooth>Bekijk de aankomst op 14 november!</Link>
+      </div>
+      <img src={logo} alt="Logo" style={{ width: '300px', height: '195px' }} loading="lazy" />
+    </div>
+    <div className="illustratie">
+      <img src={sinterklaas} alt="Sinterklaas" width="415px" height="440px" loading="lazy" />
+    </div>
+  </StyledHeader>
+);
 
-  return (
-        <StyledHeader className="grid-2x">
-          <div className="headertekst">
-            <div>
-              <h1><strong>Aankomst</strong> <br/><span>Sint Nicolaas</span> <br/><small>in</small> <strong>Huizen</strong></h1>
-              <Link className="knop" to="aankomst" smooth={true}>Bekijk de aankomst op 14 november!</Link>
-            </div>
-            <img src={logo} alt="Logo" style={{width: '300px', height: '195px'}} loading="lazy" />
-          </div>
-          <div className="illustratie">
-            <img src={sinterklaas} alt="Sinterklaas" width="415px" height="440px" loading="lazy" />
-          </div>
-        </StyledHeader>
-  )
-}
-
-export default Header
+export default Header;

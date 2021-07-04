@@ -1,6 +1,6 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image"
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 import styled from 'styled-components';
 
@@ -29,17 +29,17 @@ const Sponsoren = () => {
       }
     }
     
-    `
-  )
+    `,
+  );
   return (
-        <StyledSponsoren>
-            {sponsoren.nodes.map((item) =>
-              <a key={item.id} className="item" rel="noopener noreferrer" href={item.bedrijfswebsite} target="_blank">
-                <GatsbyImage image={item.logo.asset.gatsbyImageData} alt={item.bedrijfsnaam} />
-              </a>
-            )}
-        </StyledSponsoren>
-  )
-}
+    <StyledSponsoren>
+      {sponsoren.nodes.map((item) => (
+        <a key={item.id} className="item" rel="noopener noreferrer" href={item.bedrijfswebsite} target="_blank">
+          <GatsbyImage image={item.logo.asset.gatsbyImageData} alt={item.bedrijfsnaam} />
+        </a>
+      ))}
+    </StyledSponsoren>
+  );
+};
 
-export default Sponsoren
+export default Sponsoren;
