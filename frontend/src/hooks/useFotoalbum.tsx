@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from 'gatsby';
 
 const FotoalbumData = () => {
   const { fotos2020, fotos2019 } = useStaticQuery(graphql`
@@ -26,12 +26,11 @@ const FotoalbumData = () => {
         }
       }
     }
-    `
-  )
+    `);
   return {
     fotos2020,
-    fotos2019
-  }
-}
+    fotos2019,
+  };
+};
 
-export default FotoalbumData
+export default FotoalbumData;

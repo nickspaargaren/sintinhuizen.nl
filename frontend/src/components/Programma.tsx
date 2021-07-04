@@ -1,5 +1,5 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import { FaRegClock } from 'react-icons/fa';
 
@@ -49,18 +49,21 @@ const Programma = () => {
           }
         }
     } 
-    `
-  )
+    `,
+  );
   return (
-        <StyledProgramma>
-          {tijdslots.nodes.map((item) =>
-              <div key={item.id} className="row">
-                <div><FaRegClock/>{item.tijd}</div>
-                <div>{item.titel}</div>
-              </div>
-          )}
-        </StyledProgramma>
-  )
-}
+    <StyledProgramma>
+      {tijdslots.nodes.map((item) => (
+        <div key={item.id} className="row">
+          <div>
+            <FaRegClock />
+            {item.tijd}
+          </div>
+          <div>{item.titel}</div>
+        </div>
+      ))}
+    </StyledProgramma>
+  );
+};
 
-export default Programma
+export default Programma;
