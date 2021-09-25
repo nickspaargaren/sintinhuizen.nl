@@ -1,14 +1,14 @@
-import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import useFotoalbum from '../hooks/useFotoalbum';
-import Layout from '../components/Layout';
-import Header from '../components/Header';
-import Fotoalbum from '../components/Fotoalbum';
-import Sponsoren from '../components/Sponsoren';
+import React, { ReactElement } from 'react';
 
 import Aankomst from '../components/Aankomst';
+import Fotoalbum from '../components/Fotoalbum';
+import Header from '../components/Header';
+import Layout from '../components/Layout';
+import Sponsoren from '../components/Sponsoren';
+import useFotoalbum from '../hooks/useFotoalbum';
 
-const Home = () => {
+const Home = (): ReactElement => {
   const { fotos2020, fotos2019 } = useFotoalbum();
 
   return (

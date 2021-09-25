@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Link } from 'react-scroll';
-
 import styled from 'styled-components';
-import logo from '../assets/images/logo.svg';
 
-import sinterklaas from '../assets/images/sinterklaas.svg';
 import gebouwen from '../assets/images/gebouwen.svg';
+import logo from '../assets/images/logo.svg';
+import sinterklaas from '../assets/images/sinterklaas.svg';
 
 const StyledHeader = styled.div`
 
@@ -48,7 +47,7 @@ const StyledHeader = styled.div`
   }
 `;
 
-const Header = () => (
+const Header = (): ReactElement => (
   <StyledHeader className="grid-2x">
     <div className="headertekst">
       <div>

@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
+
 import Layout from '../components/Layout';
 
-const vierNulVier = () => (
+const vierNulVier = (): ReactElement => (
   <>
     <Layout title="404" description="404">
       404!

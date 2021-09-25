@@ -1,7 +1,6 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
-
+import React, { ReactElement } from 'react';
 import styled from 'styled-components';
 
 const StyledSponsoren = styled.div`
@@ -11,7 +10,7 @@ const StyledSponsoren = styled.div`
   a.item > div img {object-fit: contain !important;}
 `;
 
-const Sponsoren = () => {
+const Sponsoren = (): ReactElement => {
   const { sponsoren } = useStaticQuery(
     graphql`
     query sponsoren {

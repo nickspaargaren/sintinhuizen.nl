@@ -1,6 +1,18 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
-const FotoalbumData = () => {
+type Images = {
+  fotos2019: Image[];
+  fotos2020: Image[];
+}
+
+type Image = {
+  childImageSharp: object;
+  id: string;
+  publicURL: string;
+  relativePath: string;
+}
+
+const FotoalbumData = (): Images => {
   const { fotos2020, fotos2019 } = useStaticQuery(graphql`
     query {
 
@@ -27,6 +39,7 @@ const FotoalbumData = () => {
       }
     }
     `);
+
   return {
     fotos2020,
     fotos2019,

@@ -1,13 +1,15 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
 import '../styles/index.css';
+
+import React, { ReactElement } from 'react';
+import { Helmet } from 'react-helmet';
 
 interface LayoutProps {
   children: any,
   title: string,
   description: string
 }
-const Layout = ({ children, title, description }: LayoutProps) => (
+
+const Layout = ({ children, title, description }: LayoutProps): ReactElement => (
   <div className="page">
     <Helmet>
       <html lang="nl" />
