@@ -113,7 +113,7 @@ const Home = () => {
         <p>
           De jaarlijkse intocht van de Sint in Huizen wordt georganiseerd door de St. Intocht Sint Nicolaas Huizen
           <br />
-          Bestuur: Roeland Bijlard, Hans Borremans, Laura Toele, Jurgen van Wessel. Gelieerd bestuurslid: Eric Dinkla
+          Bestuur: Roeland Bijlard, Hans Borremans, Laura Toele, Jurgen van Wessel. Adviseur: Eric Dinkla
 
         </p>
         <p>
