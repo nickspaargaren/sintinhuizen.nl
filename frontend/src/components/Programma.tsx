@@ -1,7 +1,7 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import styled from 'styled-components';
+import { graphql, useStaticQuery } from 'gatsby';
+import React, { ReactElement } from 'react';
 import { FaRegClock } from 'react-icons/fa';
+import styled from 'styled-components';
 
 const StyledProgramma = styled.div`
 
@@ -37,7 +37,7 @@ const StyledProgramma = styled.div`
 }
 `;
 
-const Programma = () => {
+const Programma = (): ReactElement => {
   const { tijdslots } = useStaticQuery(
     graphql`
     query {

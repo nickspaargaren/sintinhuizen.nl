@@ -1,9 +1,9 @@
-import React from 'react';
-import { Gallery, Item } from 'react-photoswipe-gallery';
-import { GatsbyImage } from 'gatsby-plugin-image';
 import 'photoswipe/dist/photoswipe.css';
 import 'photoswipe/dist/default-skin/default-skin.css';
 
+import { GatsbyImage } from 'gatsby-plugin-image';
+import React, { ReactElement } from 'react';
+import { Gallery, Item } from 'react-photoswipe-gallery';
 import styled from 'styled-components';
 
 const StyledFotos = styled.div`
@@ -35,7 +35,7 @@ const StyledFotos = styled.div`
   }
 `;
 
-const Fotoalbum = ({ fotos }: any) => (
+const Fotoalbum = ({ fotos }: any): ReactElement => (
   <StyledFotos>
     <Gallery>
       {fotos.nodes.map((item) => (
@@ -46,7 +46,7 @@ const Fotoalbum = ({ fotos }: any) => (
             width="1200"
             height="800"
           >
-            {({ ref, open }) => (
+            {({ ref, open }: any) => (
               <div ref={ref} onClick={open} onKeyDown={open} role="button" tabIndex={0}>
                 <GatsbyImage image={item.childImageSharp.gatsbyImageData} alt={item.relativePath} />
               </div>

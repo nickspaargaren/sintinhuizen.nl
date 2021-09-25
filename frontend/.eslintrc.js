@@ -19,12 +19,14 @@ module.exports = {
   plugins: [
     'react',
     '@typescript-eslint',
+    'simple-import-sort',
   ],
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.tsx', '.ts'] }],
     'import/extensions': 'off',
     'no-use-before-define': 'off',
     'max-len': 'off',
+    'simple-import-sort/imports': 'error',
   },
   settings: {
     'import/resolver': {

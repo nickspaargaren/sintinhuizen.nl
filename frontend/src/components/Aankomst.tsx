@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
+import React, { ReactElement } from 'react';
+import styled from 'styled-components';
 
 const StyledAankomst = styled.div`
 
@@ -41,7 +41,7 @@ const StyledAankomst = styled.div`
   }
 `;
 
-const Aankomst = () => (
+const Aankomst = (): ReactElement => (
   <StyledAankomst>
     <h2 style={{ textAlign: 'center' }}>
       Intocht van Sint Nicolaas in Huizen op
