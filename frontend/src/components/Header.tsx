@@ -63,7 +63,7 @@ const Header = () => (
           {' '}
           <strong>Huizen</strong>
         </h1>
-        <Link className="knop" to="aankomst" smooth>Bekijk de aankomst op 14 november!</Link>
+        <Link className="knop" to="aankomst" smooth>Bekijk de aankomst op 14 november 2020!</Link>
       </div>
       <img src={logo} alt="Logo" style={{ width: '300px', height: '195px' }} loading="lazy" />
     </div>
