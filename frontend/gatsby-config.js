@@ -1,6 +1,6 @@
 module.exports = {
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-sanity',
       options: {
@@ -8,40 +8,40 @@ module.exports = {
         dataset: 'production',
         watchMode: true,
         token: process.env.GATSBY_SANITY_TOKEN,
-      }
+      },
     },
-    `gatsby-plugin-image`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-plugin-image',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src/assets/images`,
-        ignore: [`**/\.*`], // ignore files starting with a dot
+        ignore: ['**/\.*'], // ignore files starting with a dot
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: "UA-109024107-1",
+        trackingId: 'UA-109024107-1',
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: false,
         anonymize: true,
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: 'gatsby-plugin-google-fonts',
       options: {
         fonts: [
-          `Alfa Slab One`,
-          `Courgette`
+          'Alfa Slab One',
+          'Courgette',
         ],
-        display: 'swap'
-      }
+        display: 'swap',
+      },
     },
     {
-      resolve: `gatsby-plugin-styled-components`
+      resolve: 'gatsby-plugin-styled-components',
     },
   ],
-}
+};
