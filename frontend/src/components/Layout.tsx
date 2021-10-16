@@ -3,11 +3,7 @@ import '../styles/index.css';
 import React, { ReactElement } from 'react';
 import { Helmet } from 'react-helmet';
 
-interface LayoutProps {
-  children: any,
-  title: string,
-  description: string
-}
+import { LayoutProps } from '../types';
 
 const Layout = ({ children, title, description }: LayoutProps): ReactElement => (
   <div className="page">
