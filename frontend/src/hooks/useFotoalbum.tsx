@@ -1,16 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
-type Images = {
-  fotos2019: Image[];
-  fotos2020: Image[];
-}
-
-type Image = {
-  childImageSharp: object;
-  id: string;
-  publicURL: string;
-  relativePath: string;
-}
+import { Images } from '../types';
 
 const FotoalbumData = (): Images => {
   const { fotos2020, fotos2019 } = useStaticQuery(graphql`
