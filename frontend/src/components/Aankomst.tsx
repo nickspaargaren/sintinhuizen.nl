@@ -45,6 +45,7 @@ const Aankomst = (): ReactElement => (
   <StyledAankomst>
     <h2 style={{ textAlign: 'center' }}>
       Intocht van Sint Nicolaas in Huizen op
+      {' '}
       <strong>14 november</strong>
       {' '}
       2020
