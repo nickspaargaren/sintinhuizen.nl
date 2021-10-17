@@ -1,5 +1,7 @@
+import React from 'react';
+
 export type LayoutProps = {
-  children: any,
+  children: React.ReactNode,
   title: string,
   description: string
 }
