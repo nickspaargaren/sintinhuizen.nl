@@ -7,7 +7,7 @@
   "author": "Nick Spaargaren <nickspaargaren+sanity@protonmail.com>",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "sanity start",
+    "start": "sanity start --host=0.0.0.0",
     "test": "sanity check"
   },
   "keywords": [
@@ -15,6 +15,7 @@
   ],
   "dependencies": {
     "@sanity/base": "^2.20.0",
+    "@sanity/cli": "^2.21.4",
     "@sanity/components": "^2.14.0",
     "@sanity/core": "^2.20.0",
     "@sanity/dashboard": "^2.20.0",
