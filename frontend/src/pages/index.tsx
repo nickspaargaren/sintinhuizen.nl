@@ -9,7 +9,7 @@ import Sponsoren from '../components/Sponsoren';
 import useFotoalbum from '../hooks/useFotoalbum';
 
 const Home = (): ReactElement => {
-  const { fotos2020, fotos2019 } = useFotoalbum();
+  const [ fotos2020, fotos2019 ] = useFotoalbum();
 
   return (
     <Layout title="Home" description="Informatie over de aankomst Sint Nicolaas in de werkhaven van het Nautisch Kwartier!">
