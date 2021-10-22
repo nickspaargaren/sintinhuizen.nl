@@ -38,7 +38,7 @@ const StyledFotos = styled.div`
 const Fotoalbum = ({ fotos }: any): ReactElement => (
   <StyledFotos>
     <Gallery>
-      {fotos.nodes.map((item) => (
+      {fotos.map((item) => (
         <div key={item.id} className="item">
           <Item
             original={item.publicURL}

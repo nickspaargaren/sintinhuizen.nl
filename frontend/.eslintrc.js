@@ -6,7 +6,6 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'airbnb',
-
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -22,16 +21,18 @@ module.exports = {
     'simple-import-sort',
   ],
   rules: {
-    'react/jsx-filename-extension': [1, { extensions: ['.tsx', '.ts'] }],
+    'react/jsx-filename-extension': [ 1, { extensions: [ '.tsx', '.ts' ] } ],
     'import/extensions': 'off',
     'no-use-before-define': 'off',
     'max-len': 'off',
     'simple-import-sort/imports': 'error',
+    'array-bracket-spacing': [ 'error', 'always' ],
+    'object-curly-spacing': [ 'error', 'always' ],
   },
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        extensions: [ '.js', '.jsx', '.ts', '.tsx' ],
       },
     },
   },
