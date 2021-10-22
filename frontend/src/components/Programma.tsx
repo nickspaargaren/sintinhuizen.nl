@@ -5,29 +5,28 @@ import styled from 'styled-components';
 
 const StyledProgramma = styled.div`
 
+  box-sizing: border-box;
   margin: auto;
   padding: 0;
-  box-sizing: border-box;
   text-align: left;
 
-
 .row {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  color: #505050;
-  font-size: 15px;
   background: #fff;
+  color: #505050;
+  display: grid;
+  font-size: 15px;
+  grid-template-columns: 100px 1fr;
 }
+
 .row div {padding: 20px;}
 
-
 .row div:first-child {
-  white-space: nowrap;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 13px;
   background: #e2a531;
   color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .row div:first-child svg {margin-right: 8px;}
