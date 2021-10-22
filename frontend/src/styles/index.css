@@ -69,7 +69,7 @@ main section {
   justify-content: center;
 }
 
-main section > div {margin: auto 0; width: 100%; padding: 50px;}
+main section > div {margin: auto; max-width: 1600px; width: 100%; padding: 50px;}
 
 main section.sponsoren {background: #fff; min-height: 0;}
 main section.sponsoren > div {padding: 20px 50px;}

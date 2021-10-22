@@ -11,7 +11,7 @@ const StyledHeader = styled.div`
   background-color: #84cdde;
   background-image: url(${gebouwen});
   min-height: inherit;
-  width: 100%;
+  max-width: 100%;
   background-repeat: repeat-x;
   background-position: bottom;
   background-size: 825px 175px;
