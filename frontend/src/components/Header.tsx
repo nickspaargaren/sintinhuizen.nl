@@ -10,30 +10,30 @@ const StyledHeader = styled.div`
 
   background-color: #84cdde;
   background-image: url(${gebouwen});
-  min-height: inherit;
-  max-width: 100%;
-  background-repeat: repeat-x;
   background-position: bottom;
+  background-repeat: repeat-x;
   background-size: 825px 175px;
+  max-width: 100%;
+  min-height: inherit;
 
   .headertekst {display: flex; flex-direction: column}
   .headertekst > div {margin-bottom: 20px;}
   .headertekst > img {margin: auto auto 0 0; max-width: 300px;}
 
   .illustratie {display: flex;}
-  .illustratie img {margin-top: auto; width: 100%; max-height: 80vh;}
+  .illustratie img {margin-top: auto; max-height: 80vh; width: 100%;}
 
   .headertekst > div .knop {
-    display: inline-block;
     background-color: #c32c2b;
-    color: #fff;
-    padding: 10px 13px;
     border-radius: 3px;
-    font-family: 'Alfa Slab One';
-    line-height: normal;
     box-shadow: 0px 2px 0px rgba(0,0,0,.15);
+    color: #fff;
     cursor: pointer;
+    display: inline-block;
+    font-family: 'Alfa Slab One';
     letter-spacing: .05em;
+    line-height: normal;
+    padding: 10px 13px;
   }
 
   @media screen and (max-width: 768px) {

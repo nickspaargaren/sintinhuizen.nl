@@ -5,36 +5,37 @@ import styled from 'styled-components';
 const StyledAankomst = styled.div`
 
 .brief {
-  padding: 30px 30px 10px;
   background-color: #fff;
-  color: #333;
-  transform: perspective(3000px) rotateY(19deg) rotateX(4deg) rotate(-1deg);
-  box-shadow: 0px 50px 30px -30px rgba(0,0,0,.2);
   border: 2px solid #f1cb19;
+  box-shadow: 0px 50px 30px -30px rgba(0,0,0,.2);
+  color: #333;
+  padding: 30px 30px 10px;
+  transform: perspective(3000px) rotateY(19deg) rotateX(4deg) rotate(-1deg);
 }
 
 .brief h3 {color: #c32c2b}
 
 .afbeelding {
+  background: rgba(255,255,255,.7);
   box-shadow: 0 10px 39px -5px rgba(0,0,0,.2);
+  box-sizing: border-box;
   line-height: 0;
   margin: 0 0 30px;
+  overflow: hidden;
+  padding: 3px;
   position: relative;
   text-align: center;
-  overflow: hidden;
-  width: 100%;
-  box-sizing: border-box;
-  background: rgba(255,255,255,.7);
   transform: rotate(-2deg);
-  padding: 3px;
+  width: 100%;
 }
 
-.tekst {padding: 20px; 
-  background-color: #fff;
-  color: #333;
-  transform: perspective(3000px) rotateY(19deg) rotateX(4deg) rotate(-1deg);
+.tekst {
+  background-color: #fff; 
+  border: 2px solid #f1cb19;
   box-shadow: 0px 50px 30px -30px rgba(0,0,0,.2);
-  border: 2px solid #f1cb19;}
+  color: #333;
+  padding: 20px;
+  transform: perspective(3000px) rotateY(19deg) rotateX(4deg) rotate(-1deg);}
 
   @media screen and (max-width: 768px) {
     .brief, .tekst {transform: none;}
