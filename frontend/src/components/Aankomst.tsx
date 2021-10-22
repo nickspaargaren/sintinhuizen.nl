@@ -88,6 +88,7 @@ const Aankomst = (): ReactElement => (
         </div>
         <div className="tekst">
           De Sint bezoekt het winkelcentrum Hart van Huizen in het Oude Dorp. Op
+          {' '}
           <a href="https://hartvanhuizen.nl" rel="noopener noreferrer" target="_blank">HartvanHuizen.nl</a>
           {' '}
           kun je hier alles over lezen.
@@ -99,6 +100,7 @@ const Aankomst = (): ReactElement => (
         </div>
         <div className="tekst">
           Ook bezoekt de Sint het winkelcentrum Oostermeent. Wanneer en wat hij daar doet kun je lezen op
+          {' '}
           <a href="https://www.winkelcentrumoostermeent.nl" rel="noopener noreferrer" target="_blank">Winkelcentrumoostermeent.nl</a>
         </div>
       </div>
