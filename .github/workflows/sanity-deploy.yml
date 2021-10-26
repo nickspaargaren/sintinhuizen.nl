@@ -3,9 +3,6 @@ on: push
 jobs:
   sanity-deploy:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./backend
     name: Deploy Sanity
     steps:
       - uses: actions/checkout@v2
@@ -13,4 +10,5 @@ jobs:
         env:
           SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
         with:
+          path: backend
           args: deploy
