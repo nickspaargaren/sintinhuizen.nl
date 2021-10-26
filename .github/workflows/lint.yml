@@ -1,7 +1,9 @@
 name: CI
-on: push
+on:
+  push:
+    branches: [master]
 jobs:
-  build:
+  eslint:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -11,3 +13,14 @@ jobs:
     - name: Run ESLint
       working-directory: ./frontend
       run: yarn run lint
+  sanity-deploy:
+    runs-on: ubuntu-latest
+    name: Deploy Sanity
+    steps:
+      - uses: actions/checkout@v2
+      - uses: sanity-io/github-action-sanity@v0.2-alpha
+        env:
+          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
+        working-directory: ./backend
+        with:
+          args: deploy
