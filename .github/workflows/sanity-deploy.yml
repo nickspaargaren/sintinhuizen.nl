@@ -1,14 +1,16 @@
 name: Deploy Sanity
 on: push
 jobs:
-  sanity-deploy:
+  deploy:
     runs-on: ubuntu-latest
-    name: Deploy Sanity
+    defaults:
+      run:
+        working-directory: ./backend
     steps:
       - uses: actions/checkout@v2
-      - uses: sanity-io/github-action-sanity@v0.2-alpha
-        env:
-          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
-        with:
-          path: backend
-          args: deploy
+      - name: Install modules
+        run: yarn install
+      - name: Deploy Sanity
+        run: |
+          set -e
+          SANITY_AUTH_TOKEN="${{ secrets.SANITY_AUTH_TOKEN }}" yarn sanity deploy
