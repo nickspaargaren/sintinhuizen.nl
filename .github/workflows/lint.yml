@@ -3,22 +3,26 @@ on: push
 jobs:
   eslint:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./frontend
+    name: ESLint
     steps:
     - uses: actions/checkout@v2
     - name: Install modules
-      working-directory: ./frontend
       run: yarn install
     - name: Run ESLint
-      working-directory: ./frontend
       run: yarn run lint
   sanity-deploy:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./backend
     name: Deploy Sanity
     steps:
       - uses: actions/checkout@v2
       - uses: sanity-io/github-action-sanity@v0.2-alpha
         env:
           SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
-        working-directory: ./backend
         with:
           args: deploy
