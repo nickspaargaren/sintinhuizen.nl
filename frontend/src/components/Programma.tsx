@@ -1,6 +1,5 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React, { ReactElement } from 'react';
-import { FaRegClock } from 'react-icons/fa';
 import styled from 'styled-components';
 
 const StyledProgramma = styled.div`
@@ -15,19 +14,9 @@ const StyledProgramma = styled.div`
   color: #505050;
   display: grid;
   font-size: 15px;
-  grid-template-columns: 100px 1fr;
 }
 
-.row div {padding: 20px;}
-
-.row div:first-child {
-  background: #e2a531;
-  color: #fff;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
+.row div {padding: 15px 20px;}
 
 .row div:first-child svg {margin-right: 8px;}
 
@@ -40,11 +29,11 @@ const Programma = (): ReactElement => {
   const { tijdslots } = useStaticQuery(
     graphql`
     query {
-      tijdslots: allSanityProgramma(sort: {fields: tijd}) {
+      tijdslots: allSanityProgramma {
           nodes {
             id
-            tijd
             titel
+            tijd
           }
         }
     } 
@@ -52,15 +41,14 @@ const Programma = (): ReactElement => {
   );
   return (
     <StyledProgramma>
-      {tijdslots.nodes.map((item) => (
-        <div key={item.id} className="row">
-          <div>
-            <FaRegClock />
-            {item.tijd}
+      <h2 style={{ padding: '20px', margin: '0px' }}>Programma 13 november Nautisch Kwartier</h2>
+      {tijdslots.nodes
+        .sort((a, b) => a.tijd - b.tijd)
+        .map((item) => (
+          <div key={item.id} className="row">
+            <div>{item.titel}</div>
           </div>
-          <div>{item.titel}</div>
-        </div>
-      ))}
+        ))}
     </StyledProgramma>
   );
 };
