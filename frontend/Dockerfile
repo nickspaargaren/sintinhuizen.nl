@@ -1,4 +1,5 @@
-FROM node:alpine
+FROM node:14.18-alpine
+RUN apk add g++ make python
 WORKDIR /app
 COPY package.json ./
 COPY yarn.lock ./
