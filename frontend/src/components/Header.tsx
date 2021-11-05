@@ -7,7 +7,7 @@ import sinterklaas from '../assets/images/sinterklaas.svg';
 
 const StyledHeader = styled.div`
 
-  background-color: #84cdde;
+  background-color: #4a6091;
   background-image: url(${gebouwen});
   background-position: bottom;
   background-repeat: repeat-x;
@@ -70,7 +70,7 @@ const Header = (): ReactElement => (
 
         <p>Maar let op! De overheid kan onderstaande coronamaatregelen speciaal voor de sinterklaasintocht versoepelen. Houd daarom deze website in de gaten!</p>
 
-        <p><strong>Coronamaatregelen bij de intocht van Sint Nicolaas in Huizen.</strong></p>
+        <p style={{ marginBottom: '5px' }}><strong style={{ color: '#f1cb19' }}>Coronamaatregelen bij de intocht van Sint Nicolaas in Huizen.</strong></p>
 
         <p>
           Toegang tot het aankomstterrein is alleen mogelijk met een coronatoegangsbewijs. Dat is aan te vragen via internet, en geldt vanaf 18 jaar.
