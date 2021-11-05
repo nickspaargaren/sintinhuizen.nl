@@ -16,6 +16,7 @@ const StyledHeader = styled.div`
   min-height: inherit;
 
   .headertekst {display: flex; flex-direction: column;}
+  .headertekst h2 strong {white-space: nowrap;}
   .headertekst > div {margin-bottom: 20px;}
   .headertekst > img {margin: auto auto 0 0; max-width: 300px;}
 
@@ -50,20 +51,34 @@ const Header = (): ReactElement => (
           <strong>Huizen</strong>
         </h1>
 
-        <p><strong>Op zaterdag 13 november komt Sint Nicolaas met zijn Pieten aan in Huizen. Ze zullen worden verwelkomd in de haven van het Nautisch Kwartier. De feestelijkheden beginnen om 13.30 uur.</strong></p>
+        <h2>
+          Op
+          {' '}
+          <strong>zaterdag 13 november</strong>
+          {' '}
+          komt Sint Nicolaas met zijn Pieten aan in Huizen. Ze zullen worden verwelkomd in de haven van het Nautisch Kwartier. De feestelijkheden beginnen om
+          {' '}
+          <strong>
+            13.30 uur.
+          </strong>
+          {' '}
+          Er zal een coronatoegangsbewijs getoond moeten worden.
+        </h2>
+
+        <p>Maar let op! De overheid kan onderstaande coronamaatregelen speciaal voor de sinterklaasintocht versoepelen. Houd daarom deze website in de gaten!</p>
 
         <p><strong>Coronamaatregelen bij de intocht van Sint Nicolaas in Huizen.</strong></p>
 
         <p>
           Toegang tot het aankomstterrein is alleen mogelijk met een coronatoegangsbewijs. Dat is aan te vragen via internet, en geldt vanaf 18 jaar.
-          <br />
-          Als je het als ouder niet hebt, is er dan wellicht een vriendelijke buurman of buurvrouw die het bewijs wel heeft en de kinderen kan meenemen?
+
+          Als je het als ouder niet hebt, is er dan wellicht een vriendelijke buurman of buurvrouw die het bewijs wel heeft en de kinderen kan meenemen? Kom betijds en houd je coronatoegangsbewijs gereed.
         </p>
 
-        <p>
+        {/* <p>
           Het haventerrein is toegankelijk via drie sluizen. In elke sluis staan twee controleurs. Om snelle doorstroming te krijgen is het dringende verzoek de telefoon of document met het toegangsbewijs gereed te houden. En: kom op tijd!
           Het terrein is open vanaf 12.30 uur
-        </p>
+        </p> */}
 
         <p>We zijn blij weer een leuk feest voor de kinderen te kunnen organiseren. En met ieders medewerking gaat dat zeker lukken!</p>
 
