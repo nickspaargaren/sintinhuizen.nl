@@ -44,7 +44,7 @@ const Home = (): ReactElement => {
       <section className="bericht">
         <div className="grid-2x">
           <div>
-            <p style={{ marginBottom: '50px' }}><strong>Onze verslaggever zoekt in Spanje Sint Nicolaas want hij wil zeker weten dat de Sint zaterdag 14 november 2020 naar Huizen komt! Hier is zijn eerste bericht</strong></p>
+            <p style={{ marginBottom: '50px' }}><strong>Onze verslaggever zoekt in Spanje Sint Nicolaas want hij wil zeker weten dat de Sint zaterdag 13 november 2021 naar Huizen komt! Hier is zijn eerste bericht</strong></p>
             <h3>Hallo Nederland,</h3>
             <p>
               <em>
