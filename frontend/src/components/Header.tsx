@@ -56,7 +56,10 @@ const Header = (): ReactElement => (
           {' '}
           <strong>zaterdag 13 november</strong>
           {' '}
-          komt Sint Nicolaas met zijn Pieten aan in Huizen. Ze zullen worden verwelkomd in de haven van het Nautisch Kwartier. De feestelijkheden beginnen om
+          komt Sint Nicolaas met zijn Pieten aan in Huizen. Ze zullen worden verwelkomd in de haven van het
+          {' '}
+          <strong>Nautisch Kwartier</strong>
+          . De feestelijkheden beginnen om
           {' '}
           <strong>
             13.30 uur.

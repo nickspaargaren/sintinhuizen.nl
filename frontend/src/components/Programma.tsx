@@ -16,7 +16,7 @@ const StyledProgramma = styled.div`
   font-size: 15px;
 }
 
-.row div {padding: 20px;}
+.row div {padding: 15px 20px;}
 
 .row div:first-child svg {margin-right: 8px;}
 
@@ -41,7 +41,7 @@ const Programma = (): ReactElement => {
   );
   return (
     <StyledProgramma>
-      <h2 style={{ padding: '20px', margin: '0px' }}>Programma</h2>
+      <h2 style={{ padding: '20px', margin: '0px' }}>Programma 13 november Nautisch Kwartier</h2>
       {tijdslots.nodes
         .sort((a, b) => a.tijd - b.tijd)
         .map((item) => (

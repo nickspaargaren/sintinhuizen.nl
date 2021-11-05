@@ -46,14 +46,14 @@ const StyledAankomst = styled.div`
 
 const Aankomst = (): ReactElement => (
   <StyledAankomst>
-    <h2 style={{ textAlign: 'center' }}>
-      Intocht van Sint Nicolaas in Huizen op
+    <h2 style={{ textAlign: 'center', margin: '0px 0 40px' }}>
+      Activiteiten Sint Nicolaas
       {' '}
-      <strong>14 november</strong>
+      <strong>2021</strong>
       {' '}
-      2020
+      in Huizen
     </h2>
-    <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Welkomstwoord van de Burgemeester bij de aankomst van Sint en Pieten in Huizen</p>
+    {/* <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Welkomstwoord van de Burgemeester bij de aankomst van Sint en Pieten in Huizen</p> */}
 
     <div className="grid-3x">
       <div className="brief">
