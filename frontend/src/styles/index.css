@@ -17,7 +17,6 @@ h1 {
   letter-spacing: .05em;
   font-weight: normal;
   text-transform: uppercase;
-  hyphens: none;
   line-height: 1.1em;
 }
 
@@ -27,7 +26,6 @@ h2 {
   letter-spacing: .05em;
   font-weight: normal;
   text-transform: uppercase;
-  hyphens: none;
 }
 
 h3 {
@@ -36,7 +34,6 @@ h3 {
   letter-spacing: .05em;
   font-weight: normal;
   text-transform: uppercase;
-  hyphens: none;
 }
 
 h1 span, h2 span {white-space: nowrap;}
@@ -76,7 +73,7 @@ main section.sponsoren > div {padding: 20px 50px;}
 
 
 /* Grid Templates */
-div[class*="grid"] {hyphens: auto; -webkit-hyphens: auto; display: grid; grid-gap: 30px; box-sizing: border-box;}
+div[class*="grid"] {display: grid; grid-gap: 30px; box-sizing: border-box;}
 div[class*="grid"].vertical-align-middle > div {margin: auto 0;}
 div[class*="grid"] img {max-width: 100%; height: auto !important;}
 .grid-2x {grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));}

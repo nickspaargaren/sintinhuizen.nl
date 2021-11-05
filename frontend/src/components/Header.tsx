@@ -1,5 +1,4 @@
 import React, { ReactElement } from 'react';
-import { Link } from 'react-scroll';
 import styled from 'styled-components';
 
 import gebouwen from '../assets/images/gebouwen.svg';
@@ -16,25 +15,13 @@ const StyledHeader = styled.div`
   max-width: 100%;
   min-height: inherit;
 
-  .headertekst {display: flex; flex-direction: column}
+  .headertekst {display: flex; flex-direction: column;}
   .headertekst > div {margin-bottom: 20px;}
   .headertekst > img {margin: auto auto 0 0; max-width: 300px;}
 
   .illustratie {display: flex;}
   .illustratie img {margin-top: auto; max-height: 80vh; width: 100%;}
 
-  .headertekst > div .knop {
-    background-color: #c32c2b;
-    border-radius: 3px;
-    box-shadow: 0px 2px 0px rgba(0,0,0,.15);
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: 'Alfa Slab One';
-    letter-spacing: .05em;
-    line-height: normal;
-    padding: 10px 13px;
-  }
 
   @media screen and (max-width: 768px) {
     .headertekst {flex-direction: column-reverse;}
@@ -62,7 +49,26 @@ const Header = (): ReactElement => (
           {' '}
           <strong>Huizen</strong>
         </h1>
-        <Link className="knop" to="aankomst" smooth>Bekijk de aankomst op 14 november 2020!</Link>
+
+        <p><strong>Op zaterdag 13 november komt Sint Nicolaas met zijn Pieten aan in Huizen. Ze zullen worden verwelkomd in de haven van het Nautisch Kwartier. De feestelijkheden beginnen om 13.30 uur.</strong></p>
+
+        <p><strong>Coronamaatregelen bij de intocht van Sint Nicolaas in Huizen.</strong></p>
+
+        <p>
+          Toegang tot het aankomstterrein is alleen mogelijk met een coronatoegangsbewijs. Dat is aan te vragen via internet, en geldt vanaf 18 jaar.
+          <br />
+          Als je het als ouder niet hebt, is er dan wellicht een vriendelijke buurman of buurvrouw die het bewijs wel heeft en de kinderen kan meenemen?
+        </p>
+
+        <p>
+          Het haventerrein is toegankelijk via drie sluizen. In elke sluis staan twee controleurs. Om snelle doorstroming te krijgen is het dringende verzoek de telefoon of document met het toegangsbewijs gereed te houden. En: kom op tijd!
+          Het terrein is open vanaf 12.30 uur
+        </p>
+
+        <p>We zijn blij weer een leuk feest voor de kinderen te kunnen organiseren. En met ieders medewerking gaat dat zeker lukken!</p>
+
+        <p>Bestuur Stichting Intocht Sint Nicolaas Huizen</p>
+
       </div>
       <img src={logo} alt="Logo" style={{ width: '300px', height: '195px' }} loading="lazy" />
     </div>

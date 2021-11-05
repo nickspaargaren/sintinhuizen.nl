@@ -14,7 +14,7 @@ const Home = (): ReactElement => {
   return (
     <Layout title="Home" description="Informatie over de aankomst Sint Nicolaas in de werkhaven van het Nautisch Kwartier!">
       <section><Header /></section>
-      <section id="aankomst"><Aankomst /></section>
+      <section><Aankomst /></section>
 
       <section className="fotos">
         <div>
@@ -66,15 +66,7 @@ const Home = (): ReactElement => {
             <p><em>Ik stuur weer een brief naar Nederland als ik Sinterklaas heb gevonden.</em></p>
             <p><em>Adios y hasta pronto</em></p>
             <p><em>Jullie speciale verslaggever</em></p>
-            <p className="handtekening">Erico</p>
-            <p style={{ marginBottom: '50px', marginTop: '50px' }}>
-              <strong>
-                Het derde en laatste bericht van onze verslaggever. Nu maar afwachten wanneer de Sint Nicolaas en zijn Pieten in Nederland aankomen en of ze meteen doorvaren naar Huizen.
-                <br />
-                Zaterdag 14 november vanaf 14.00 uur weten we het en laten dat jullie op deze website weten!
-              </strong>
-
-            </p>
+            <p className="handtekening" style={{ marginBottom: '50px' }}>Erico</p>
             <p />
             <h3>Hola Nederland,</h3>
             <p><em>Hier is jullie speciale verslaggever weer. Ik ben bij de burgemeester op visite geweest. Een aardige man, alleen spreekt hij geen Nederlands en ik bijna geen Spaans. Ik kon nog net in het Spaans vragen of hij weet waar Sinterklaas woont, en ja dat wist hij. Ben direct weer in de auto gaan zitten en heb gezocht en gezocht, en heb hem gevonden. JIPPIE!</em></p>
