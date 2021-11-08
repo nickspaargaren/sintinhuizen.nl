@@ -14,3 +14,8 @@ export type Image = {
   publicURL: string;
   relativePath: string;
 }
+
+export type ButtonProps = {
+  title: string;
+  url: string;
+}
