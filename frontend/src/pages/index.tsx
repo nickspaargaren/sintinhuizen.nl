@@ -87,7 +87,7 @@ const Home = (): ReactElement => {
               <p>
                 Toegang tot het aankomstterrein is alleen mogelijk met een coronatoegangsbewijs. Dat is aan te vragen via internet, en geldt vanaf 18 jaar.
 
-                Als je het als ouder niet hebt, is er dan wellicht een vriendelijke buurman of buurvrouw die het bewijs wel heeft en de kinderen kan meenemen? Kom betijds en houd je coronatoegangsbewijs gereed.
+                Als je het als ouder niet hebt, is er dan wellicht een vriendelijke buurman of buurvrouw die het bewijs wel heeft en de kinderen kan meenemen? Kom bijtijds en houd je coronatoegangsbewijs gereed.
               </p>
 
               <p>We zijn blij weer een leuk feest voor de kinderen te kunnen organiseren. En met ieders medewerking gaat dat zeker lukken!</p>
