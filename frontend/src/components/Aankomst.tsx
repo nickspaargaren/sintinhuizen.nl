@@ -2,6 +2,8 @@ import { StaticImage } from 'gatsby-plugin-image';
 import React, { ReactElement } from 'react';
 import styled from 'styled-components';
 
+import Programma from './Programma';
+
 const StyledAankomst = styled.div`
 
 .brief {
@@ -9,7 +11,7 @@ const StyledAankomst = styled.div`
   border: 2px solid #f1cb19;
   box-shadow: 0px 50px 30px -30px rgba(0,0,0,.2);
   color: #333;
-  padding: 30px 30px 10px;
+  /* padding: 30px 30px 10px; */
   transform: perspective(3000px) rotateY(19deg) rotateX(4deg) rotate(-1deg);
 }
 
@@ -44,44 +46,18 @@ const StyledAankomst = styled.div`
 
 const Aankomst = (): ReactElement => (
   <StyledAankomst>
-    <h2 style={{ textAlign: 'center' }}>
-      Intocht van Sint Nicolaas in Huizen op
+    <h2 style={{ textAlign: 'center', margin: '0px 0 40px' }}>
+      Activiteiten Sint Nicolaas
       {' '}
-      <strong>14 november</strong>
+      <strong>2021</strong>
       {' '}
-      2020
+      in Huizen
     </h2>
-    <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Welkomstwoord van de Burgemeester bij de aankomst van Sint en Pieten in Huizen</p>
+    {/* <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Welkomstwoord van de Burgemeester bij de aankomst van Sint en Pieten in Huizen</p> */}
 
     <div className="grid-3x">
       <div className="brief">
-
-        <h3>Dag Sint Nicolaas,</h3>
-
-        <p>
-          Heel hartelijk welkom in Huizen, fijn dat u er weer bent!
-          <br />
-          Door corona was het niet mogelijk u te verwelkomen met duizenden kinderen langs de kade. Bovendien kon u niet vertellen wanneer u precies zou komen. Ik kreeg een telefoontje van de Stichting Intocht Sint Nicolaas Huizen dat u aangemeerd was met uw Pakjesboot 15. Ik ben met mijn echtgenote meteen naar de haven gegaan om u te verwelkomen. Daar zijn foto’s gemaakt die de kinderen bij dit welkomstwoord kunnen zien.
-        </p>
-
-        <p>
-          U hebt onze Huizer botters ingeschakeld om alle cadeautjes en snoepgoed mee te kunnen nemen. Ik weet dat door de Pieten flink aan de botters geschilderd hebben om ze bijtijds klaar te hebben. Ik zag een paar Schilderpieten op de pakjesboot. De gezichten zaten onder de botterbruine verf, soms veel en soms weinig!
-          <br />
-          Veel cadeautjes moeten misschien nog worden gekocht. Bij de Huizer winkeliers bent u in ieder geval van harte welkom. Zij zorgen ervoor dat u op een veilige manier uw inkopen kunt doen.
-        </p>
-
-        <p>
-          We hopen u volgend jaar weer te mogen verwelkomen op de manier die u in Huizen gewend bent: met duizenden kinderen op de kade!
-          <br />
-          Namens alle Huizer kinderen wens ik u en de Pieten hier een goede tijd hier. Een fijne verjaardag en voor u en de Pieten en alle mensen in Huizen: blijf gezond!
-        </p>
-
-        <p>Met hartelijke groet,</p>
-        <p className="handtekening">
-          Niek Meijer
-          <span>Burgemeester van Huizen</span>
-        </p>
-
+        <Programma />
       </div>
       <div>
         <div className="afbeelding">

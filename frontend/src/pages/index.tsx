@@ -1,20 +1,109 @@
 import { StaticImage } from 'gatsby-plugin-image';
 import React, { ReactElement } from 'react';
+import styled from 'styled-components';
 
+import gebouwen from '../assets/images/gebouwen.svg';
+import logo from '../assets/images/logo.svg';
+import sinterklaas from '../assets/images/sinterklaas.svg';
 import Aankomst from '../components/Aankomst';
+import Button from '../components/Button';
 import Fotoalbum from '../components/Fotoalbum';
-import Header from '../components/Header';
 import Layout from '../components/Layout';
 import Sponsoren from '../components/Sponsoren';
 import useFotoalbum from '../hooks/useFotoalbum';
+
+const StyledHeader = styled.div`
+
+  background-color: #4a6091;
+  background-image: url(${gebouwen});
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 825px 175px;
+  max-width: 100%;
+  min-height: inherit;
+
+  .headertekst {display: flex; flex-direction: column;}
+  .headertekst h2 strong {white-space: nowrap;}
+  .headertekst > div {margin-bottom: 20px;}
+  .headertekst > img {margin: auto auto 0 0; max-width: 300px;}
+
+  .illustratie {display: flex; flex-direction: column;}
+  .illustratie img {margin-top: auto; max-height: 80vh; width: 100%;}
+
+
+  @media screen and (max-width: 768px) {
+    .headertekst {flex-direction: column-reverse;}
+    .headertekst > div {margin-bottom: auto;}
+    .headertekst > img {margin-bottom: 20px;}
+
+    .headertekst > div .knop {font-size: 12px;}
+
+    .illustratie img {max-height: 300px;}
+  }
+`;
 
 const Home = (): ReactElement => {
   const [ fotos2020, fotos2019 ] = useFotoalbum();
 
   return (
     <Layout title="Home" description="Informatie over de aankomst Sint Nicolaas in de werkhaven van het Nautisch Kwartier!">
-      <section><Header /></section>
-      <section id="aankomst"><Aankomst /></section>
+      <section>
+        <StyledHeader className="grid-2x">
+          <div className="headertekst">
+            <div>
+              <h1>
+                <strong>Aankomst</strong>
+                {' '}
+                <br />
+                <span>Sint Nicolaas</span>
+                {' '}
+                <br />
+                <small>in</small>
+                {' '}
+                <strong>Huizen</strong>
+              </h1>
+
+              <h2>
+                Op
+                {' '}
+                <strong>zaterdag 13 november</strong>
+                {' '}
+                komt Sint Nicolaas met zijn Pieten aan in Huizen. Ze zullen worden verwelkomd in de haven van het
+                {' '}
+                <strong>Nautisch Kwartier</strong>
+                . De feestelijkheden beginnen om
+                {' '}
+                <strong>
+                  13.30 uur.
+                </strong>
+                {' '}
+                Er zal een coronatoegangsbewijs getoond moeten worden.
+              </h2>
+
+              <p>Maar let op! De overheid kan onderstaande coronamaatregelen speciaal voor de sinterklaasintocht versoepelen. Houd daarom deze website in de gaten!</p>
+
+              <p style={{ marginBottom: '5px' }}><strong style={{ color: '#f1cb19' }}>Coronamaatregelen bij de intocht van Sint Nicolaas in Huizen.</strong></p>
+
+              <p>
+                Toegang tot het aankomstterrein is alleen mogelijk met een coronatoegangsbewijs. Dat is aan te vragen via internet, en geldt vanaf 18 jaar.
+
+                Als je het als ouder niet hebt, is er dan wellicht een vriendelijke buurman of buurvrouw die het bewijs wel heeft en de kinderen kan meenemen? Kom bijtijds en houd je coronatoegangsbewijs gereed.
+              </p>
+
+              <p>We zijn blij weer een leuk feest voor de kinderen te kunnen organiseren. En met ieders medewerking gaat dat zeker lukken!</p>
+
+              <p>Bestuur Stichting Intocht Sint Nicolaas Huizen</p>
+
+            </div>
+            <img src={logo} alt="Logo" style={{ width: '300px', height: '195px' }} loading="lazy" />
+          </div>
+          <div className="illustratie">
+            <div style={{ textAlign: 'right' }}><Button title="Verkeer en parkeren" url="/verkeer-en-parkeren" /></div>
+            <img src={sinterklaas} alt="Sinterklaas" width="415px" height="440px" loading="lazy" />
+          </div>
+        </StyledHeader>
+      </section>
+      <section><Aankomst /></section>
 
       <section className="fotos">
         <div>
@@ -44,7 +133,7 @@ const Home = (): ReactElement => {
       <section className="bericht">
         <div className="grid-2x">
           <div>
-            <p style={{ marginBottom: '50px' }}><strong>Onze verslaggever zoekt in Spanje Sint Nicolaas want hij wil zeker weten dat de Sint zaterdag 14 november 2020 naar Huizen komt! Hier is zijn eerste bericht</strong></p>
+            <p style={{ marginBottom: '50px' }}><strong>Onze verslaggever zoekt in Spanje Sint Nicolaas want hij wil zeker weten dat de Sint zaterdag 13 november 2021 naar Huizen komt! Hier is zijn eerste bericht</strong></p>
             <h3>Hallo Nederland,</h3>
             <p>
               <em>
@@ -66,15 +155,7 @@ const Home = (): ReactElement => {
             <p><em>Ik stuur weer een brief naar Nederland als ik Sinterklaas heb gevonden.</em></p>
             <p><em>Adios y hasta pronto</em></p>
             <p><em>Jullie speciale verslaggever</em></p>
-            <p className="handtekening">Erico</p>
-            <p style={{ marginBottom: '50px', marginTop: '50px' }}>
-              <strong>
-                Het derde en laatste bericht van onze verslaggever. Nu maar afwachten wanneer de Sint Nicolaas en zijn Pieten in Nederland aankomen en of ze meteen doorvaren naar Huizen.
-                <br />
-                Zaterdag 14 november vanaf 14.00 uur weten we het en laten dat jullie op deze website weten!
-              </strong>
-
-            </p>
+            <p className="handtekening" style={{ marginBottom: '50px' }}>Erico</p>
             <p />
             <h3>Hola Nederland,</h3>
             <p><em>Hier is jullie speciale verslaggever weer. Ik ben bij de burgemeester op visite geweest. Een aardige man, alleen spreekt hij geen Nederlands en ik bijna geen Spaans. Ik kon nog net in het Spaans vragen of hij weet waar Sinterklaas woont, en ja dat wist hij. Ben direct weer in de auto gaan zitten en heb gezocht en gezocht, en heb hem gevonden. JIPPIE!</em></p>
