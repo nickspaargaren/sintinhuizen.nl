@@ -1,8 +1,6 @@
 FROM node:14.18-alpine
 RUN apk add g++ make python
 WORKDIR /app
-COPY package.json ./
-COPY yarn.lock ./
+COPY ./ /app
 RUN yarn install
-COPY ./ ./
 CMD ["yarn", "develop"]

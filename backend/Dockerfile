@@ -1,7 +1,5 @@
 FROM node:14.18-alpine
 WORKDIR /app
-COPY package.json ./
-COPY yarn.lock ./
+COPY ./ /app
 RUN yarn install
-COPY ./ ./
 CMD ["yarn", "start"]
