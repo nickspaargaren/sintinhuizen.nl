@@ -77,18 +77,13 @@ const Home = (): ReactElement => {
                   13.30 uur.
                 </strong>
                 {' '}
-                Er zal een coronatoegangsbewijs getoond moeten worden.
               </h2>
 
-              <p>Maar let op! De overheid kan onderstaande coronamaatregelen speciaal voor de sinterklaasintocht versoepelen. Houd daarom deze website in de gaten!</p>
+              <p style={{ marginBottom: '5px' }}><strong style={{ color: '#f1cb19' }}>Coronamaatregelen?</strong></p>
 
-              <p style={{ marginBottom: '5px' }}><strong style={{ color: '#f1cb19' }}>Coronamaatregelen bij de intocht van Sint Nicolaas in Huizen.</strong></p>
+              <p>Wat betreft de coronamaatregelen bij de intocht heeft de overheid het volgende besloten:</p>
 
-              <p>
-                Toegang tot het aankomstterrein is alleen mogelijk met een coronatoegangsbewijs. Dat is aan te vragen via internet, en geldt vanaf 18 jaar.
-
-                Als je het als ouder niet hebt, is er dan wellicht een vriendelijke buurman of buurvrouw die het bewijs wel heeft en de kinderen kan meenemen? Kom bijtijds en houd je coronatoegangsbewijs gereed.
-              </p>
+              <p>Georganiseerde jeugdactiviteiten, zoals een Sinterklaasintocht, zijn uitgezonderd van de plicht een coronatoegangsbewijs (CTB) te tonen. Dit geldt voor deelnemers tot en met 17 jaar en hun begeleiders.</p>
 
               <p>We zijn blij weer een leuk feest voor de kinderen te kunnen organiseren. En met ieders medewerking gaat dat zeker lukken!</p>
 
