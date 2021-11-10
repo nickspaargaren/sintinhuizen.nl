@@ -1,3 +1,4 @@
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import { StaticImage } from 'gatsby-plugin-image';
 import React, { ReactElement } from 'react';
 import styled from 'styled-components';
@@ -65,7 +66,7 @@ const Aankomst = (): ReactElement => (
         <div className="tekst">
           De Sint bezoekt het winkelcentrum Hart van Huizen in het Oude Dorp. Op
           {' '}
-          <a href="https://hartvanhuizen.nl" rel="noopener noreferrer" target="_blank">HartvanHuizen.nl</a>
+          <OutboundLink href="https://hartvanhuizen.nl" rel="noopener noreferrer" target="_blank">HartvanHuizen.nl</OutboundLink>
           {' '}
           kun je hier alles over lezen.
         </div>
@@ -77,7 +78,7 @@ const Aankomst = (): ReactElement => (
         <div className="tekst">
           Ook bezoekt de Sint het winkelcentrum Oostermeent. Wanneer en wat hij daar doet kun je lezen op
           {' '}
-          <a href="https://www.winkelcentrumoostermeent.nl" rel="noopener noreferrer" target="_blank">Winkelcentrumoostermeent.nl</a>
+          <OutboundLink href="https://www.winkelcentrumoostermeent.nl" rel="noopener noreferrer" target="_blank">Winkelcentrumoostermeent.nl</OutboundLink>
         </div>
       </div>
     </div>
