@@ -10,7 +10,6 @@ import Button from '../components/Button';
 import Footer from '../components/Footer';
 import Fotoalbum from '../components/Fotoalbum';
 import Layout from '../components/Layout';
-import Sponsoren from '../components/Sponsoren';
 import useFotoalbum from '../hooks/useFotoalbum';
 
 const StyledHeader = styled.div`
@@ -180,10 +179,6 @@ const Home = (): ReactElement => {
             </div>
           </div>
         </div>
-      </section>
-
-      <section className="sponsoren">
-        <Sponsoren />
       </section>
 
       <Footer />

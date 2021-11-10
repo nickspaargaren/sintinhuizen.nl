@@ -6,7 +6,6 @@ import logo from '../assets/images/logo.svg';
 import Button from '../components/Button';
 import Footer from '../components/Footer';
 import Layout from '../components/Layout';
-import Sponsoren from '../components/Sponsoren';
 
 const StyledHeader = styled.div`
 
@@ -85,10 +84,6 @@ const Home = (): ReactElement => (
           <div style={{ textAlign: 'right' }}><Button title="Terug naar home" url="/" /></div>
         </div>
       </StyledHeader>
-    </section>
-
-    <section className="sponsoren">
-      <Sponsoren />
     </section>
 
     <Footer />
