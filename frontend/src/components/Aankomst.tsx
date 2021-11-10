@@ -53,7 +53,6 @@ const Aankomst = (): ReactElement => (
       {' '}
       in Huizen
     </h2>
-    {/* <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Welkomstwoord van de Burgemeester bij de aankomst van Sint en Pieten in Huizen</p> */}
 
     <div className="grid-3x">
       <div className="brief">
