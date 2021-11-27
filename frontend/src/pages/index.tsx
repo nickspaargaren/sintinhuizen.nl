@@ -45,12 +45,8 @@ const StyledHeader = styled.div`
 
 export const pageQuery = graphql`
   query {
-    markdownRemark(id: {eq: "97da612d-3a7c-53ee-b81a-87b566b1bbfb"}) {
+    markdownRemark(fileAbsolutePath: { regex: "/bericht-sint.md/"}) {
       html
-      id
-      frontmatter {
-        title
-      }
     }
   }
 `;
