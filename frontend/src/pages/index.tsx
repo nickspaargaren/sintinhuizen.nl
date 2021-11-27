@@ -66,7 +66,7 @@ type HomeProps = {
 const Home = ({ data }: HomeProps): ReactElement => {
   const [ fotos2020, fotos2019 ] = useFotoalbum();
 
-  const berichtSint = data.markdownRemark;
+  const { markdownRemark: { html: berichtSint } } = data;
 
   return (
     <Layout title="Home" description="Informatie over de aankomst Sint Nicolaas in de werkhaven van het Nautisch Kwartier!">
@@ -151,7 +151,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
       <section className="bericht">
         <div className="grid-2x">
 
-          <div dangerouslySetInnerHTML={{ __html: berichtSint.html }} />
+          <div dangerouslySetInnerHTML={{ __html: berichtSint }} />
 
           <div>
             <div style={{
