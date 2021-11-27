@@ -13,12 +13,20 @@ module.exports = {
     'gatsby-plugin-image',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-transformer-remark',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
         path: `${__dirname}/src/assets/images`,
-        ignore: ['**/.*'], // ignore files starting with a dot
+        ignore: [ '**/.*' ], // ignore files starting with a dot
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'content',
+        path: `${__dirname}/src/content`,
       },
     },
     {
