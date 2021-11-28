@@ -190,7 +190,6 @@ const Home = ({ data }: HomeProps): ReactElement => {
           <div>
             <h2>De intocht gezien vanaf het water</h2>
             <p>Er gebeurde veel in de Haven waar iedereen wachtte op de komst van Sint Nicolaas en de Pieten. Maar ook op het water gebeurde er veel. Een vloot schepen wachtte de Sint op en bracht hem naar de haven. De film van Elles Schipper van Waveren geeft hiervan een goed voorbeeld.</p>
-
           </div>
           <div>
 
@@ -251,10 +250,8 @@ const Home = ({ data }: HomeProps): ReactElement => {
             >
 
               <StaticImage
-                style={{
-                  margin: 'auto', width: '100%', position: 'relative', maxWidth: '321px',
-                }}
-                src="../assets/images/sinterklaas-2020.jpg"
+                style={{ margin: 'auto', width: '100%', position: 'relative' }}
+                src="../assets/images/kluspiet-2021.jpg"
                 alt="Intocht Sinterklaas"
               />
             </div>
