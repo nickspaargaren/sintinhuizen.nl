@@ -185,6 +185,35 @@ const Home = ({ data }: HomeProps): ReactElement => {
         </StyledAankomst>
       </section>
 
+      <section>
+        <div className="grid-2x vertical-align-middle">
+          <div>
+            <h2>De intocht gezien vanaf het water</h2>
+            <p>Er gebeurde veel in de Haven waar iedereen wachtte op de komst van Sint Nicolaas en de Pieten. Maar ook op het water gebeurde er veel. Een vloot schepen wachtte de Sint op en bracht hem naar de haven. De film van Elles Schipper van Waveren geeft hiervan een goed voorbeeld.</p>
+
+          </div>
+          <div>
+
+            <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+              <iframe
+                src="https://player.vimeo.com/video/650779183?h=8770fcab97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                allow="autoplay; fullscreen; picture-in-picture"
+                style={{
+                  position: 'absolute', top: 0, left: 0, width: '100%', height: '100%',
+                }}
+                frameBorder="0"
+                title="Stichting Intocht Sint Nicolaas Huizen Intocht 2021"
+              />
+
+            </div>
+            <script src="https://player.vimeo.com/api/player.js" />
+
+            <p><small>De film is van Elles Schipper van Waveren</small></p>
+          </div>
+
+        </div>
+      </section>
+
       <section className="fotos">
         <div>
           <h3 style={{ textAlign: 'center' }}>
