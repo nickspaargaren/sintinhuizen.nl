@@ -105,12 +105,10 @@ type HomeProps = {
 }
 
 const Home = ({ data }: HomeProps): ReactElement => {
-  const [ fotos2020, fotos2019 ] = useFotoalbum();
+  const [ fotos2020, fotos2019, tekeningen ] = useFotoalbum();
 
   const { berichtsint: { html: berichtSint } } = data;
   const { terugblik: { html: terugblik } } = data;
-
-  console.log(terugblik);
 
   return (
     <Layout title="Home" description="Informatie over de aankomst Sint Nicolaas in de werkhaven van het Nautisch Kwartier!">
@@ -256,6 +254,26 @@ const Home = ({ data }: HomeProps): ReactElement => {
               />
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="fotos">
+        <div>
+          <h3 style={{ textAlign: 'center' }}>
+            Bedankt kinderen voor deze
+            {' '}
+            <strong>prachtige tekeningen</strong>
+            !
+          </h3>
+          <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Klik op de foto voor een vergroting</p>
+          <Fotoalbum fotos={tekeningen} />
+          <StaticImage
+            style={{
+              margin: '40px auto 0', width: '100%', display: 'block', position: 'relative', maxWidth: '700px',
+            }}
+            src="../assets/images/sint-bedankt.JPEG"
+            alt="Sint bedankt"
+          />
         </div>
       </section>
 
