@@ -105,7 +105,7 @@ type HomeProps = {
 }
 
 const Home = ({ data }: HomeProps): ReactElement => {
-  const [ fotos2020, fotos2019, tekeningen ] = useFotoalbum();
+  const [ fotos2021, fotos2020, fotos2019, tekeningen ] = useFotoalbum();
 
   const { berichtsint: { html: berichtSint } } = data;
   const { terugblik: { html: terugblik } } = data;
@@ -183,6 +183,20 @@ const Home = ({ data }: HomeProps): ReactElement => {
         </StyledAankomst>
       </section>
 
+      <section className="fotos">
+        <div>
+          <h3 style={{ textAlign: 'center' }}>
+            Foto&apos;s van de aankomst op
+            {' '}
+            <strong>13 november</strong>
+            {' '}
+            2021
+          </h3>
+          <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Klik op de foto voor een vergroting</p>
+          <Fotoalbum fotos={fotos2021} />
+        </div>
+      </section>
+
       <section>
         <div className="grid-2x vertical-align-middle">
           <div>
@@ -224,6 +238,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
           <Fotoalbum fotos={fotos2020} />
         </div>
       </section>
+
       <section className="fotos">
         <div>
           <h3 style={{ textAlign: 'center' }}>
