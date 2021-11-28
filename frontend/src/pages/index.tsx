@@ -207,7 +207,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
 
             <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
               <iframe
-                src="https://player.vimeo.com/video/650779183?h=8770fcab97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                src="https://player.vimeo.com/video/650812118?h=8714d401f1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                 allow="autoplay; fullscreen; picture-in-picture"
                 style={{
                   position: 'absolute', top: 0, left: 0, width: '100%', height: '100%',
