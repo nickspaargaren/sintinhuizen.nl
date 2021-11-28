@@ -76,7 +76,7 @@ const Aankomst = (): ReactElement => (
           <StaticImage src="../assets/images/sint-op-kade.jpg" alt="Sint op de kade in de haven van Huizen" />
         </div>
         <div className="tekst">
-          Ook bezoekt de Sint het winkelcentrum Oostermeent. Wanneer en wat hij daar doet kun je lezen op
+          Op zaterdag 27 november 2021 bezocht de Sint het winkelcentrum Oostermeent. Zie
           {' '}
           <OutboundLink href="https://www.winkelcentrumoostermeent.nl" rel="noopener noreferrer" target="_blank">Winkelcentrumoostermeent.nl</OutboundLink>
         </div>
