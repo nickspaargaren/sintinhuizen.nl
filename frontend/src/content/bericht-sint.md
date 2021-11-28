@@ -1,46 +1,21 @@
-**Onze verslaggever zoekt in Spanje Sint Nicolaas want hij wil zeker weten dat de Sint zaterdag 13 november 2021 naar Huizen komt! Hier is zijn eerste bericht**
+**Bij de intocht in Huizen op 13 november gingen er dingen fout. De boot van de Sint ging kapot en de Sint was de weg kwijt. Reden voor onze speciale verslaggever te vragen hoe dit allemaal kon gebeuren. Hij mocht bij de Sint langskomen.**
 
-### Hallo Nederland,
+### Hallo allemaal,
 
-*Hier een bericht van jullie speciale verslaggever vanuit Spanje, want ik ben maar eens gaan kijken hoe het met Sinterklaas gaat want ik maak mij heel veel zorgen om hem.
-Jullie weten dat Sinterklaas een hele oude man is, dus hij moet erg uitkijken met het Corona virus want dat is ook in Spanje.*
+Hier en bericht van jullie Speciale verslaggever. Ik was toch wel een beetje zenuwachtig toen ik bij de Sint langs mocht komen. Fijn dat hij in deze drukke pakjes tijd kon vrijmaken. 
 
-Ik ben nu onderweg naar Madrid, daar woont Sinterklaas en weten jullie, Madrid is de hoofdstad van Spanje en daar wonen heel veel mensen in heel veel straten, dus ik ben maar vroeg op pad gegaan want ik zal veel moeten zoeken. En omdat ik niet zoveel Spaans spreek wordt het vinden van Sinterklaas nog moeilijker.
+De grote vraag die ik voor hem had: “Sint, u komt al zo vaak in Huizen. Hoe kon het dat u naar de verkeerde haven gevaren bent?” De sint: “Nou kijk, bij het varen ga ik er van uit dat de Pieten weten wat ze doen. Die zaterdag stond voor het eerst een nieuwe Piet achter het roer. Hij had al vele urengevaren en was al helemaal tot Huizen gekomen. Petje af wat mij betreft!
 
-Ik stuur weer een brief naar Nederland als ik Sinterklaas heb gevonden. Adios y hasta pronto (ik begin het al een beetje te leren, er staat: Doei en tot ziens
+De Piet die hem begeleidde is even eh.. nou ja, en plasje gaan doen, en toen ging het mis. Ach, het was een klein foutje.” Ik vertelde de Sint dat de kinderen het niet erg vonden en dat ze zelfs dachten dat het een grapje was. Nou kinderen, de Sint stond te schuddebuiken van het lachen toen hij dat hoorde!
 
-Jullie speciale verslaggever
-<p style="font-family: Courgette; font-size: 25px; line-height: 1.25em;" markdown='1'>Erico</p>
+Maar er gebeurde nog meer. We kregen op de kade, terwijl we aan het wachten waren op het binnenvaren van de boot, het bericht dat de Pakjesboot motorpech had. Daar schrokken we erg van. Ik vroeg de Sint wat er gebeurd was. “Ja, ik schrok hier zelf van. Ineens kwam de hoofdpiet de kajuit binnenstormen en vertelde dat de motor gestopt was. De reden was waterplanten. Dat mooie Gooimeer van jullie zit vol met die planten. Dat maakt dat het water mooi he1der is, maar de bootmensen vinden het niet altijd even leuk. Het verstopt de motorkoeling en dan stopt de boot. En dat is precies wat gebeurd is. Maar gelukkig hadden jullie op de wal een ervaren kluspiet. Die is door de boot van de van de reddingsbrigade vliegensvlug naar mijn boot gebracht en heeft de boel gerepareerd.”
+En voor de zekerheid vroeg ik: “Sint, dus de pakjes komen op tijd bij de kinderen aan?”
+Er klonk een kort en krachtig “ja”!
 
-**Hier is het tweede bericht van onze verslaggever in Spanje. Het ziet er naar uit dat hij de Sint bijna gevonden heeft! Nou, lees het zelf maar. We hopen in de volgende brief op goed nieuws!**
+Ik bedankte de Sint en bij het afscheid begon hij weer aanstekelijk te lachen. “Toen de motor er mee stopte, stuurden jullie de kluspiet. En wat stond er op zijn rug: Klu(n)s piet. Ha, ha, ha, ha.”
+Nou een ding is zeker, de Sint is een vrolijk mens!
 
-### Hola Nederland,
-Hier weer een bericht van jullie speciale verslaggever vanuit Spanje, en gelukkig ben ik nu in Madrid. Kanonne wat is dat een grote stad! Er wonen bijna 7 miljoen mensen, en in heel Nederland 17 miljoen. Ik heb al aan een paar mensen gevraagd of zei weten waar Sinterklaas woont. Niemand weet dat dus ik ga naar de burgemeester. Die man heet José en die weet dat vast wel. Maar eerst ga ik op zoek naar de pakhuizen van Sinterklaas om te kijken of alle cadeautjes al zijn gekocht en of ze wel zijn ingepakt.
-
-Om de paar kilometer moet ik van de politie - die heet hier Guardia Civil - stoppen en vragen ze mij wat ik aan het doen ben. Dan leg ik uit dat ik naar Sinterklaas op zoek ben en dan mag ik gelukkig weer doorrijden. Maar ze kijken hier wel heel streng hoor, veel strenger dan thuis.
-
-Het is geluk want weten jullie (vast niet ha ha) dat het gemeentehuis, waar de burgemeester woont, daar is ook de haven. Dan kan ik meteen kijken of de Pakjesboot al klaar ligt om uit te varen, want het wordt best wel tijd. Over twee weken moet Sinterklaas ook in Huizen komen! 
-
-Ik stuur weer een brief naar Nederland als ik Sinterklaas heb gevonden. Adios y hasta pronto
-
-Jullie speciale verslaggever
-
-<p style="font-family: Courgette; font-size: 25px; line-height: 1.25em;" markdown='1'>Erico</p>
-
-### Hola Nederland,
-Hier is jullie speciale verslaggever weer. Ik ben bij de burgemeester op visite geweest. Een aardige man, alleen spreekt hij geen Nederlands en ik bijna geen Spaans. Ik kon nog net in het Spaans vragen of hij weet waar Sinterklaas woont, en ja dat wist hij. Ben direct weer in de auto gaan zitten en heb gezocht en gezocht, en heb hem gevonden. JIPPIE!
-
-Ik heb Sinterklaas gesproken, maar ook hier op 1.5 meter door de Corona. Heb met hem over van alles en nog wat gesproken en natuurlijk gevraagd of hij wel voldoende cadeautjes heeft gekocht en heeft ingepakt.
-
-Zegt Sinterklaas tegen mij dat hij dat niet allemaal weet, want zelf is hij heel druk met Het Grote Boek, dus ik moest het aan zijn Hoofdpiet vragen.
-
-Op naar de Hoofdpiet. Nou, die wist het gelukkig wel.! Heel vrolijk verteld hij dat niet alle cadeautjes in Madrid worden gekocht, want daar is de Pakjesboot veel te klein voor. Dus zodra Sinterklaas en zijn Pieten in Nederland zijn worden er weer cadeautjes gekocht.
-
-Wauw, dat belooft wat. En terwijl ik dit allemaal schrijf is Sinterklaas in Madrid onderweg naar de Pakjesboot want hij moet gaan varen, wil hij nog op tijd in Nederland zijn.
-
-Ik ben best wel een beetje zenuwachtig geworden, en hoop dat ik op tijd terug ben, want dan kan ik mijn schoen gaan zetten!
-
-Adios y hasta pronto
+Adios y hasta
 
 Jullie speciale verslaggever
 <p style="font-family: Courgette; font-size: 25px; line-height: 1.25em;" markdown='1'>Erico</p>
