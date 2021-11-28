@@ -6,7 +6,6 @@ import styled from 'styled-components';
 
 import gebouwen from '../assets/images/gebouwen.svg';
 import sinterklaas from '../assets/images/sinterklaas.svg';
-import Button from '../components/Button';
 import Footer from '../components/Footer';
 import Fotoalbum from '../components/Fotoalbum';
 import Layout from '../components/Layout';
