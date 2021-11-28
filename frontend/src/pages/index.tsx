@@ -4,7 +4,6 @@ import React, { ReactElement } from 'react';
 import styled from 'styled-components';
 
 import gebouwen from '../assets/images/gebouwen.svg';
-import logo from '../assets/images/logo.svg';
 import sinterklaas from '../assets/images/sinterklaas.svg';
 import Aankomst from '../components/Aankomst';
 import Button from '../components/Button';
@@ -80,39 +79,19 @@ const Home = ({ data }: HomeProps): ReactElement => {
                 <small>in</small>
                 {' '}
                 <strong>Huizen</strong>
+                {' '}
+                <span style={{ whiteSpace: 'no-wrap' }}>13 november 2021</span>
+
               </h1>
 
-              <h2>
-                Op
-                {' '}
-                <strong>zaterdag 13 november</strong>
-                {' '}
-                komt Sint Nicolaas met zijn Pieten aan in Huizen. Ze zullen worden verwelkomd in de haven van het
-                {' '}
-                <strong>Nautisch Kwartier</strong>
-                . De feestelijkheden beginnen om
-                {' '}
-                <strong>
-                  13.30 uur.
-                </strong>
-                {' '}
-              </h2>
-
-              <p style={{ marginBottom: '5px' }}><strong style={{ color: '#f1cb19' }}>Coronamaatregelen?</strong></p>
-
-              <p>Wat betreft de coronamaatregelen bij de intocht heeft de overheid het volgende besloten:</p>
-
-              <p>Georganiseerde jeugdactiviteiten, zoals een Sinterklaasintocht, zijn uitgezonderd van de plicht een coronatoegangsbewijs (CTB) te tonen. Dit geldt voor deelnemers tot en met 17 jaar en hun begeleiders.</p>
-
-              <p>We zijn blij weer een leuk feest voor de kinderen te kunnen organiseren. En met ieders medewerking gaat dat zeker lukken!</p>
-
-              <p>Bestuur Stichting Intocht Sint Nicolaas Huizen</p>
+              <StaticImage src="../assets/images/pakjesboot-sint-huizen-2021.jpg" alt="Sint en pieten op de boot" />
 
             </div>
-            <img src={logo} alt="Logo" style={{ width: '300px', height: '195px' }} loading="lazy" />
+            {/* <img src={logo} alt="Logo" style={{ width: '300px', height: '195px' }} loading="lazy" /> */}
           </div>
           <div className="illustratie">
-            <div style={{ textAlign: 'right' }}><Button title="Verkeer en parkeren" url="/verkeer-en-parkeren" /></div>
+            <div style={{ textAlign: 'right' }}><Button title="Klik hier voor de film" url="/video" /></div>
+
             <img src={sinterklaas} alt="Sinterklaas" width="415px" height="440px" loading="lazy" />
           </div>
         </StyledHeader>
