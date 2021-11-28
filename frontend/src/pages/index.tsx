@@ -132,14 +132,11 @@ const Home = ({ data }: HomeProps): ReactElement => {
 
               </h1>
 
-              <StaticImage src="../assets/images/pakjesboot-sint-huizen-2021.jpg" alt="Sint en pieten op de boot" />
-
+              <VimeoVideo title="Stichting Intocht Sint Nicolaas Huizen Intocht 2021" url="https://player.vimeo.com/video/650779183?h=8770fcab97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" />
             </div>
             {/* <img src={logo} alt="Logo" style={{ width: '300px', height: '195px' }} loading="lazy" /> */}
           </div>
           <div className="illustratie">
-            <div style={{ textAlign: 'right' }}><Button title="Klik hier voor de film" url="/video" /></div>
-
             <img src={sinterklaas} alt="Sinterklaas" width="415px" height="440px" loading="lazy" />
           </div>
         </StyledHeader>
