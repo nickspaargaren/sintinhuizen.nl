@@ -3,7 +3,7 @@ info:
 	@echo "  make start       Start the project containers."
 	@echo "  make stop        Stop the project containers."
 	@echo "  make dev         Start the project containers including dev output."
-	@echo "  make restart     Reset the project containers & volumes."
+	@echo "  make reset     Reset the project containers & volumes."
 build:
 	@docker-compose build
 start:
