@@ -127,7 +127,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
                 {' '}
                 <strong>Huizen</strong>
                 {' '}
-                <span style={{ whiteSpace: 'no-wrap' }}>13 november 2021</span>
+                <span>13 november 2021</span>
 
               </h1>
 
