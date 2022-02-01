@@ -4,8 +4,9 @@ module.exports = {
     es2021: true,
   },
   extends: [
+    'eslint:recommended',
     'plugin:react/recommended',
-    'airbnb',
+    'plugin:@typescript-eslint/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -30,6 +31,12 @@ module.exports = {
     'array-bracket-spacing': [ 'error', 'always' ],
     'object-curly-spacing': [ 'error', 'always' ],
     'better-styled-components/sort-declarations-alphabetically': 2,
+    'indent': [ 'error', 2 ],
+    'no-multi-spaces': [ 'error' ],
+    'no-multiple-empty-lines': [ 'error', { max: 1, maxBOF: 0, maxEOF: 0 } ],
+    'comma-dangle': [ 'error', { arrays: 'always-multiline', objects: 'always-multiline', imports: 'always-multiline', exports: 'always-multiline', functions: 'always-multiline' } ],
+    'no-trailing-spaces': [ 'error', { skipBlankLines: false, ignoreComments: false } ],
+    'space-in-parens': [ 'error', 'never' ],
   },
   settings: {
     'import/resolver': {
