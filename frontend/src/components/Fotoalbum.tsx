@@ -6,6 +6,8 @@ import React, { ReactElement } from 'react';
 import { Gallery, Item } from 'react-photoswipe-gallery';
 import styled from 'styled-components';
 
+import { Images } from '../types';
+
 const StyledFotos = styled.div`
   margin: auto 0; width: 100%;
   ::after {clear: both; content: ""; float: none; display: block;}
@@ -35,7 +37,7 @@ const StyledFotos = styled.div`
   }
 `;
 
-const Fotoalbum = ({ fotos }: any): ReactElement => (
+const Fotoalbum = ({ fotos }: { fotos: Images }): ReactElement => (
   <StyledFotos>
     <Gallery>
       {fotos.map((item) => (

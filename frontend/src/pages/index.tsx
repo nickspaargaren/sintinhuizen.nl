@@ -112,173 +112,174 @@ const Home = ({ data }: HomeProps): ReactElement => {
 
   return (
     <Layout title="Home" description="Informatie over de aankomst Sint Nicolaas in de werkhaven van het Nautisch Kwartier!">
-      <section>
-        <StyledHeader className="grid-2x">
-          <div className="headertekst">
-            <div>
-              <h1>
-                <strong>Aankomst</strong>
-                {' '}
-                <br />
-                <span>Sint Nicolaas</span>
-                {' '}
-                <br />
-                <small>in</small>
-                {' '}
-                <strong>Huizen</strong>
-                {' '}
-                <span>13 november 2021</span>
+      <>
+        <section>
+          <StyledHeader className="grid-2x">
+            <div className="headertekst">
+              <div>
+                <h1>
+                  <strong>Aankomst</strong>
+                  {' '}
+                  <br />
+                  <span>Sint Nicolaas</span>
+                  {' '}
+                  <br />
+                  <small>in</small>
+                  {' '}
+                  <strong>Huizen</strong>
+                  {' '}
+                  <span>13 november 2021</span>
 
-              </h1>
+                </h1>
 
-              <VimeoVideo title="Stichting Intocht Sint Nicolaas Huizen Intocht 2021" url="https://player.vimeo.com/video/650779183?h=8770fcab97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" />
+                <VimeoVideo title="Stichting Intocht Sint Nicolaas Huizen Intocht 2021" url="https://player.vimeo.com/video/650779183?h=8770fcab97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" />
+              </div>
+              {/* <img src={logo} alt="Logo" style={{ width: '300px', height: '195px' }} loading="lazy" /> */}
             </div>
-            {/* <img src={logo} alt="Logo" style={{ width: '300px', height: '195px' }} loading="lazy" /> */}
-          </div>
-          <div className="illustratie">
-            <img src={sinterklaas} alt="Sinterklaas" width="415px" height="440px" loading="lazy" />
-          </div>
-        </StyledHeader>
-      </section>
-      <section>
-        <StyledAankomst>
-          <h2 style={{ textAlign: 'center', margin: '0px 0 40px' }}>
+            <div className="illustratie">
+              <img src={sinterklaas} alt="Sinterklaas" width="415px" height="440px" loading="lazy" />
+            </div>
+          </StyledHeader>
+        </section>
+        <section>
+          <StyledAankomst>
+            <h2 style={{ textAlign: 'center', margin: '0px 0 40px' }}>
             Activiteiten Sint Nicolaas
-            {' '}
-            <strong>2021</strong>
-            {' '}
+              {' '}
+              <strong>2021</strong>
+              {' '}
             in Huizen
-          </h2>
+            </h2>
 
-          <div className="grid-3x">
-            <div className="brief">
-              <div dangerouslySetInnerHTML={{ __html: terugblik }} />
-            </div>
-            <div>
-              <div className="afbeelding">
-                <StaticImage src="../assets/images/sint-en-pieten-op-pakjesboot.jpg" alt="Sint en pieten op de boot" />
+            <div className="grid-3x">
+              <div className="brief">
+                <div dangerouslySetInnerHTML={{ __html: terugblik }} />
               </div>
-              <div className="tekst">
+              <div>
+                <div className="afbeelding">
+                  <StaticImage src="../assets/images/sint-en-pieten-op-pakjesboot.jpg" alt="Sint en pieten op de boot" />
+                </div>
+                <div className="tekst">
                 De Sint bezoekt het winkelcentrum Hart van Huizen in het Oude Dorp. Op
-                {' '}
-                <OutboundLink href="https://hartvanhuizen.nl" rel="noopener noreferrer" target="_blank">HartvanHuizen.nl</OutboundLink>
-                {' '}
+                  {' '}
+                  <OutboundLink href="https://hartvanhuizen.nl" rel="noopener noreferrer" target="_blank">HartvanHuizen.nl</OutboundLink>
+                  {' '}
                 kun je hier alles over lezen.
+                </div>
               </div>
+              <div>
+                <div className="afbeelding">
+                  <StaticImage src="../assets/images/sint-op-kade.jpg" alt="Sint op de kade in de haven van Huizen" />
+                </div>
+                <div className="tekst">
+                Op zaterdag 27 november 2021 bezocht de Sint het winkelcentrum Oostermeent. Zie
+                  {' '}
+                  <OutboundLink href="https://www.winkelcentrumoostermeent.nl" rel="noopener noreferrer" target="_blank">Winkelcentrumoostermeent.nl</OutboundLink>
+                </div>
+              </div>
+            </div>
+          </StyledAankomst>
+        </section>
+
+        <section className="fotos">
+          <div>
+            <h3 style={{ textAlign: 'center' }}>
+            Foto&apos;s van de aankomst op
+              {' '}
+              <strong>13 november</strong>
+              {' '}
+            2021
+            </h3>
+            <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Klik op de foto voor een vergroting</p>
+            <Fotoalbum fotos={fotos2021} />
+          </div>
+        </section>
+
+        <section>
+          <div className="grid-2x vertical-align-middle">
+            <div>
+              <h2>De intocht gezien vanaf het water</h2>
+              <p>Er gebeurde veel in de Haven waar iedereen wachtte op de komst van Sint Nicolaas en de Pieten. Maar ook op het water gebeurde er veel. Een vloot schepen wachtte de Sint op en bracht hem naar de haven. De film van Elles Schipper van Waveren geeft hiervan een goed voorbeeld.</p>
             </div>
             <div>
-              <div className="afbeelding">
-                <StaticImage src="../assets/images/sint-op-kade.jpg" alt="Sint op de kade in de haven van Huizen" />
-              </div>
-              <div className="tekst">
-                Op zaterdag 27 november 2021 bezocht de Sint het winkelcentrum Oostermeent. Zie
-                {' '}
-                <OutboundLink href="https://www.winkelcentrumoostermeent.nl" rel="noopener noreferrer" target="_blank">Winkelcentrumoostermeent.nl</OutboundLink>
-              </div>
+
+              <VimeoVideo title="Intocht vanaf het water" url="https://player.vimeo.com/video/650812118?h=8714d401f1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" />
+
+              <p><small>De film is van Elles Schipper van Waveren</small></p>
             </div>
+
           </div>
-        </StyledAankomst>
-      </section>
+        </section>
 
-      <section className="fotos">
-        <div>
-          <h3 style={{ textAlign: 'center' }}>
-            Foto&apos;s van de aankomst op
-            {' '}
-            <strong>13 november</strong>
-            {' '}
-            2021
-          </h3>
-          <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Klik op de foto voor een vergroting</p>
-          <Fotoalbum fotos={fotos2021} />
-        </div>
-      </section>
-
-      <section>
-        <div className="grid-2x vertical-align-middle">
+        <section className="fotos">
           <div>
-            <h2>De intocht gezien vanaf het water</h2>
-            <p>Er gebeurde veel in de Haven waar iedereen wachtte op de komst van Sint Nicolaas en de Pieten. Maar ook op het water gebeurde er veel. Een vloot schepen wachtte de Sint op en bracht hem naar de haven. De film van Elles Schipper van Waveren geeft hiervan een goed voorbeeld.</p>
-          </div>
-          <div>
-
-            <VimeoVideo title="Intocht vanaf het water" url="https://player.vimeo.com/video/650812118?h=8714d401f1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" />
-
-            <p><small>De film is van Elles Schipper van Waveren</small></p>
-          </div>
-
-        </div>
-      </section>
-
-      <section className="fotos">
-        <div>
-          <h3 style={{ textAlign: 'center' }}>
+            <h3 style={{ textAlign: 'center' }}>
             Foto&apos;s van de aankomst op
-            {' '}
-            <strong>14 november</strong>
-            {' '}
+              {' '}
+              <strong>14 november</strong>
+              {' '}
             2020
-          </h3>
-          <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Klik op de foto voor een vergroting</p>
-          <Fotoalbum fotos={fotos2020} />
-        </div>
-      </section>
+            </h3>
+            <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Klik op de foto voor een vergroting</p>
+            <Fotoalbum fotos={fotos2020} />
+          </div>
+        </section>
 
-      <section className="fotos">
-        <div>
-          <h3 style={{ textAlign: 'center' }}>
-            Foto&apos;s van de intocht
-            {' '}
-            <strong>2019</strong>
-          </h3>
-          <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Klik op de foto voor een vergroting</p>
-          <Fotoalbum fotos={fotos2019} />
-        </div>
-      </section>
-
-      <section className="bericht">
-        <div className="grid-2x">
-
-          <div dangerouslySetInnerHTML={{ __html: berichtSint }} />
-
+        <section className="fotos">
           <div>
-            <div style={{
-              textAlign: 'center', position: 'sticky', top: '0', height: '100vh', display: 'flex',
-            }}
-            >
+            <h3 style={{ textAlign: 'center' }}>
+            Foto&apos;s van de intocht
+              {' '}
+              <strong>2019</strong>
+            </h3>
+            <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Klik op de foto voor een vergroting</p>
+            <Fotoalbum fotos={fotos2019} />
+          </div>
+        </section>
 
-              <StaticImage
-                style={{ margin: 'auto', width: '100%', position: 'relative' }}
-                src="../assets/images/kluspiet-2021.jpg"
-                alt="Intocht Sinterklaas"
-              />
+        <section className="bericht">
+          <div className="grid-2x">
+
+            <div dangerouslySetInnerHTML={{ __html: berichtSint }} />
+
+            <div>
+              <div style={{
+                textAlign: 'center', position: 'sticky', top: '0', height: '100vh', display: 'flex',
+              }}
+              >
+
+                <StaticImage
+                  style={{ margin: 'auto', width: '100%', position: 'relative' }}
+                  src="../assets/images/kluspiet-2021.jpg"
+                  alt="Intocht Sinterklaas"
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="fotos">
-        <div>
-          <h3 style={{ textAlign: 'center' }}>
+        <section className="fotos">
+          <div>
+            <h3 style={{ textAlign: 'center' }}>
             Bedankt kinderen voor deze
-            {' '}
-            <strong>prachtige tekeningen</strong>
+              {' '}
+              <strong>prachtige tekeningen</strong>
             !
-          </h3>
-          <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Klik op de foto voor een vergroting</p>
-          <Fotoalbum fotos={tekeningen} />
-          <StaticImage
-            style={{
-              margin: '40px auto 0', width: '100%', display: 'block', position: 'relative', maxWidth: '700px',
-            }}
-            src="../assets/images/sint-bedankt.JPEG"
-            alt="Sint bedankt"
-          />
-        </div>
-      </section>
+            </h3>
+            <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Klik op de foto voor een vergroting</p>
+            <Fotoalbum fotos={tekeningen} />
+            <StaticImage
+              style={{
+                margin: '40px auto 0', width: '100%', display: 'block', position: 'relative', maxWidth: '700px',
+              }}
+              src="../assets/images/sint-bedankt.JPEG"
+              alt="Sint bedankt"
+            />
+          </div>
+        </section>
 
-      <Footer />
-
+        <Footer />
+      </>
     </Layout>
   );
 };
