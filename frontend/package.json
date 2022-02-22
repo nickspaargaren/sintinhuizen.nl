@@ -28,16 +28,12 @@
     "photoswipe": "^4.1.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-gesture-responder": "^2.1.0",
     "react-helmet": "^6.1.0",
-    "react-icons": "^4.2.0",
     "react-photoswipe-gallery": "^1.3.6",
-    "react-scroll": "^1.8.5",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "@types/react-helmet": "^6.1.5",
-    "@types/react-scroll": "^1.8.3",
     "@types/styled-components": "^5.1.23",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "@typescript-eslint/parser": "^5.12.1",
