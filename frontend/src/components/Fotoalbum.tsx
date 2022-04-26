@@ -1,5 +1,4 @@
-import 'photoswipe/dist/photoswipe.css';
-import 'photoswipe/dist/default-skin/default-skin.css';
+import 'photoswipe/style.css';
 
 import { GatsbyImage } from 'gatsby-plugin-image';
 import React, { ReactElement } from 'react';
