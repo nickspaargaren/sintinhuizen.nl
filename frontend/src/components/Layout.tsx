@@ -1,11 +1,11 @@
 import '../styles/index.css';
 
-import React, { ReactElement } from 'react';
+import React, { PropsWithChildren,ReactElement } from 'react';
 import { Helmet } from 'react-helmet';
 
 import { LayoutProps } from '../types';
 
-const Layout = ({ children, title, description }: LayoutProps): ReactElement => (
+const Layout = ({ children, title, description }: PropsWithChildren<LayoutProps>): ReactElement => (
   <div className="page">
     <Helmet>
       <html lang="nl" />
