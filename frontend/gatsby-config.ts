@@ -1,4 +1,6 @@
-module.exports = {
+import type { GatsbyConfig } from "gatsby";
+
+const config: GatsbyConfig = {
   plugins: [
     'gatsby-plugin-react-helmet',
     {
@@ -19,7 +21,7 @@ module.exports = {
       options: {
         name: 'images',
         path: `${__dirname}/src/assets/images`,
-        ignore: [ '**/.*' ], // ignore files starting with a dot
+        ignore: [ '**/.*' ],
       },
     },
     {
@@ -33,7 +35,6 @@ module.exports = {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-109024107-1',
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: false,
         anonymize: true,
       },
@@ -53,3 +54,5 @@ module.exports = {
     },
   ],
 };
+
+export default config;
