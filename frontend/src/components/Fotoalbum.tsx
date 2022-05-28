@@ -37,7 +37,7 @@ const StyledFotos = styled.div`
 `;
 
 const Fotoalbum = ({ fotos }: { fotos: Images }): ReactElement => (
-  <StyledFotos>
+  <StyledFotos data-cy="fotoalbum">
     <Gallery>
       {fotos.map((item) => (
         <div key={item.id} className="item">

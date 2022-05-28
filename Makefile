@@ -20,6 +20,9 @@ stop: ## Stop the project containers.
 dev: ## Start the project containers including dev output.
 	@docker-compose up
 
+test: start \
+	do-frontend-tests
+
 update: ## Update all dependencies in root, frontend and backend folders.
 	@make do-update-root-dependencies
 	@make do-update-frontend-dependencies
@@ -83,3 +86,7 @@ do-remove-cache:
 	@cd frontend && sudo rm -rf .cache/ && sudo rm -rf public/
 	@echo ""
 	@echo "Cache folders removed.."
+
+do-frontend-tests:
+	@echo "Starting frontend tests.."
+	cd frontend && yarn test 
