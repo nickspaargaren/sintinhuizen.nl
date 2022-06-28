@@ -1,10 +1,27 @@
 import React, { ReactElement } from 'react';
+import styled from 'styled-components';
 
 import Layout from '../components/Layout';
 
-const vierNulVier = (): ReactElement => (
+const StyledNotfound = styled.div`
+  bottom: 0;
+  display: flex;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  > div {margin: auto; text-align: center;}
+`;
+
+const Notfound = (): ReactElement => (
   <Layout title="404" description="404">
-    <>404!</>
+    <StyledNotfound>
+      <div>
+        <h1>404</h1>
+        <p>Sorry, deze pagina bestaat niet meer.</p>
+      </div>
+    </StyledNotfound>
   </Layout>
 );
-export default vierNulVier;
+export default Notfound;
