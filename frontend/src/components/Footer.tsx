@@ -1,12 +1,12 @@
 import { StaticImage } from 'gatsby-plugin-image';
 import React, { ReactElement } from 'react';
 
-import Sponsoren from './Sponsoren';
+import Sponsors from './Sponsors';
 
 const Footer = (): ReactElement => (
   <>
-    <section className="sponsoren">
-      <Sponsoren />
+    <section className="sponsors">
+      <Sponsors />
     </section>
     <footer>
       <p>
