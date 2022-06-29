@@ -1,5 +1,5 @@
 export default {
-  name: 'sponsoren',
+  name: 'sponsors',
   title: 'Sponsoren',
   type: 'document',
   fields: [
