@@ -4,12 +4,12 @@ export default {
   type: 'document',
   fields: [
     {
-      name: 'bedrijfsnaam',
+      name: 'title',
       title: 'Bedrijfsnaam',
       type: 'string',
     },
     {
-      name: 'bedrijfswebsite',
+      name: 'url',
       title: 'Bedrijfswebsite',
       type: 'url',
       validation: Rule => Rule.uri({
@@ -27,8 +27,8 @@ export default {
   ],
   preview: {
     select: {
-      title: 'bedrijfsnaam',
-      subtitle: 'bedrijfswebsite',
+      title: 'title',
+      subtitle: 'url',
       media: 'logo',
     }
   }

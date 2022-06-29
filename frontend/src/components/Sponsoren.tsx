@@ -23,8 +23,8 @@ const Sponsoren = (): ReactElement => {
             }
           }
           id
-          bedrijfsnaam
-          bedrijfswebsite
+          title
+          url
         }
       }
     }
@@ -34,8 +34,8 @@ const Sponsoren = (): ReactElement => {
   return (
     <StyledSponsoren>
       {sponsoren.nodes.map((item) => (
-        <OutboundLink key={item.id} className="item" rel="noopener noreferrer" href={item.bedrijfswebsite} target="_blank">
-          <GatsbyImage image={item.logo.asset.gatsbyImageData} alt={item.bedrijfsnaam} />
+        <OutboundLink key={item.id} className="item" rel="noopener noreferrer" href={item.url} target="_blank">
+          <GatsbyImage image={item.logo.asset.gatsbyImageData} alt={item.title} />
         </OutboundLink>
       ))}
     </StyledSponsoren>
