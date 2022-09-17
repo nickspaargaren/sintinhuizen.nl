@@ -105,7 +105,7 @@ type HomeProps = {
 }
 
 const Home = ({ data }: HomeProps): ReactElement => {
-  const [ fotos2021, fotos2020, fotos2019, tekeningen ] = useFotoalbum();
+  const [ fotos2021, tekeningen ] = useFotoalbum();
 
   const { berichtsint: { html: berichtSint } } = data;
   const { terugblik: { html: terugblik } } = data;
@@ -208,32 +208,6 @@ const Home = ({ data }: HomeProps): ReactElement => {
               <p><small>De film is van Elles Schipper van Waveren</small></p>
             </div>
 
-          </div>
-        </section>
-
-        <section className="fotos">
-          <div>
-            <h3 style={{ textAlign: 'center' }}>
-            Foto&apos;s van de aankomst op
-              {' '}
-              <strong>14 november</strong>
-              {' '}
-            2020
-            </h3>
-            <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Klik op de foto voor een vergroting</p>
-            <Fotoalbum fotos={fotos2020} />
-          </div>
-        </section>
-
-        <section className="fotos">
-          <div>
-            <h3 style={{ textAlign: 'center' }}>
-            Foto&apos;s van de intocht
-              {' '}
-              <strong>2019</strong>
-            </h3>
-            <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Klik op de foto voor een vergroting</p>
-            <Fotoalbum fotos={fotos2019} />
           </div>
         </section>
 
