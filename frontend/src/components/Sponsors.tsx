@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from 'gatsby';
-import { OutboundLink } from 'gatsby-plugin-google-analytics';
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import React, { ReactElement } from 'react';
 import styled from 'styled-components';
