@@ -34,7 +34,7 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: 'UA-109024107-1',
+        trackingId: 'G-SY3LD8B7K6',
         head: false,
         anonymize: true,
       },
