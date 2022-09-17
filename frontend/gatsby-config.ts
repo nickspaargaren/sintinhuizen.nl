@@ -32,11 +32,17 @@ const config: GatsbyConfig = {
       },
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: 'gatsby-plugin-google-gtag',
       options: {
-        trackingId: 'G-SY3LD8B7K6',
-        head: false,
-        anonymize: true,
+        trackingIds: [
+          "G-SY3LD8B7K6",
+        ],
+        gtagConfig: {
+          anonymize_ip: true,
+        },
+        pluginConfig: {
+          head: false,
+        },
       },
     },
     {
