@@ -1,5 +1,4 @@
 import { graphql, useStaticQuery } from 'gatsby';
-import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import React, { ReactElement } from 'react';
 import styled from 'styled-components';
@@ -34,9 +33,9 @@ const Sponsors = (): ReactElement => {
   return (
     <Styledsponsors>
       {sponsors.nodes.map((item) => (
-        <OutboundLink key={item.id} className="item" rel="noopener noreferrer" href={item.url} target="_blank">
+        <a key={item.id} className="item" rel="noopener noreferrer" href={item.url} target="_blank">
           <GatsbyImage image={item.logo.asset.gatsbyImageData} alt={item.title} />
-        </OutboundLink>
+        </a>
       ))}
     </Styledsponsors>
   );

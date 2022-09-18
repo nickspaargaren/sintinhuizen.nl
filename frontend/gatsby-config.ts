@@ -32,20 +32,6 @@ const config: GatsbyConfig = {
       },
     },
     {
-      resolve: 'gatsby-plugin-google-gtag',
-      options: {
-        trackingIds: [
-          "G-SY3LD8B7K6",
-        ],
-        gtagConfig: {
-          anonymize_ip: true,
-        },
-        pluginConfig: {
-          head: false,
-        },
-      },
-    },
-    {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
         fonts: [
