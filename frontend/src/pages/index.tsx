@@ -24,19 +24,13 @@ const StyledHeader = styled.div`
   .headertekst {display: flex; flex-direction: column;}
   .headertekst h2 strong {white-space: nowrap;}
   .headertekst > div {margin-bottom: 20px;}
-  .headertekst > img {margin: auto auto 0 0; max-width: 300px;}
+  .headertekst > .intro {margin: auto 0;}
 
   .illustratie {display: flex; flex-direction: column;}
   .illustratie img {margin-top: auto; max-height: 80vh; width: 100%;}
 
 
   @media screen and (max-width: 768px) {
-    .headertekst {flex-direction: column-reverse;}
-    .headertekst > div {margin-bottom: auto;}
-    .headertekst > img {margin-bottom: 20px;}
-
-    .headertekst > div .knop {font-size: 12px;}
-
     .illustratie img {max-height: 300px;}
   }
 `;
@@ -127,18 +121,27 @@ const Home = ({ data }: HomeProps): ReactElement => {
                   {' '}
                   <strong>Huizen</strong>
                   {' '}
-                  <span>13 november 2021</span>
-
+                  <span>12 november 2022</span>
                 </h1>
 
-                <VimeoVideo title="Stichting Intocht Sint Nicolaas Huizen Intocht 2021" url="https://player.vimeo.com/video/650779183?h=8770fcab97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" />
               </div>
-              {/* <img src={logo} alt="Logo" style={{ width: '300px', height: '195px' }} loading="lazy" /> */}
+              <div className='intro'>
+                <h2>Hallo kinderen,</h2>
+                <p>Zaterdag 12 november 2022 kom ik weer naar Huizen. Ik verheug me er nu al op jullie te zien bij de haven in het Nautisch Kwartier.</p>
+                <p>Kom je ook? Het feest begint om 13:30 uur!</p>
+                <p>Hartelijke groet, mede namens de 30 pieten die met mij meekomen,</p>
+                <p style={{ fontFamily: "Courgette", fontSize: '25px', lineHeight: '1.25em' }}>Sint Nicolaas</p>
+              </div>
             </div>
             <div className="illustratie">
               <img src={sinterklaas} alt="Sinterklaas" width="415px" height="440px" loading="lazy" />
             </div>
           </StyledHeader>
+        </section>
+        <section>
+          <div>
+            <VimeoVideo title="Stichting Intocht Sint Nicolaas Huizen Intocht 2021" url="https://player.vimeo.com/video/650779183?h=8770fcab97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" />
+          </div>
         </section>
         <section>
           <StyledAankomst>
