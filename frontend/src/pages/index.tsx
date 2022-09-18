@@ -1,5 +1,4 @@
 import { graphql } from 'gatsby';
-import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import { StaticImage } from 'gatsby-plugin-image';
 import React, { ReactElement } from 'react';
 import styled from 'styled-components';
@@ -162,7 +161,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
                 <div className="tekst">
                 De Sint bezoekt het winkelcentrum Hart van Huizen in het Oude Dorp. Op
                   {' '}
-                  <OutboundLink href="https://hartvanhuizen.nl" rel="noopener noreferrer" target="_blank">HartvanHuizen.nl</OutboundLink>
+                  <a href="https://hartvanhuizen.nl" rel="noopener noreferrer" target="_blank">HartvanHuizen.nl</a>
                   {' '}
                 kun je hier alles over lezen.
                 </div>
@@ -174,7 +173,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
                 <div className="tekst">
                 Op zaterdag 27 november 2021 bezocht de Sint het winkelcentrum Oostermeent. Zie
                   {' '}
-                  <OutboundLink href="https://www.winkelcentrumoostermeent.nl" rel="noopener noreferrer" target="_blank">Winkelcentrumoostermeent.nl</OutboundLink>
+                  <a href="https://www.winkelcentrumoostermeent.nl" rel="noopener noreferrer" target="_blank">Winkelcentrumoostermeent.nl</a>
                 </div>
               </div>
             </div>
