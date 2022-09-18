@@ -21,7 +21,7 @@ const Footer = (): ReactElement => (
         {' '}
         | postadres: Slangekruid 6, 1273 VM Huizen | KvK 75336707
       </p>
-      <StaticImage className="knopHome" alt="mijter" src="../assets/images/mijter.png" style={{ height: '35px', width: '30px', verticalAlign: 'middle' }} />
+      <StaticImage alt="mijter" src="../assets/images/mijter.png" style={{ height: '35px', width: '30px', verticalAlign: 'middle' }} />
     </footer>
   </>
 );
