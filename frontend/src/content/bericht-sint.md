@@ -1,4 +1,4 @@
-**Bij de intocht in Huizen op 13 november gingen er dingen fout. De boot van de Sint ging kapot en de Sint was de weg kwijt. Reden voor onze speciale verslaggever te vragen hoe dit allemaal kon gebeuren. Hij mocht bij de Sint langskomen.**
+**Bij de intocht in Huizen op 13 november 2021 gingen er dingen fout. De boot van de Sint ging kapot en de Sint was de weg kwijt. Reden voor onze speciale verslaggever te vragen hoe dit allemaal kon gebeuren. Hij mocht bij de Sint langskomen.**
 
 ### Hallo allemaal,
 
