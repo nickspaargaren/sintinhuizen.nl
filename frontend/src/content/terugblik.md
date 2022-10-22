@@ -9,4 +9,4 @@
 - Sint en Hoofdpiet maken een rondgang langs de kinderen
 - Optredens dansschool Modance en Winterguard The Pride
 
-### De sint komt aan zaterdag 12 november 2022 in het Nautisch Kwartier van Huizen. De festiviteiten beginnen om 14:00
+### De sint komt aan zaterdag 12 november 2022 in het Nautisch Kwartier van Huizen. De festiviteiten beginnen om 13:30
