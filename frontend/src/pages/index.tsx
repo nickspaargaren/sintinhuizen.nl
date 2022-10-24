@@ -104,7 +104,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
   const { terugblik: { html: terugblik } } = data;
 
   return (
-    <Layout title="Home" description="Informatie over de aankomst Sint Nicolaas in de werkhaven van het Nautisch Kwartier!">
+    <Layout title="Home" description="Informatie over de aankomst Sint Nicolaas in de werkhaven van het Nautisch Kwartier!" canonical="https://www.sintinhuizen.nl">
       <>
         <section>
           <StyledHeader className="grid-2x">
