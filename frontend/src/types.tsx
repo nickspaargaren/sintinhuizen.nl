@@ -1,6 +1,7 @@
 export type LayoutProps = {
   title: string,
   description: string
+  canonical?: string
 }
 
 export type Images = Image[];

@@ -5,10 +5,11 @@ import { Helmet } from 'react-helmet';
 
 import { LayoutProps } from '../types';
 
-const Layout = ({ children, title, description }: PropsWithChildren<LayoutProps>): ReactElement => (
+const Layout = ({ children, title, description, canonical }: PropsWithChildren<LayoutProps>): ReactElement => (
   <div className="page">
     <Helmet>
       <meta charSet="utf-8" />
+      {canonical && <link rel="canonical" href={canonical} />}
       <title>
         {title}
         {' '}
