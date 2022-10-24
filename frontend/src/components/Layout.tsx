@@ -8,7 +8,6 @@ import { LayoutProps } from '../types';
 const Layout = ({ children, title, description }: PropsWithChildren<LayoutProps>): ReactElement => (
   <div className="page">
     <Helmet>
-      <html lang="nl" />
       <meta charSet="utf-8" />
       <title>
         {title}
