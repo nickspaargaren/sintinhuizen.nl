@@ -43,7 +43,7 @@ const StyledAankomst = styled.div`
   box-shadow: 0px 50px 30px -30px rgba(0,0,0,.2);
   color: #333;
   padding: 10px 30px 10px;
-  transform: perspective(3000px) rotateY(19deg) rotateX(4deg) rotate(-1deg);
+  transform: perspective(3000px) rotateY(11deg) rotateX(4deg) rotate(-1deg);
 }
 
 .brief h3 {color: #c32c2b}
@@ -68,7 +68,7 @@ const StyledAankomst = styled.div`
   box-shadow: 0px 50px 30px -30px rgba(0,0,0,.2);
   color: #333;
   padding: 20px;
-  transform: perspective(3000px) rotateY(19deg) rotateX(4deg) rotate(-1deg);}
+  transform: perspective(3000px) rotateY(11deg) rotateX(4deg) rotate(-1deg);}
 
   @media screen and (max-width: 768px) {
     .brief, .tekst {transform: none;}
@@ -154,8 +154,10 @@ const Home = ({ data }: HomeProps): ReactElement => {
             </h2>
 
             <div className="grid-3x">
-              <div className="brief">
-                <div dangerouslySetInnerHTML={{ __html: terugblik }} />
+              <div>
+                <div className="brief">
+                  <div dangerouslySetInnerHTML={{ __html: terugblik }} />
+                </div>
               </div>
               <div>
                 <div className="afbeelding">
