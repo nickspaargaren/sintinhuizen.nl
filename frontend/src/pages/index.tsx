@@ -162,8 +162,14 @@ const Home = ({ data }: HomeProps): ReactElement => {
                   <StaticImage src="../assets/images/sint-en-pieten-op-pakjesboot.jpg" alt="Sint en pieten op de boot" />
                 </div>
                 <div className="tekst">
-                De activiteiten van Hart van Huizen 2022: Het Hart van Huizen ontvangt evenals vorig jaar, 3 middagen de gezellige Pietenband met Pietjes op zaterdag 3, zondag 4 en maandag 5 december van 13:00 - 17:00 uur in het winkelcentrum hart van Huizen. Er is wederom een Sinterklaaskleurplaat om in te leveren en een prijsje mee te winnen.
-                Op de website <a href="https://hartvanhuizen.nl" rel="noopener noreferrer" target="_blank">HartvanHuizen.nl</a> kun je hier alles over lezen.
+                  <strong>De activiteiten van Hart van Huizen 2022:</strong>
+                  <ul>
+                    <li>Vrijdag 2 december 17:00 - 21:00 uur, Pietenband met pietjes</li>
+                    <li>Zaterdag 3 december 13:00 - 17:00 uur, met Sint en Hoofdpieten van 13:00 - 14:00 uur, Pietenband met pietjes</li>
+                    <li>Maandag 5 december 13:00 - 17:00 uur, Pietenband met pietjes</li>
+                  </ul>
+                  Er is wederom een Sinterklaaskleurplaat om in te leveren en een prijsje mee te winnen.
+                  Op de website <a href="https://hartvanhuizen.nl" rel="noopener noreferrer" target="_blank">HartvanHuizen.nl</a> kun je hier alles over lezen.
                 </div>
               </div>
               <div>
