@@ -15,6 +15,10 @@ const FotoalbumData = (): Images[] => {
           publicURL
           childImageSharp {
             gatsbyImageData(width: 270, height: 200)
+            original {
+              height
+              width
+            }
           }
         }
       }
@@ -26,6 +30,10 @@ const FotoalbumData = (): Images[] => {
           publicURL
           childImageSharp {
             gatsbyImageData(width: 270, height: 200)
+            original {
+              height
+              width
+            }
           }
         }
       }

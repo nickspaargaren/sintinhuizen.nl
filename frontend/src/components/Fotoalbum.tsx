@@ -44,8 +44,8 @@ const Fotoalbum = ({ fotos }: { fotos: Images }): ReactElement => (
           <Item
             original={item.publicURL}
             thumbnail={item.publicURL}
-            width="1200"
-            height="800"
+            width={item.childImageSharp.original.width}
+            height={item.childImageSharp.original.height}
           >
             {({ ref, open }: any) => (
               <div ref={ref} onClick={open} onKeyDown={open} role="button" tabIndex={0}>

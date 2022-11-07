@@ -26,6 +26,10 @@ export type Image = {
       layout: "fixed" | "fullWidth" | "constrained";
       width: number;
     }
+    original: {
+      height: number;
+      width: number;
+    }
   };
   id: string;
   publicURL: string;
