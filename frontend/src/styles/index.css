@@ -47,17 +47,10 @@ p {
   margin: 0 0 20px 0;
 }
 
-p.handtekening {
+p.signature {
   font-family: 'Courgette';
   font-size: 25px;
   line-height: 1.25em;
-}
-
-p.handtekening span {
-  opacity: .7;
-  font-size: 60%;
-  display: block;
-  margin-top: -5px;  
 }
 
 ul {
@@ -87,7 +80,7 @@ div[class*="grid"] img {max-width: 100%; height: auto !important;}
 .grid-2x {grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));}
 .grid-3x {grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));}
 .grid-4x {grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));}
-/* Einde Grid Templates */
+/* End Grid Templates */
 
 footer {background: #b72322; text-align: center; padding: 20px;}
 
