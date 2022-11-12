@@ -251,7 +251,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
               style={{
                 margin: '40px auto 0', width: '100%', display: 'block', position: 'relative', maxWidth: '700px',
               }}
-              src="../assets/images/sint-bedankt.jpeg"
+              src="../assets/images/bedankt-sint.jpeg"
               alt="Sint bedankt"
             />
           </div>
