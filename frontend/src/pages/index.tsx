@@ -176,7 +176,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
               </div>
               <div>
                 <div className="afbeelding">
-                  <StaticImage src="../assets/images/poster-sinterklaas-oostermeent.jpg" alt="Sint op de kade in de haven van Huizen" />
+                  <StaticImage src="../assets/images/poster-sinterklaas-oostermeent.jpeg" alt="Sint op de kade in de haven van Huizen" />
                 </div>
                 <div className="tekst">
                   De Sint bezoekt ook het winkelcentrum Oostermeent. Voor meer informatie zie de website <a href="https://www.winkelcentrumoostermeent.nl" rel="noopener noreferrer" target="_blank">Winkelcentrumoostermeent.nl</a>
@@ -229,7 +229,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
 
                 <StaticImage
                   style={{ margin: 'auto', width: '100%', position: 'relative' }}
-                  src="../assets/images/kluspiet-2021.jpg"
+                  src="../assets/images/kluspiet-2021.jpeg"
                   alt="Intocht Sinterklaas"
                 />
               </div>
@@ -251,7 +251,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
               style={{
                 margin: '40px auto 0', width: '100%', display: 'block', position: 'relative', maxWidth: '700px',
               }}
-              src="../assets/images/sint-bedankt.JPEG"
+              src="../assets/images/sint-bedankt.jpeg"
               alt="Sint bedankt"
             />
           </div>
