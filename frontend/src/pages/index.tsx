@@ -6,10 +6,10 @@ import styled from 'styled-components';
 import gebouwen from '../assets/images/gebouwen.svg';
 import sinterklaas from '../assets/images/sinterklaas.svg';
 import Footer from '../components/Footer';
-import Fotoalbum from '../components/Fotoalbum';
 import Layout from '../components/Layout';
+import PhotoGallery from '../components/PhotoGallery';
 import VimeoVideo from '../components/VimeoVideo';
-import useFotoalbum from '../hooks/useFotoalbum';
+import usePhotoGallery from '../hooks/usePhotoGallery';
 
 const StyledHeader = styled.div`
 
@@ -21,23 +21,23 @@ const StyledHeader = styled.div`
   max-width: 100%;
   min-height: inherit;
 
-  .headertekst {display: flex; flex-direction: column;}
-  .headertekst h2 strong {white-space: nowrap;}
-  .headertekst > div {margin-bottom: 20px;}
-  .headertekst > .intro {margin: auto 0;}
+  .headerintro {display: flex; flex-direction: column;}
+  .headerintro h2 strong {white-space: nowrap;}
+  .headerintro > div {margin-bottom: 20px;}
+  .headerintro > .intro {margin: auto 0;}
 
-  .illustratie {display: flex; flex-direction: column;}
-  .illustratie img {margin-top: auto; max-height: 80vh; width: 100%;}
+  .illustration {display: flex; flex-direction: column;}
+  .illustration img {margin-top: auto; max-height: 80vh; width: 100%;}
 
 
   @media screen and (max-width: 768px) {
-    .illustratie img {max-height: 300px;}
+    .illustration img {max-height: 300px;}
   }
 `;
 
 const StyledAankomst = styled.div`
 
-.brief {
+.letter {
   background-color: #fff;
   border: 2px solid #f1cb19;
   box-shadow: 0px 50px 30px -30px rgba(0,0,0,.2);
@@ -46,9 +46,9 @@ const StyledAankomst = styled.div`
   transform: perspective(3000px) rotateY(11deg) rotateX(4deg) rotate(-1deg);
 }
 
-.brief h3 {color: #c32c2b}
+.letter h3 {color: #c32c2b}
 
-.afbeelding {
+.rotatedImage {
   background: rgba(255,255,255,.7);
   box-shadow: 0 10px 39px -5px rgba(0,0,0,.2);
   box-sizing: border-box;
@@ -71,7 +71,7 @@ const StyledAankomst = styled.div`
   transform: perspective(3000px) rotateY(11deg) rotateX(4deg) rotate(-1deg);}
 
   @media screen and (max-width: 768px) {
-    .brief, .tekst {transform: none;}
+    .letter, .tekst {transform: none;}
   }
 `;
 
@@ -98,7 +98,7 @@ type HomeProps = {
 }
 
 const Home = ({ data }: HomeProps): ReactElement => {
-  const [ fotos2021, tekeningen ] = useFotoalbum();
+  const [ photos2021, drawings ] = usePhotoGallery();
 
   const { berichtsint: { html: berichtSint } } = data;
   const { terugblik: { html: terugblik } } = data;
@@ -108,7 +108,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
       <>
         <section>
           <StyledHeader className="grid-2x">
-            <div className="headertekst">
+            <div className="headerintro">
               <div>
                 <h1>
                   <strong>Aankomst</strong>
@@ -130,10 +130,10 @@ const Home = ({ data }: HomeProps): ReactElement => {
                 <p>Zaterdag 12 november 2022 kom ik weer naar Huizen. Ik verheug me er nu al op jullie te zien bij de haven in het Nautisch Kwartier.</p>
                 <p>Kom je ook? Het feest begint om 13:30 uur!</p>
                 <p>Hartelijke groet, mede namens de 30 pieten die met mij meekomen,</p>
-                <p style={{ fontFamily: "Courgette", fontSize: '25px', lineHeight: '1.25em' }}>Sint Nicolaas</p>
+                <p className="signature">Sint Nicolaas</p>
               </div>
             </div>
-            <div className="illustratie">
+            <div className="illustration">
               <img src={sinterklaas} alt="Sinterklaas" width="415px" height="440px" loading="lazy" />
             </div>
           </StyledHeader>
@@ -155,12 +155,12 @@ const Home = ({ data }: HomeProps): ReactElement => {
 
             <div className="grid-3x">
               <div>
-                <div className="brief">
+                <div className="letter">
                   <div dangerouslySetInnerHTML={{ __html: terugblik }} />
                 </div>
               </div>
               <div>
-                <div className="afbeelding">
+                <div className="rotatedImage">
                   <StaticImage src="../assets/images/sint-en-pieten-op-pakjesboot.jpg" alt="Sint en pieten op de boot" />
                 </div>
                 <div className="tekst">
@@ -175,7 +175,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
                 </div>
               </div>
               <div>
-                <div className="afbeelding">
+                <div className="rotatedImage">
                   <StaticImage src="../assets/images/poster-sinterklaas-oostermeent.jpeg" alt="Sint op de kade in de haven van Huizen" />
                 </div>
                 <div className="tekst">
@@ -186,7 +186,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
           </StyledAankomst>
         </section>
 
-        <section className="fotos">
+        <section className="photos">
           <div>
             <h3 style={{ textAlign: 'center' }}>
             Foto&apos;s van de aankomst op
@@ -196,7 +196,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
             2021
             </h3>
             <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Klik op de foto voor een vergroting</p>
-            <Fotoalbum fotos={fotos2021} />
+            <PhotoGallery images={photos2021} />
           </div>
         </section>
 
@@ -237,7 +237,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
           </div>
         </section>
 
-        <section className="fotos">
+        <section className="photos">
           <div>
             <h3 style={{ textAlign: 'center' }}>
             Bedankt kinderen voor deze
@@ -246,7 +246,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
             !
             </h3>
             <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Klik op de foto voor een vergroting</p>
-            <Fotoalbum fotos={tekeningen} />
+            <PhotoGallery images={drawings} />
             <StaticImage
               style={{
                 margin: '40px auto 0', width: '100%', display: 'block', position: 'relative', maxWidth: '700px',
