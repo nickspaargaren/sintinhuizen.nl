@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
 import { Images } from '../types';
 
-const StyledFotos = styled.div`
+const StyledPhotoGallery = styled.div`
   margin: auto 0; width: 100%;
   ::after {clear: both; content: ""; float: none; display: block;}
 
@@ -36,10 +36,10 @@ const StyledFotos = styled.div`
   }
 `;
 
-const Fotoalbum = ({ fotos }: { fotos: Images }): ReactElement => (
-  <StyledFotos data-cy="fotoalbum">
+const PhotoGallery = ({ images }: { images: Images }): ReactElement => (
+  <StyledPhotoGallery data-cy="photogallery">
     <Gallery>
-      {fotos.map((item) => (
+      {images.map((item) => (
         <div key={item.id} className="item">
           <Item
             original={item.publicURL}
@@ -56,7 +56,7 @@ const Fotoalbum = ({ fotos }: { fotos: Images }): ReactElement => (
         </div>
       ))}
     </Gallery>
-  </StyledFotos>
+  </StyledPhotoGallery>
 );
 
-export default Fotoalbum;
+export default PhotoGallery;

@@ -2,13 +2,13 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 import { Images } from '../types';
 
-const FotoalbumData = (): Images[] => {
+const PhotoGalleryData = (): Images[] => {
   const {
-    fotos2021, tekeningen,
+    photos2021, drawings,
   } = useStaticQuery(graphql`
     query {
 
-      fotos2021: allFile(filter: {relativeDirectory: {eq: "fotos-2021"}}, sort: {fields: relativePath}) {
+      photos2021: allFile(filter: {relativeDirectory: {eq: "photos-2021"}}, sort: {fields: relativePath}) {
         nodes {
           id
           relativePath
@@ -23,7 +23,7 @@ const FotoalbumData = (): Images[] => {
         }
       }
 
-      tekeningen: allFile(filter: {relativeDirectory: {eq: "tekeningen"}}, sort: {fields: relativePath}) {
+      drawings: allFile(filter: {relativeDirectory: {eq: "drawings"}}, sort: {fields: relativePath}) {
         nodes {
           id
           relativePath
@@ -42,9 +42,9 @@ const FotoalbumData = (): Images[] => {
     `);
 
   return [
-    fotos2021.nodes,
-    tekeningen.nodes,
+    photos2021.nodes,
+    drawings.nodes,
   ];
 };
 
-export default FotoalbumData;
+export default PhotoGalleryData;

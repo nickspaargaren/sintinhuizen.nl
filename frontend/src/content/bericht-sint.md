@@ -18,4 +18,4 @@ Nou een ding is zeker, de Sint is een vrolijk mens!
 Adios y hasta
 
 Jullie speciale verslaggever
-<p style="font-family: Courgette; font-size: 25px; line-height: 1.25em;" markdown='1'>Erico</p>
+<p class="signature">Erico</p>
