@@ -71,6 +71,8 @@ main section > div {margin: auto; max-width: 1600px; width: 100%; padding: 50px;
 
 main section.sponsors {background: #fff; min-height: 0;}
 main section.sponsors > div {padding: 20px 50px;}
+main section.sponsors > div h3 {margin-top: 0; color: #c32c2b;}
+main section.sponsors > div p {color: #333;}
 
 
 /* Grid Templates */

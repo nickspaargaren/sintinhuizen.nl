@@ -6,7 +6,13 @@ import Sponsors from './Sponsors';
 const Footer = (): ReactElement => (
   <>
     <section className="sponsors">
-      <Sponsors />
+      <div>
+        <h3 style={{ textAlign: 'center' }}>
+            Onze sponsoren
+        </h3>
+        <p style={{ textAlign: 'center', margin: '-15px 0px 25px' }}>Klik op een logo voor meer informatie</p>
+        <Sponsors />
+      </div>
     </section>
     <footer>
       <p>
