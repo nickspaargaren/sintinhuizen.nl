@@ -98,7 +98,7 @@ type HomeProps = {
 }
 
 const Home = ({ data }: HomeProps): ReactElement => {
-  const [ photos2021, drawings ] = usePhotoGallery();
+  const [ photos2021, photos2022, drawings ] = usePhotoGallery();
 
   const { berichtsint: { html: berichtSint } } = data;
   const { terugblik: { html: terugblik } } = data;
@@ -184,6 +184,20 @@ const Home = ({ data }: HomeProps): ReactElement => {
               </div>
             </div>
           </StyledAankomst>
+        </section>
+
+        <section className="photos">
+          <div>
+            <h3 style={{ textAlign: 'center' }}>
+            Foto&apos;s van de aankomst op
+              {' '}
+              <strong>12 november</strong>
+              {' '}
+            2022
+            </h3>
+            <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Klik op de foto voor een vergroting</p>
+            <PhotoGallery images={photos2022} />
+          </div>
         </section>
 
         <section className="photos">
