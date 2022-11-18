@@ -229,8 +229,8 @@ const Home = ({ data }: HomeProps): ReactElement => {
 
                 <StaticImage
                   style={{ margin: 'auto', width: '100%', position: 'relative' }}
-                  src="../assets/images/kluspiet-2021.jpeg"
-                  alt="Intocht Sinterklaas"
+                  src="../assets/images/sint-en-piet-met-burgemeester.jpg"
+                  alt="Sint en piet met burgemeester"
                 />
               </div>
             </div>

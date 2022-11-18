@@ -1,21 +1,20 @@
-**Bij de intocht in Huizen op 13 november 2021 gingen er dingen fout. De boot van de Sint ging kapot en de Sint was de weg kwijt. Reden voor onze speciale verslaggever te vragen hoe dit allemaal kon gebeuren. Hij mocht bij de Sint langskomen.**
+**Sinterklaas stuurde ons een brief. Hij wil de kinderen in Huizen bedanken voor het grootse onthaal dat we hem en zijn Pieten gegeven hebben. Hieronder staat de brief.**
 
-### Hallo allemaal,
+Huizen, 12 november 2022
 
-Hier en bericht van jullie Speciale verslaggever. Ik was toch wel een beetje zenuwachtig toen ik bij de Sint langs mocht komen. Fijn dat hij in deze drukke pakjes tijd kon vrijmaken. 
+### Lieve kinderen van Huizen,
 
-De grote vraag die ik voor hem had: “Sint, u komt al zo vaak in Huizen. Hoe kon het dat u naar de verkeerde haven gevaren bent?” De sint: “Nou kijk, bij het varen ga ik er van uit dat de Pieten weten wat ze doen. Die zaterdag stond voor het eerst een nieuwe Piet achter het roer. Hij had al vele urengevaren en was al helemaal tot Huizen gekomen. Petje af wat mij betreft!
+Ik schrijf jullie deze brief op m’n hotelkamer in Huizen.\
+Het was me een weekje wel. Boot gezonken, met een vliegtuig naar Nederland, daar op de reserve pakjesboot gestapt en op tijd in Hellevoetsluis. Daar wachtte de TV camera’s om aan alle kinderen te laten zien dat ik aangekomen ben in Nederland. Meteen daarna zou ik naar Huizen gaan. Dat was tenminste de bedoeling. Misschien wel door de haast, ging het weer bijna fout. 
 
-De Piet die hem begeleidde is even eh.. nou ja, en plasje gaan doen, en toen ging het mis. Ach, het was een klein foutje.” Ik vertelde de Sint dat de kinderen het niet erg vonden en dat ze zelfs dachten dat het een grapje was. Nou kinderen, de Sint stond te schuddebuiken van het lachen toen hij dat hoorde!
+Jullie mooie Huizen heeft maar liefst zes Havens. En natuurlijk, we konden de juiste haven niet vinden! Mijn Radiopiet belde meteen naar het ontvangstcomité, en die boden hulp. Ze stuurden met de snelle boot van de Huizer Reddingsbrigade een Wegwijspiet die alle havens van Huizen kent en de juiste weg weet aan te wijzen. En met succes. Mijn veertig Pieten en ik waren op tijd in de goede haven!\
+We werden begeleid door heel veel boten. Mijn Botenpiet vertelde dat het Huizer botters waren en boten van de KNRM en de Huizer reddingsbrigade. En misschien ook wel door prachtige weer waren er ook nogal wat andere boten.
+Wat we zagen was hartverwarmend. We werden opgewacht door duizenden kinderen die mij en de Pieten toezongen. We werden ontvangen burgemeester Niek Meijer en Martin Meijer, de baas van hotel Fletcher waar ik zou slapen. De voorraadboot met 400 kg strooigoed lag al klaar en mijn Pieten begonnen meteen met uit uitdelen.
+Met de burgemeester en de hoofdpiet kon ik langs de kinderen lopen en een handje te geven. We vonden dat geweldig. En intussen werd er door jullie gezongen, waren er optredens van dansgroepen en speelde het Pieteorkest. Prachtig allemaal!
 
-Maar er gebeurde nog meer. We kregen op de kade, terwijl we aan het wachten waren op het binnenvaren van de boot, het bericht dat de Pakjesboot motorpech had. Daar schrokken we erg van. Ik vroeg de Sint wat er gebeurd was. “Ja, ik schrok hier zelf van. Ineens kwam de hoofdpiet de kajuit binnenstormen en vertelde dat de motor gestopt was. De reden was waterplanten. Dat mooie Gooimeer van jullie zit vol met die planten. Dat maakt dat het water mooi helder is, maar de bootmensen vinden het niet altijd even leuk. Het verstopt de motorkoeling en dan stopt de boot. En dat is precies wat gebeurd is. Maar gelukkig hadden jullie op de wal een ervaren kluspiet. Die is door de boot van de van de reddingsbrigade vliegensvlug naar mijn boot gebracht en heeft de boel gerepareerd.”
-En voor de zekerheid vroeg ik: “Sint, dus de pakjes komen op tijd bij de kinderen aan?”
-Er klonk een kort en krachtig “ja”!
+Ik zag bij het binnenvaren een groot schip in de haven liggen. Daarop wonen asielzoekers, begreep ik. Speciaal voor mij is de boot ’n middag op een andere plek gaan liggen, zodat mijn Pakjesboot 15 en de voorraadboot konden aanleggen. Dat vond ik erg aardig en ben daarom bij de asielboot op bezoek gegaan om de mensen de bedanken. Er werden veel ‘selfies’ met mij gemaakt en ik werd uitgedaagd voor een potje tafeltennis. De tijd drong, dus ik moest afscheid nemen van deze vriendelijke mensen. Ik hoorde dat de mensen van de gemeente klaar stonden de boel schoon te maken en alle spullen van de asielboot weer terug te zetten op de kade. En het zou al gauw donker worden. Bovendien was ik erg moe en het hotel wachtte. Maar ik ga nog niet weg. De komende weken ga ik nog naar scholen en de winkelcentra. En natuurlijk: cadeautjes in jullie schoenen stoppen.
+Ik heb begrepen dat er bijna 130 vrijwilligers bij mijn aankomst actief waren. Geweldig!
+Het was een ontvangst die ik niet snel zal vergeten. Namens de Pieten en mijzelf heel erg bedankt daarvoor!
 
-Ik bedankte de Sint en bij het afscheid begon hij weer aanstekelijk te lachen. “Toen de motor er mee stopte, stuurden jullie de kluspiet. En wat stond er op zijn rug: Klu(n)s piet. Ha, ha, ha, ha.”
-Nou een ding is zeker, de Sint is een vrolijk mens!
-
-Adios y hasta
-
-Jullie speciale verslaggever
-<p class="signature">Erico</p>
+Hartelijke groet,
+<p class="signature">Sint Nicolaas</p>
