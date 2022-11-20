@@ -137,11 +137,28 @@ const Home = ({ data }: HomeProps): ReactElement => {
             </div>
           </StyledHeader>
         </section>
-        <section>
-          <div>
-            <VimeoVideo title="Stichting Intocht Sint Nicolaas Huizen Intocht 2021" url="https://player.vimeo.com/video/650779183?h=8770fcab97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" />
+
+        <section className="bericht">
+          <div className="grid-2x">
+
+            <div dangerouslySetInnerHTML={{ __html: berichtSint }} />
+
+            <div>
+              <div style={{
+                textAlign: 'center', position: 'sticky', top: '0', height: '100vh', display: 'flex',
+              }}
+              >
+
+                <StaticImage
+                  style={{ margin: 'auto', width: '100%', position: 'relative' }}
+                  src="../assets/images/sint-en-piet-met-burgemeester.jpg"
+                  alt="Sint en piet met burgemeester"
+                />
+              </div>
+            </div>
           </div>
         </section>
+
         <section>
           <StyledAankomst>
             <h2 style={{ textAlign: 'center', margin: '0px 0 40px' }}>
@@ -199,6 +216,21 @@ const Home = ({ data }: HomeProps): ReactElement => {
           </div>
         </section>
 
+        <section>
+          <div>
+            <h3 style={{ textAlign: 'center', marginBottom: '40px' }}>Video&apos;s van de aankomst op <strong>12 november</strong> 2022</h3>
+            <div className="grid-3x">
+              <div>
+                <VimeoVideo title="Korte impressie activiteiten op de kade" url="https://player.vimeo.com/video/772979203?h=f7b3963557" />
+              </div>
+              <div>
+                <VimeoVideo title="Sint en burgemeester bezoeken de asielboot" url="https://player.vimeo.com/video/772979322?h=c10ed4027a" />
+              </div>
+              <VimeoVideo title="Het verleggen van de Asielboot 12 november 07.30 in de mist om de kade vrij te maken voor de aankomst van de Sint" url="https://player.vimeo.com/video/772980541?h=f6013edb27" />
+            </div>
+          </div>
+        </section>
+
         <section className="photos">
           <div>
             <h3 style={{ textAlign: 'center' }}>
@@ -210,43 +242,6 @@ const Home = ({ data }: HomeProps): ReactElement => {
             </h3>
             <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Klik op de foto voor een vergroting</p>
             <PhotoGallery images={photos2021} />
-          </div>
-        </section>
-
-        <section>
-          <div className="grid-2x vertical-align-middle">
-            <div>
-              <h2>De intocht gezien vanaf het water</h2>
-              <p>Er gebeurde veel in de Haven waar iedereen wachtte op de komst van Sint Nicolaas en de Pieten. Maar ook op het water gebeurde er veel. Een vloot schepen wachtte de Sint op en bracht hem naar de haven. De film van Elles Schipper van Waveren geeft hiervan een goed voorbeeld.</p>
-            </div>
-            <div>
-
-              <VimeoVideo title="Intocht vanaf het water" url="https://player.vimeo.com/video/650812118?h=8714d401f1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" />
-
-              <p><small>De film is van Elles Schipper van Waveren</small></p>
-            </div>
-
-          </div>
-        </section>
-
-        <section className="bericht">
-          <div className="grid-2x">
-
-            <div dangerouslySetInnerHTML={{ __html: berichtSint }} />
-
-            <div>
-              <div style={{
-                textAlign: 'center', position: 'sticky', top: '0', height: '100vh', display: 'flex',
-              }}
-              >
-
-                <StaticImage
-                  style={{ margin: 'auto', width: '100%', position: 'relative' }}
-                  src="../assets/images/sint-en-piet-met-burgemeester.jpg"
-                  alt="Sint en piet met burgemeester"
-                />
-              </div>
-            </div>
           </div>
         </section>
 
@@ -267,6 +262,13 @@ const Home = ({ data }: HomeProps): ReactElement => {
               src="../assets/images/bedankt-sint.jpeg"
               alt="Sint bedankt"
             />
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <h3 style={{ textAlign: 'center', marginBottom: '40px' }}>Video van de aankomst op <strong>13 november</strong> 2021</h3>
+            <VimeoVideo title="Stichting Intocht Sint Nicolaas Huizen Intocht 2021" url="https://player.vimeo.com/video/650779183?h=8770fcab97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" />
           </div>
         </section>
 
