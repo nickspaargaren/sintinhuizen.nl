@@ -62,7 +62,7 @@ const StyledAankomst = styled.div`
   width: 100%;
 }
 
-.tekst {
+.text {
   background-color: #fff; 
   border: 2px solid #f1cb19;
   box-shadow: 0px 50px 30px -30px rgba(0,0,0,.2);
@@ -71,7 +71,7 @@ const StyledAankomst = styled.div`
   transform: perspective(3000px) rotateY(11deg) rotateX(4deg) rotate(-1deg);}
 
   @media screen and (max-width: 768px) {
-    .letter, .tekst {transform: none;}
+    .letter, .text {transform: none;}
   }
 `;
 
@@ -127,9 +127,8 @@ const Home = ({ data }: HomeProps): ReactElement => {
               </div>
               <div className='intro'>
                 <h2>Hallo kinderen,</h2>
-                <p>Zaterdag 12 november 2022 kom ik weer naar Huizen. Ik verheug me er nu al op jullie te zien bij de haven in het Nautisch Kwartier.</p>
-                <p>Kom je ook? Het feest begint om 13:30 uur!</p>
-                <p>Hartelijke groet, mede namens de 30 pieten die met mij meekomen,</p>
+                <p>Zaterdag 12 november 2022 kwam ik met mijn Pieten aan in Huizen.<br />Verderop kun je hier alles over lezen.</p>
+                <p>Hartelijke groet,</p>
                 <p className="signature">Sint Nicolaas</p>
               </div>
             </div>
@@ -163,7 +162,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
                 <div className="rotatedImage">
                   <StaticImage src="../assets/images/sint-en-pieten-op-pakjesboot.jpg" alt="Sint en pieten op de boot" />
                 </div>
-                <div className="tekst">
+                <div className="text">
                   <strong>De activiteiten van Hart van Huizen 2022:</strong>
                   <ul>
                     <li>Vrijdag 2 december 17:00 - 21:00 uur, Pietenband met pietjes</li>
@@ -178,7 +177,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
                 <div className="rotatedImage">
                   <StaticImage src="../assets/images/poster-sinterklaas-oostermeent.jpeg" alt="Sint op de kade in de haven van Huizen" />
                 </div>
-                <div className="tekst">
+                <div className="text">
                   De Sint bezoekt ook het winkelcentrum Oostermeent. Voor meer informatie zie de website <a href="https://www.winkelcentrumoostermeent.nl" rel="noopener noreferrer" target="_blank">Winkelcentrumoostermeent.nl</a>
                 </div>
               </div>
