@@ -137,11 +137,28 @@ const Home = ({ data }: HomeProps): ReactElement => {
             </div>
           </StyledHeader>
         </section>
-        <section>
-          <div>
-            <VimeoVideo title="Stichting Intocht Sint Nicolaas Huizen Intocht 2021" url="https://player.vimeo.com/video/650779183?h=8770fcab97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" />
+
+        <section className="bericht">
+          <div className="grid-2x">
+
+            <div dangerouslySetInnerHTML={{ __html: berichtSint }} />
+
+            <div>
+              <div style={{
+                textAlign: 'center', position: 'sticky', top: '0', height: '100vh', display: 'flex',
+              }}
+              >
+
+                <StaticImage
+                  style={{ margin: 'auto', width: '100%', position: 'relative' }}
+                  src="../assets/images/sint-en-piet-met-burgemeester.jpg"
+                  alt="Sint en piet met burgemeester"
+                />
+              </div>
+            </div>
           </div>
         </section>
+
         <section>
           <StyledAankomst>
             <h2 style={{ textAlign: 'center', margin: '0px 0 40px' }}>
@@ -199,20 +216,6 @@ const Home = ({ data }: HomeProps): ReactElement => {
           </div>
         </section>
 
-        <section className="photos">
-          <div>
-            <h3 style={{ textAlign: 'center' }}>
-            Foto&apos;s van de aankomst op
-              {' '}
-              <strong>13 november</strong>
-              {' '}
-            2021
-            </h3>
-            <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Klik op de foto voor een vergroting</p>
-            <PhotoGallery images={photos2021} />
-          </div>
-        </section>
-
         <section>
           <div className="grid-2x vertical-align-middle">
             <div>
@@ -229,24 +232,17 @@ const Home = ({ data }: HomeProps): ReactElement => {
           </div>
         </section>
 
-        <section className="bericht">
-          <div className="grid-2x">
-
-            <div dangerouslySetInnerHTML={{ __html: berichtSint }} />
-
-            <div>
-              <div style={{
-                textAlign: 'center', position: 'sticky', top: '0', height: '100vh', display: 'flex',
-              }}
-              >
-
-                <StaticImage
-                  style={{ margin: 'auto', width: '100%', position: 'relative' }}
-                  src="../assets/images/sint-en-piet-met-burgemeester.jpg"
-                  alt="Sint en piet met burgemeester"
-                />
-              </div>
-            </div>
+        <section className="photos">
+          <div>
+            <h3 style={{ textAlign: 'center' }}>
+            Foto&apos;s van de aankomst op
+              {' '}
+              <strong>13 november</strong>
+              {' '}
+            2021
+            </h3>
+            <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Klik op de foto voor een vergroting</p>
+            <PhotoGallery images={photos2021} />
           </div>
         </section>
 
@@ -267,6 +263,12 @@ const Home = ({ data }: HomeProps): ReactElement => {
               src="../assets/images/bedankt-sint.jpeg"
               alt="Sint bedankt"
             />
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <VimeoVideo title="Stichting Intocht Sint Nicolaas Huizen Intocht 2021" url="https://player.vimeo.com/video/650779183?h=8770fcab97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" />
           </div>
         </section>
 
