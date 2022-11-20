@@ -230,22 +230,6 @@ const Home = ({ data }: HomeProps): ReactElement => {
           </div>
         </section>
 
-        <section>
-          <div className="grid-2x vertical-align-middle">
-            <div>
-              <h2>De intocht gezien vanaf het water</h2>
-              <p>Er gebeurde veel in de Haven waar iedereen wachtte op de komst van Sint Nicolaas en de Pieten. Maar ook op het water gebeurde er veel. Een vloot schepen wachtte de Sint op en bracht hem naar de haven. De film van Elles Schipper van Waveren geeft hiervan een goed voorbeeld.</p>
-            </div>
-            <div>
-
-              <VimeoVideo title="Intocht vanaf het water" url="https://player.vimeo.com/video/650812118?h=8714d401f1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" />
-
-              <p><small>De film is van Elles Schipper van Waveren</small></p>
-            </div>
-
-          </div>
-        </section>
-
         <section className="photos">
           <div>
             <h3 style={{ textAlign: 'center' }}>
