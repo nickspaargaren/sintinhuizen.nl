@@ -217,6 +217,20 @@ const Home = ({ data }: HomeProps): ReactElement => {
         </section>
 
         <section>
+          <div>
+            <div className="grid-3x">
+              <div>
+                <VimeoVideo title="Korte impressie activiteiten op de kade" url="https://player.vimeo.com/video/772979203?h=f7b3963557" />
+              </div>
+              <div>
+                <VimeoVideo title="Sint en burgemeester bezoeken de asielboot" url="https://player.vimeo.com/video/772979322?h=c10ed4027a" />
+              </div>
+              <VimeoVideo title="Het verleggen van de Asielboot 12 november 07.30 in de mist om de kade vrij te maken voor de aankomst van de Sint" url="https://player.vimeo.com/video/772980541?h=f6013edb27" />
+            </div>
+          </div>
+        </section>
+
+        <section>
           <div className="grid-2x vertical-align-middle">
             <div>
               <h2>De intocht gezien vanaf het water</h2>
