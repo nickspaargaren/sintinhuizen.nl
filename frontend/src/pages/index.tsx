@@ -218,6 +218,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
 
         <section>
           <div>
+            <h3 style={{ textAlign: 'center', marginBottom: '40px' }}>Video&apos;s van de aankomst op <strong>12 november</strong> 2022</h3>
             <div className="grid-3x">
               <div>
                 <VimeoVideo title="Korte impressie activiteiten op de kade" url="https://player.vimeo.com/video/772979203?h=f7b3963557" />
