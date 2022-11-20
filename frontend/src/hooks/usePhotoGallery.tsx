@@ -8,7 +8,21 @@ const PhotoGalleryData = (): Images[] => {
   } = useStaticQuery(graphql`
     query {
 
-      photos2021: allFile(filter: {relativeDirectory: {eq: "photos-2021"}}, sort: {fields: relativePath}) {
+      photos2021: allFile(filter: {relativeDirectory: {eq: "photos-2021"}}, sort: { relativePath: ASC } ){
+        nodes {
+          id
+          relativePath
+          publicURL
+          childImageSharp {
+            gatsbyImageData(width: 270, height: 200)
+            original {
+              height
+              width
+            }
+          }
+        }
+      }
+      photos2022: allFile(filter: {relativeDirectory: {eq: "photos-2022"}}, sort: { relativePath: ASC }) {
         nodes {
           id
           relativePath
@@ -23,22 +37,7 @@ const PhotoGalleryData = (): Images[] => {
         }
       }
 
-      photos2022: allFile(filter: {relativeDirectory: {eq: "photos-2022"}}, sort: {fields: relativePath}) {
-        nodes {
-          id
-          relativePath
-          publicURL
-          childImageSharp {
-            gatsbyImageData(width: 270, height: 200)
-            original {
-              height
-              width
-            }
-          }
-        }
-      }
-
-      drawings: allFile(filter: {relativeDirectory: {eq: "drawings"}}, sort: {fields: relativePath}) {
+      drawings: allFile(filter: {relativeDirectory: {eq: "drawings"}}, sort: { relativePath: ASC }) {
         nodes {
           id
           relativePath
