@@ -268,6 +268,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
 
         <section>
           <div>
+            <h3 style={{ textAlign: 'center', marginBottom: '40px' }}>Video van de aankomst op <strong>13 november</strong> 2021</h3>
             <VimeoVideo title="Stichting Intocht Sint Nicolaas Huizen Intocht 2021" url="https://player.vimeo.com/video/650779183?h=8770fcab97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" />
           </div>
         </section>
