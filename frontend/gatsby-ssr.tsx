@@ -9,7 +9,7 @@ export const onRenderBody: GatsbySSR['onRenderBody'] = (
   });
   setPostBodyComponents(
     [
-      <script key="stats" defer data-domain="sintinhuizen.nl" src="https://plausible.io/js/script.js" />,
+      <script key="stats" defer data-domain="sintinhuizen.nl" data-api="/stats/api/event" src="/stats/js/script.js" />,
     ],
   );
 };
