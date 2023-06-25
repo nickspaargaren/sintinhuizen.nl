@@ -1,3 +1,5 @@
+import type { IGatsbyImageData } from 'gatsby-plugin-image';
+
 export type LayoutProps = {
   title: string,
   description: string
@@ -8,24 +10,7 @@ export type Images = Image[];
 
 export type Image = {
   childImageSharp: {
-    gatsbyImageData: {
-      backgroundColor: string;
-      height: number;
-      images: {
-        fallback: {
-          sizes: string;
-          src: string;
-          srcSet: string;
-        };
-        sources: [{
-          sizes: string;
-          srcSet: string;
-          type: string;
-        }];
-      }
-      layout: "fixed" | "fullWidth" | "constrained";
-      width: number;
-    }
+    gatsbyImageData: IGatsbyImageData;
     original: {
       height: number;
       width: number;
