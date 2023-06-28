@@ -28,6 +28,7 @@ test: ## Run the project end-to-end tests.
 lint: ## Run the project codestyle check.
 	@make start
 	@make do-frontend-lint
+	@make do-frontend-typescript
 
 update: ## Update all dependencies in root, frontend and backend folders.
 	@make do-update-frontend-dependencies
@@ -88,3 +89,7 @@ do-frontend-tests:
 do-frontend-lint:
 	@echo "Starting frontend codestyle check.."
 	@docker-compose exec frontend sh -c "yarn lint"
+
+do-frontend-typescript:
+	@echo "Starting frontend typescript check.."
+	@docker-compose exec frontend sh -c "npx tsc --noEmit"

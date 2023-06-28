@@ -89,10 +89,10 @@ query {
 type HomeProps = {
   data: {
     berichtsint: {
-      html
+      html: string;
     }
     terugblik: {
-      html
+      html: string;
     }
   }
 }
