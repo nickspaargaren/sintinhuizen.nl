@@ -1,11 +1,5 @@
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
 
-export type LayoutProps = {
-  title: string,
-  description: string
-  canonical?: string
-}
-
 export type Images = Image[];
 
 export type Image = {

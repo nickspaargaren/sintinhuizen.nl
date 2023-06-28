@@ -3,7 +3,6 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   trailingSlash: 'never',
   plugins: [
-    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-sanity',
       options: {
