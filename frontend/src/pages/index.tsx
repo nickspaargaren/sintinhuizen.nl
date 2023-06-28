@@ -104,7 +104,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
   const { terugblik: { html: terugblik } } = data;
 
   return (
-    <Layout title="Home" description="Informatie over de aankomst Sint Nicolaas in de werkhaven van het Nautisch Kwartier!" canonical="https://www.sintinhuizen.nl">
+    <Layout>
       <>
         <section>
           <StyledHeader className="grid-2x">
@@ -277,4 +277,13 @@ const Home = ({ data }: HomeProps): ReactElement => {
     </Layout>
   );
 };
+
+export const Head = () => (
+  <>
+    <meta charSet="utf-8" />
+    <link rel="canonical" href="https://www.sintinhuizen.nl" />
+    <title>Home | Stichting Intocht Sint Nicolaas Huizen</title>
+    <meta name="description" content="Informatie over de aankomst Sint Nicolaas in de werkhaven van het Nautisch Kwartier!" />
+  </>
+)
 export default Home;
