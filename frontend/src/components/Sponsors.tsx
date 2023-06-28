@@ -3,6 +3,8 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import React, { ReactElement } from 'react';
 import styled from 'styled-components';
 
+import { SponsorsType } from '../types';
+
 const Styledsponsors = styled.div`
   display: flex; margin: auto 0; width: 100%;
   a.item {display: flex; flex: 1; width: 100%; padding: 0 5px; position: relative;}
@@ -27,9 +29,9 @@ const Sponsors = (): ReactElement => {
         }
       }
     }
-    
     `,
-  );
+  ) as SponsorsType;
+
   return (
     <Styledsponsors>
       {sponsors.nodes.map((item) => (
