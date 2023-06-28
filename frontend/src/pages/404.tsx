@@ -15,7 +15,7 @@ const StyledNotfound = styled.div`
 `;
 
 const Notfound = (): ReactElement => (
-  <Layout title="404" description="404">
+  <Layout>
     <StyledNotfound>
       <div>
         <h1>404</h1>
