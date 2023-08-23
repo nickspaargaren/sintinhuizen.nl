@@ -111,17 +111,18 @@ const Home = ({ data }: HomeProps): ReactElement => {
             <div className="headerintro">
               <div>
                 <h1>
-                  <strong>Aankomst</strong>
+                  <small>Laatste nieuws!</small>
                   {' '}
                   <br />
-                  <span>Sint Nicolaas</span>
+                  <strong>Sint Nicolaas</strong>
                   {' '}
-                  <br />
-                  <small>in</small>
+                  <small>komt</small>
+                  {' '}
+                  <span>18 november 2023</span>
+                  {' '}
+                  <small>aan in</small>
                   {' '}
                   <strong>Huizen</strong>
-                  {' '}
-                  <span>12 november 2022</span>
                 </h1>
 
               </div>
