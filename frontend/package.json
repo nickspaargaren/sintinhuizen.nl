@@ -23,10 +23,10 @@
     "gatsby-source-sanity": "^7.6.2",
     "gatsby-transformer-remark": "^6.4.0",
     "gatsby-transformer-sharp": "^5.4.0",
-    "photoswipe": "^5.3.4",
+    "photoswipe": "^5.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-photoswipe-gallery": "^2.2.2",
+    "react-photoswipe-gallery": "^2.2.7",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
