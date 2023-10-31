@@ -34,6 +34,12 @@ update: ## Update all dependencies in root, frontend and backend folders.
 	@make do-update-frontend-dependencies
 	@make do-update-backend-dependencies
 
+shell-backend: ## Exec into backend container
+	@make do-shell-backend
+
+shell-frontend: ## Exec into frontend container
+	@make do-shell-frontend
+
 reset: ## Reset the project containers, volumes, local dependencies and cache files.
 	@make do-remove-nodemodules
 	@make do-remove-cache
@@ -90,6 +96,8 @@ do-frontend-lint:
 	@echo "Starting frontend codestyle check.."
 	@docker-compose exec frontend sh -c "yarn lint"
 
-do-frontend-typescript:
-	@echo "Starting frontend typescript check.."
-	@docker-compose exec frontend sh -c "npx tsc --noEmit"
+do-shell-backend:
+	@docker-compose exec backend sh
+
+do-shell-frontend:
+	@docker-compose exec frontend sh
