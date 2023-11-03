@@ -98,7 +98,7 @@ type HomeProps = {
 }
 
 const Home = ({ data }: HomeProps): ReactElement => {
-  const [ photos2021, photos2022, drawings ] = usePhotoGallery();
+  const [ photos2022, drawings ] = usePhotoGallery();
 
   const { berichtsint: { html: berichtSint } } = data;
   const { terugblik: { html: terugblik } } = data;
@@ -229,20 +229,6 @@ const Home = ({ data }: HomeProps): ReactElement => {
               </div>
               <VimeoVideo title="Het verleggen van de Asielboot 12 november 07.30 in de mist om de kade vrij te maken voor de aankomst van de Sint" url="https://player.vimeo.com/video/772980541?h=f6013edb27" />
             </div>
-          </div>
-        </section>
-
-        <section className="photos">
-          <div>
-            <h3 style={{ textAlign: 'center' }}>
-            Foto&apos;s van de aankomst op
-              {' '}
-              <strong>13 november</strong>
-              {' '}
-            2021
-            </h3>
-            <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Klik op de foto voor een vergroting</p>
-            <PhotoGallery images={photos2021} />
           </div>
         </section>
 
