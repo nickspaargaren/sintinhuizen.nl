@@ -204,7 +204,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
                 </div>
                 <div className="text">
                   <p>
-                    <strong>Hoe herkent Glutenvrije Piet jou?</strong><br />Print deze vlag, hang &apos;m aan je pietenmuts of plak 'm om een stokje heen. Als je 'm goed omhoog houdt, ziet Glutenvrije Piet dat jij de glutenvrije kruidnoten mag hebben! Je kunt ook de kleurplaat downloaden, inkleuren en omhoog houden. Verwacht je slecht weer? Dan is lamineren een uitkomst.
+                    <strong>Hoe herkent Glutenvrije Piet jou?</strong><br />Print deze vlag, hang &apos;m aan je pietenmuts of plak m om een stokje heen. Als je &apos;m goed omhoog houdt, ziet Glutenvrije Piet dat jij de glutenvrije kruidnoten mag hebben! Je kunt ook de kleurplaat downloaden, inkleuren en omhoog houden. Verwacht je slecht weer? Dan is lamineren een uitkomst.
                   </p>
                   <Button title="Print het vlaggetje" url='https://www.ncv.nl/l/library/download/urn:uuid:175f2bd8-7a80-4951-b8e3-14fcf84ca896/glutenvrij+groene+vlag+met+pietje.pdf'/>
                   <Button title="Print de kleurplaat" url='https://www.ncv.nl/l/library/download/urn:uuid:05f0afe4-9136-48c6-86a5-e70fd76dab2e/kleurplaat+glutenvrije+piet.pdf'/>
