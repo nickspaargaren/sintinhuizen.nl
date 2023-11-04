@@ -146,14 +146,14 @@ const Home = ({ data }: HomeProps): ReactElement => {
 
             <div>
               <div style={{
-                textAlign: 'center', position: 'sticky', top: '0', height: '100vh', display: 'flex',
+                textAlign: 'center', position: 'sticky', top: '0', width: '100%', height: '100vh', margin: 'auto', display: 'flex',
               }}
               >
 
                 <StaticImage
-                  style={{ margin: 'auto', width: '100%', position: 'relative' }}
-                  src="../assets/images/sint-en-piet-met-burgemeester.jpg"
-                  alt="Sint en piet met burgemeester"
+                  style={{ margin: 'auto', width: '100%', height: '100%', position: 'relative' }}
+                  src="../assets/images/sint-en-piet-op-kade.jpg"
+                  alt="Sint en piet op de kade"
                 />
               </div>
             </div>
