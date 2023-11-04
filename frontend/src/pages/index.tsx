@@ -158,7 +158,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
             <h2 style={{ textAlign: 'center', margin: '0px 0 40px' }}>
             Activiteiten Sint Nicolaas
               {' '}
-              <strong>2022</strong>
+              <strong>2023</strong>
               {' '}
             in Huizen
             </h2>
@@ -174,19 +174,13 @@ const Home = ({ data }: HomeProps): ReactElement => {
                   <StaticImage src="../assets/images/sint-en-pieten-op-pakjesboot.jpg" alt="Sint en pieten op de boot" />
                 </div>
                 <div className="text">
-                  <strong>De activiteiten van Hart van Huizen 2022:</strong>
-                  <ul>
-                    <li>Vrijdag 2 december 17:00 - 21:00 uur, Pietenband met pietjes</li>
-                    <li>Zaterdag 3 december 13:00 - 17:00 uur, met Sint en Hoofdpieten van 13:00 - 14:00 uur, Pietenband met pietjes</li>
-                    <li>Maandag 5 december 13:00 - 17:00 uur, Pietenband met pietjes</li>
-                  </ul>
-                  Er is wederom een Sinterklaaskleurplaat om in te leveren en een prijsje mee te winnen.
-                  Op de website <a href="https://hartvanhuizen.nl" rel="noopener noreferrer" target="_blank">HartvanHuizen.nl</a> kun je hier alles over lezen.
+                  <strong>De activiteiten van Hart van Huizen:</strong>
+                  <br/>Op de website <a href="https://hartvanhuizen.nl" rel="noopener noreferrer" target="_blank">HartvanHuizen.nl</a> kun je hier alles over lezen.
                 </div>
               </div>
               <div>
                 <div className="rotatedImage">
-                  <StaticImage src="../assets/images/poster-sinterklaas-oostermeent.jpeg" alt="Sint op de kade in de haven van Huizen" />
+                  <StaticImage src="../assets/images/poster-sinterklaas-oostermeent.jpg" alt="Sint op de kade in de haven van Huizen" />
                 </div>
                 <div className="text">
                   De Sint bezoekt ook het winkelcentrum Oostermeent. Voor meer informatie zie de website <a href="https://www.winkelcentrumoostermeent.nl" rel="noopener noreferrer" target="_blank">Winkelcentrumoostermeent.nl</a>
