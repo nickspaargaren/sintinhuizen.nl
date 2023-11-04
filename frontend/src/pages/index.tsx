@@ -4,6 +4,7 @@ import React, { ReactElement } from 'react';
 import styled from 'styled-components';
 
 import gebouwen from '../assets/images/gebouwen.svg';
+import Button from '../components/Button';
 import Footer from '../components/Footer';
 import Layout from '../components/Layout';
 import PhotoGallery from '../components/PhotoGallery';
@@ -62,6 +63,7 @@ const StyledAankomst = styled.div`
   border: 2px solid #f1cb19;
   box-shadow: 0px 50px 30px -30px rgba(0,0,0,.2);
   color: #333;
+  margin-bottom: 20px;
   padding: 20px;
   transform: perspective(3000px) rotateY(11deg) rotateX(4deg) rotate(-1deg);}
 
@@ -184,6 +186,41 @@ const Home = ({ data }: HomeProps): ReactElement => {
                 </div>
                 <div className="text">
                   De Sint bezoekt ook het winkelcentrum Oostermeent. Voor meer informatie zie de website <a href="https://www.winkelcentrumoostermeent.nl" rel="noopener noreferrer" target="_blank">Winkelcentrumoostermeent.nl</a>
+                </div>
+              </div>
+            </div>
+          </StyledAankomst>
+        </section>
+
+        <section>
+          <StyledAankomst>
+            <h3 style={{ textAlign: 'center', marginBottom: '40px' }}><strong>Glutenvrije</strong> Piet & kruidnoten</h3>
+            <div className="grid-3x">
+              <div>
+                <div className="text">
+                  <p><strong>Waarom Glutenvrije Piet?</strong><br />In Nederland heeft 1 op de 100 kinderen de auto-immuunziekte coeliakie. Zij moeten om medische redenen een strikt en levenslang glutenvrij dieet volgen. De intocht van Sinterklaas is voor hen niet altijd feestelijk. Ze mogen de kruidnoten niet eten en highfiven met de Pieten gaat ook al niet, want van kruimels op de handschoen worden zij al ziek.</p>
+                  <p><strong>Glutenvrije kruidnoten</strong><br />De bakkerij van glutenvrije kruidnoten maakt deze heerlijke kruidnoten voor kinderen die glutenvrij eten.
+                  </p>
+                </div>
+                <div className="text">
+                  <p>
+                    <strong>Hoe herkent Glutenvrije Piet jou?</strong><br />Print deze vlag, hang &apos;m aan je pietenmuts of plak 'm om een stokje heen. Als je 'm goed omhoog houdt, ziet Glutenvrije Piet dat jij de glutenvrije kruidnoten mag hebben! Je kunt ook de kleurplaat downloaden, inkleuren en omhoog houden. Verwacht je slecht weer? Dan is lamineren een uitkomst.
+                  </p>
+                  <Button title="Print het vlaggetje" url='https://www.ncv.nl/l/library/download/urn:uuid:175f2bd8-7a80-4951-b8e3-14fcf84ca896/glutenvrij+groene+vlag+met+pietje.pdf'/>
+                  <Button title="Print de kleurplaat" url='https://www.ncv.nl/l/library/download/urn:uuid:05f0afe4-9136-48c6-86a5-e70fd76dab2e/kleurplaat+glutenvrije+piet.pdf'/>
+                </div>
+              </div>
+              <div>
+                <div className="rotatedImage">
+                  <StaticImage src="../assets/images/glutenvrije-pepernoten-ingrediënten.jpg" alt="Glutenvrije pepernoten ingrediënten" />
+                </div>
+              </div>
+              <div>
+                <div className="text">
+                  <p><strong>Hoe herken je Glutenvrije Piet?</strong><br />De Glutenvrije Piet draagt een speciale tas, met daarin de glutenvrije kruidnoten, zodat ze niet vermengd worden met ander snoepgoed. De Glutenvrije Piet houdt een vlag omhoog met het Glutenvrije Piet logo erop. Je herkent hem dus zeker!</p>
+                </div>
+                <div className="rotatedImage">
+                  <StaticImage src="../assets/images/glutenvrije-pepernoten-zak.jpeg" alt="Zak glutenvrije pepernoten" />
                 </div>
               </div>
             </div>
