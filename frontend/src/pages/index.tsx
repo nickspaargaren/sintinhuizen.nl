@@ -4,7 +4,6 @@ import React, { ReactElement } from 'react';
 import styled from 'styled-components';
 
 import gebouwen from '../assets/images/gebouwen.svg';
-import sinterklaas from '../assets/images/sinterklaas.svg';
 import Footer from '../components/Footer';
 import Layout from '../components/Layout';
 import PhotoGallery from '../components/PhotoGallery';
@@ -27,12 +26,8 @@ const StyledHeader = styled.div`
   .headerintro > .intro {margin: auto 0;}
 
   .illustration {display: flex; flex-direction: column;}
-  .illustration img {margin-top: auto; max-height: 80vh; width: 100%;}
+  .illustration img {margin: auto auto 0 auto; max-height: 80vh; width: auto;}
 
-
-  @media screen and (max-width: 768px) {
-    .illustration img {max-height: 300px;}
-  }
 `;
 
 const StyledAankomst = styled.div`
@@ -124,17 +119,15 @@ const Home = ({ data }: HomeProps): ReactElement => {
                   {' '}
                   <strong>Huizen</strong>
                 </h1>
+                <p>Verderop kun je hier alles over lezen!<br />Hij brengt ook een Glutenvrije Piet mee!</p>
 
-              </div>
-              <div className='intro'>
-                <h2>Hallo kinderen,</h2>
-                <p>Zaterdag 12 november 2022 kwam ik met mijn Pieten aan in Huizen.<br />Verderop kun je hier alles over lezen.</p>
-                <p>Hartelijke groet,</p>
-                <p className="signature">Sint Nicolaas</p>
               </div>
             </div>
             <div className="illustration">
-              <img src={sinterklaas} alt="Sinterklaas" width="415px" height="440px" loading="lazy" />
+              <StaticImage
+                src="../assets/images/sinterklaas.png"
+                alt="Sinterklaas"
+              />
             </div>
           </StyledHeader>
         </section>
