@@ -13,6 +13,7 @@ node_modules/
 # gatsby files
 .cache/
 public
+gatsby-types.d.ts
 
 # Mac files
 .DS_Store
