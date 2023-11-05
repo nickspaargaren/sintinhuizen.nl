@@ -1,12 +1,10 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
-import { Images } from '../types';
-
-const PhotoGalleryData = (): Images[] => {
+const PhotoGalleryData = () => {
   const {
     photos2022, drawings,
-  } = useStaticQuery(graphql`
-    query {
+  } = useStaticQuery<Queries.photoGalleryQuery>(graphql`
+    query photoGallery {
       photos2022: allFile(filter: {relativeDirectory: {eq: "photos-2022"}}, sort: { relativePath: ASC }) {
         nodes {
           id
