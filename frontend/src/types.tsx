@@ -19,18 +19,3 @@ export type ButtonProps = {
   title: string;
   url: string;
 }
-
-export type SponsorsType = {
-  sponsors: {
-    nodes: {
-      logo: {
-        asset: {
-          gatsbyImageData: IGatsbyImageData;
-        };
-      };
-      id: string;
-      title: string;
-      url: string;
-    }[];
-  };
-}

@@ -2,6 +2,7 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   trailingSlash: 'never',
+  graphqlTypegen: true,
   plugins: [
     {
       resolve: 'gatsby-source-sanity',
