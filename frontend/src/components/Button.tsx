@@ -2,8 +2,6 @@ import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 
-import { ButtonProps } from '../types';
-
 const StyledButton = styled.a`
   background-color: #c32c2b;
   border-radius: 3px;
@@ -28,6 +26,11 @@ const StyledButton = styled.a`
       display: block;
   }
 `;
+
+type ButtonProps = {
+  title: string;
+  url: string;
+}
 
 const Button = ({
   title, url,

@@ -3,8 +3,6 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import React, { ReactElement } from 'react';
 import styled from 'styled-components';
 
-import { SponsorsType } from '../types';
-
 const Styledsponsors = styled.div`
   display: flex; margin: auto 0; width: 100%;
   a.item {display: flex; flex: 1; width: 100%; padding: 0 5px; position: relative;}
@@ -13,7 +11,7 @@ const Styledsponsors = styled.div`
 `;
 
 const Sponsors = (): ReactElement => {
-  const { sponsors } = useStaticQuery(
+  const { sponsors } = useStaticQuery<Queries.sponsorsQuery>(
     graphql`
     query sponsors {
       sponsors: allSanitySponsors {
@@ -30,15 +28,19 @@ const Sponsors = (): ReactElement => {
       }
     }
     `,
-  ) as SponsorsType;
+  ) ;
 
   return (
     <Styledsponsors>
-      {sponsors.nodes.map((item) => (
-        <a key={item.id} className="item" rel="noopener noreferrer" href={item.url} target="_blank">
-          <GatsbyImage image={item.logo.asset.gatsbyImageData} alt={item.title} />
-        </a>
-      ))}
+      {sponsors.nodes.map((item) => {
+        if (!item.logo?.asset?.gatsbyImageData) return;
+
+        return (
+          <a key={item.id} className="item" rel="noopener noreferrer" href={item.url || ""} target="_blank">
+            <GatsbyImage image={item.logo.asset.gatsbyImageData} alt={item.title || ""} />
+          </a>
+        )
+      })}
     </Styledsponsors>
   );
 };

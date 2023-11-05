@@ -7,13 +7,15 @@ jobs:
       run:
         working-directory: ./frontend
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 18
-    - name: Install modules
-      run: yarn install
-    - name: Run ESLint
-      run: yarn run lint
-    - name: Run TypeScript Check
-      run: tsc --noEmit
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install modules
+        run: yarn install
+      - name: Run ESLint
+        run: yarn run lint
+      - name: Build project & generate types
+        run: yarn build
+      - name: Run TypeScript Check
+        run: tsc --noEmit

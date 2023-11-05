@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby';
+import { graphql, PageProps } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React, { ReactElement } from 'react';
 import styled from 'styled-components';
@@ -73,32 +73,20 @@ const StyledAankomst = styled.div`
 `;
 
 export const pageQuery = graphql`
-query {
-  berichtsint: markdownRemark(fileAbsolutePath: { regex: "/bericht-sint.md/"}) {
-    html
+  query markdown {
+    berichtsint: markdownRemark(fileAbsolutePath: { regex: "/bericht-sint.md/"}) {
+      html
+    }
+    terugblik: markdownRemark(fileAbsolutePath: { regex: "/terugblik.md/"}) {
+      html
+    }
   }
-  terugblik: markdownRemark(fileAbsolutePath: { regex: "/terugblik.md/"}) {
-    html
-  }
-}
 `;
 
-type HomeProps = {
-  data: {
-    berichtsint: {
-      html: string;
-    }
-    terugblik: {
-      html: string;
-    }
-  }
-}
-
-const Home = ({ data }: HomeProps): ReactElement => {
+const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
   const [ photos2022, drawings ] = usePhotoGallery();
 
-  const { berichtsint: { html: berichtSint } } = data;
-  const { terugblik: { html: terugblik } } = data;
+  const { berichtsint, terugblik } = data;
 
   return (
     <Layout>
@@ -138,7 +126,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
         <section className="bericht">
           <div className="grid-2x">
 
-            <div dangerouslySetInnerHTML={{ __html: berichtSint }} />
+            <div dangerouslySetInnerHTML={{ __html: berichtsint?.html || "" }} />
 
             <div>
               <div style={{
@@ -169,7 +157,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
             <div className="grid-3x">
               <div>
                 <div className="letter">
-                  <div dangerouslySetInnerHTML={{ __html: terugblik }} />
+                  <div dangerouslySetInnerHTML={{ __html: terugblik?.html || "" }} />
                 </div>
               </div>
               <div>

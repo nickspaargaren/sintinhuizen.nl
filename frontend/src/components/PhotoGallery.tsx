@@ -5,8 +5,6 @@ import React, { ReactElement } from 'react';
 import { Gallery, Item } from 'react-photoswipe-gallery';
 import styled from 'styled-components';
 
-import { Images } from '../types';
-
 const StyledPhotoGallery = styled.div`
   margin: auto 0; width: 100%;
   ::after {clear: both; content: ""; float: none; display: block;}
@@ -36,25 +34,33 @@ const StyledPhotoGallery = styled.div`
   }
 `;
 
-const PhotoGallery = ({ images }: { images: Images }): ReactElement => (
+type PhotoGalleryProps = Queries.photoGalleryQuery['photos2022']['nodes'] | Queries.photoGalleryQuery['drawings']['nodes'];
+
+const PhotoGallery = ({ images }: { images: PhotoGalleryProps }): ReactElement => (
   <StyledPhotoGallery data-cy="photogallery">
     <Gallery>
-      {images.map((item) => (
-        <div key={item.id} className="item">
-          <Item
-            original={item.publicURL}
-            thumbnail={item.publicURL}
-            width={item.childImageSharp.original.width}
-            height={item.childImageSharp.original.height}
-          >
-            {({ ref, open }: any) => (
-              <div ref={ref} onClick={open} onKeyDown={open} role="button" tabIndex={0}>
-                <GatsbyImage image={item.childImageSharp.gatsbyImageData} alt={item.relativePath} />
-              </div>
-            )}
-          </Item>
-        </div>
-      ))}
+      {images.map((item) => {
+        return (
+          <div key={item.id} className="item">
+            <Item
+              original={item.publicURL || ""}
+              thumbnail={item.publicURL || ""}
+              width={item.childImageSharp?.original?.width || 0}
+              height={item.childImageSharp?.original?.height || 0}
+            >
+              {({ ref, open }: any) => {
+                if (!item.childImageSharp?.gatsbyImageData) return <></>;
+
+                return (
+                  <div ref={ref} onClick={open} onKeyDown={open} role="button" tabIndex={0}>
+                    <GatsbyImage image={item.childImageSharp.gatsbyImageData} alt={item.relativePath} />
+                  </div>
+                )
+              }}
+            </Item>
+          </div>
+        )
+      })}
     </Gallery>
   </StyledPhotoGallery>
 );
