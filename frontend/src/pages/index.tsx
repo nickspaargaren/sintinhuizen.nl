@@ -130,6 +130,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
                 src="../assets/images/sinterklaas.png"
                 alt="Sinterklaas"
               />
+              <h3><strong>Sint Niclolaas</strong> kijkt in het grote boek waarin staat welke cadeautjes de kinderen gevraagd hebben. Hij is erg zuinig op <strong>het boek</strong>, want als het kwijtraakt, weet hij niet waar de <strong>cadeautjes</strong> naartoe moeten!</h3>
             </div>
           </StyledHeader>
         </section>
@@ -173,11 +174,11 @@ const Home = ({ data }: HomeProps): ReactElement => {
               </div>
               <div>
                 <div className="rotatedImage">
-                  <StaticImage src="../assets/images/sint-en-pieten-op-pakjesboot.jpg" alt="Sint en pieten op de boot" />
+                  <StaticImage src="../assets/images/poster-sinterklaas-hart-van-huizen.jpg" alt="Sinterklaas Hart van Huizen.jpg" />
                 </div>
                 <div className="text">
                   <strong>De activiteiten van Hart van Huizen:</strong>
-                  <br/>Op de website <a href="https://hartvanhuizen.nl" rel="noopener noreferrer" target="_blank">HartvanHuizen.nl</a> kun je hier alles over lezen.
+                  <br/>Op de website <a href="https://hartvanhuizen.nl/activiteiten/sint-in-het-oude-dorp/" rel="noopener noreferrer" target="_blank">HartvanHuizen.nl</a> kun je hier alles over lezen.
                 </div>
               </div>
               <div>

@@ -76,6 +76,12 @@ table tr:first-child td {
   border-top: 0;
 }
 
+table tr td:first-child {
+  font-weight: bold;
+  color: #dc1f26;
+  font-variant-numeric: tabular-nums;
+}
+
 main section {
   min-height: 100vh;
   display: flex;
