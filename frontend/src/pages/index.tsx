@@ -4,7 +4,7 @@ import React, { ReactElement } from 'react';
 import styled from 'styled-components';
 
 import gebouwen from '../assets/images/gebouwen.svg';
-import sinterklaas from '../assets/images/sinterklaas.svg';
+import Button from '../components/Button';
 import Footer from '../components/Footer';
 import Layout from '../components/Layout';
 import PhotoGallery from '../components/PhotoGallery';
@@ -27,12 +27,8 @@ const StyledHeader = styled.div`
   .headerintro > .intro {margin: auto 0;}
 
   .illustration {display: flex; flex-direction: column;}
-  .illustration img {margin-top: auto; max-height: 80vh; width: 100%;}
+  .illustration img {margin: auto auto 0 auto; max-height: 80vh; width: auto;}
 
-
-  @media screen and (max-width: 768px) {
-    .illustration img {max-height: 300px;}
-  }
 `;
 
 const StyledAankomst = styled.div`
@@ -67,6 +63,7 @@ const StyledAankomst = styled.div`
   border: 2px solid #f1cb19;
   box-shadow: 0px 50px 30px -30px rgba(0,0,0,.2);
   color: #333;
+  margin-bottom: 20px;
   padding: 20px;
   transform: perspective(3000px) rotateY(11deg) rotateX(4deg) rotate(-1deg);}
 
@@ -98,7 +95,7 @@ type HomeProps = {
 }
 
 const Home = ({ data }: HomeProps): ReactElement => {
-  const [ photos2021, photos2022, drawings ] = usePhotoGallery();
+  const [ photos2022, drawings ] = usePhotoGallery();
 
   const { berichtsint: { html: berichtSint } } = data;
   const { terugblik: { html: terugblik } } = data;
@@ -124,17 +121,16 @@ const Home = ({ data }: HomeProps): ReactElement => {
                   {' '}
                   <strong>Huizen</strong>
                 </h1>
+                <p>Verderop kun je hier alles over lezen!<br />Hij brengt ook een Glutenvrije Piet mee!</p>
 
-              </div>
-              <div className='intro'>
-                <h2>Hallo kinderen,</h2>
-                <p>Zaterdag 12 november 2022 kwam ik met mijn Pieten aan in Huizen.<br />Verderop kun je hier alles over lezen.</p>
-                <p>Hartelijke groet,</p>
-                <p className="signature">Sint Nicolaas</p>
               </div>
             </div>
             <div className="illustration">
-              <img src={sinterklaas} alt="Sinterklaas" width="415px" height="440px" loading="lazy" />
+              <StaticImage
+                src="../assets/images/sinterklaas.png"
+                alt="Sinterklaas"
+              />
+              <h3><strong>Sint Niclolaas</strong> kijkt in het grote boek waarin staat welke cadeautjes de kinderen gevraagd hebben. Hij is erg zuinig op <strong>het boek</strong>, want als het kwijtraakt, weet hij niet waar de <strong>cadeautjes</strong> naartoe moeten!</h3>
             </div>
           </StyledHeader>
         </section>
@@ -146,14 +142,14 @@ const Home = ({ data }: HomeProps): ReactElement => {
 
             <div>
               <div style={{
-                textAlign: 'center', position: 'sticky', top: '0', height: '100vh', display: 'flex',
+                textAlign: 'center', position: 'sticky', top: '0', width: '100%', height: '100vh', margin: 'auto', display: 'flex',
               }}
               >
 
                 <StaticImage
-                  style={{ margin: 'auto', width: '100%', position: 'relative' }}
-                  src="../assets/images/sint-en-piet-met-burgemeester.jpg"
-                  alt="Sint en piet met burgemeester"
+                  style={{ margin: 'auto', width: '100%', height: '100%', position: 'relative' }}
+                  src="../assets/images/sint-en-piet-op-kade.jpg"
+                  alt="Sint en piet op de kade"
                 />
               </div>
             </div>
@@ -165,7 +161,7 @@ const Home = ({ data }: HomeProps): ReactElement => {
             <h2 style={{ textAlign: 'center', margin: '0px 0 40px' }}>
             Activiteiten Sint Nicolaas
               {' '}
-              <strong>2022</strong>
+              <strong>2023</strong>
               {' '}
             in Huizen
             </h2>
@@ -178,25 +174,54 @@ const Home = ({ data }: HomeProps): ReactElement => {
               </div>
               <div>
                 <div className="rotatedImage">
-                  <StaticImage src="../assets/images/sint-en-pieten-op-pakjesboot.jpg" alt="Sint en pieten op de boot" />
+                  <StaticImage src="../assets/images/poster-sinterklaas-hart-van-huizen.jpg" alt="Sinterklaas Hart van Huizen.jpg" />
                 </div>
                 <div className="text">
-                  <strong>De activiteiten van Hart van Huizen 2022:</strong>
-                  <ul>
-                    <li>Vrijdag 2 december 17:00 - 21:00 uur, Pietenband met pietjes</li>
-                    <li>Zaterdag 3 december 13:00 - 17:00 uur, met Sint en Hoofdpieten van 13:00 - 14:00 uur, Pietenband met pietjes</li>
-                    <li>Maandag 5 december 13:00 - 17:00 uur, Pietenband met pietjes</li>
-                  </ul>
-                  Er is wederom een Sinterklaaskleurplaat om in te leveren en een prijsje mee te winnen.
-                  Op de website <a href="https://hartvanhuizen.nl" rel="noopener noreferrer" target="_blank">HartvanHuizen.nl</a> kun je hier alles over lezen.
+                  <strong>De activiteiten van Hart van Huizen:</strong>
+                  <br/>Op de website <a href="https://hartvanhuizen.nl/activiteiten/sint-in-het-oude-dorp/" rel="noopener noreferrer" target="_blank">HartvanHuizen.nl</a> kun je hier alles over lezen.
                 </div>
               </div>
               <div>
                 <div className="rotatedImage">
-                  <StaticImage src="../assets/images/poster-sinterklaas-oostermeent.jpeg" alt="Sint op de kade in de haven van Huizen" />
+                  <StaticImage src="../assets/images/poster-sinterklaas-oostermeent.jpg" alt="Sint op de kade in de haven van Huizen" />
                 </div>
                 <div className="text">
                   De Sint bezoekt ook het winkelcentrum Oostermeent. Voor meer informatie zie de website <a href="https://www.winkelcentrumoostermeent.nl" rel="noopener noreferrer" target="_blank">Winkelcentrumoostermeent.nl</a>
+                </div>
+              </div>
+            </div>
+          </StyledAankomst>
+        </section>
+
+        <section>
+          <StyledAankomst>
+            <h3 style={{ textAlign: 'center', marginBottom: '40px' }}><strong>Glutenvrije</strong> Piet & kruidnoten</h3>
+            <div className="grid-3x">
+              <div>
+                <div className="text">
+                  <p><strong>Waarom Glutenvrije Piet?</strong><br />In Nederland heeft 1 op de 100 kinderen de auto-immuunziekte coeliakie. Zij moeten om medische redenen een strikt en levenslang glutenvrij dieet volgen. De intocht van Sinterklaas is voor hen niet altijd feestelijk. Ze mogen de kruidnoten niet eten en highfiven met de Pieten gaat ook al niet, want van kruimels op de handschoen worden zij al ziek.</p>
+                  <p><strong>Glutenvrije kruidnoten</strong><br />De bakkerij van glutenvrije kruidnoten maakt deze heerlijke kruidnoten voor kinderen die glutenvrij eten.
+                  </p>
+                </div>
+                <div className="text">
+                  <p>
+                    <strong>Hoe herkent Glutenvrije Piet jou?</strong><br />Print deze vlag, hang &apos;m aan je pietenmuts of plak m om een stokje heen. Als je &apos;m goed omhoog houdt, ziet Glutenvrije Piet dat jij de glutenvrije kruidnoten mag hebben! Je kunt ook de kleurplaat downloaden, inkleuren en omhoog houden. Verwacht je slecht weer? Dan is lamineren een uitkomst.
+                  </p>
+                  <Button title="Print het vlaggetje" url='https://www.ncv.nl/l/library/download/urn:uuid:175f2bd8-7a80-4951-b8e3-14fcf84ca896/glutenvrij+groene+vlag+met+pietje.pdf'/>
+                  <Button title="Print de kleurplaat" url='https://www.ncv.nl/l/library/download/urn:uuid:05f0afe4-9136-48c6-86a5-e70fd76dab2e/kleurplaat+glutenvrije+piet.pdf'/>
+                </div>
+              </div>
+              <div>
+                <div className="rotatedImage">
+                  <StaticImage src="../assets/images/glutenvrije-pepernoten-ingrediënten.jpg" alt="Glutenvrije pepernoten ingrediënten" />
+                </div>
+              </div>
+              <div>
+                <div className="text">
+                  <p><strong>Hoe herken je Glutenvrije Piet?</strong><br />De Glutenvrije Piet draagt een speciale tas, met daarin de glutenvrije kruidnoten, zodat ze niet vermengd worden met ander snoepgoed. De Glutenvrije Piet houdt een vlag omhoog met het Glutenvrije Piet logo erop. Je herkent hem dus zeker!</p>
+                </div>
+                <div className="rotatedImage">
+                  <StaticImage src="../assets/images/glutenvrije-pepernoten-zak.jpeg" alt="Zak glutenvrije pepernoten" />
                 </div>
               </div>
             </div>
@@ -235,20 +260,6 @@ const Home = ({ data }: HomeProps): ReactElement => {
         <section className="photos">
           <div>
             <h3 style={{ textAlign: 'center' }}>
-            Foto&apos;s van de aankomst op
-              {' '}
-              <strong>13 november</strong>
-              {' '}
-            2021
-            </h3>
-            <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Klik op de foto voor een vergroting</p>
-            <PhotoGallery images={photos2021} />
-          </div>
-        </section>
-
-        <section className="photos">
-          <div>
-            <h3 style={{ textAlign: 'center' }}>
             Bedankt kinderen voor deze
               {' '}
               <strong>prachtige tekeningen</strong>
@@ -268,7 +279,8 @@ const Home = ({ data }: HomeProps): ReactElement => {
 
         <section>
           <div>
-            <h3 style={{ textAlign: 'center', marginBottom: '40px' }}>Video van de aankomst op <strong>13 november</strong> 2021</h3>
+            <h3 style={{ textAlign: 'center', marginBottom: '40px' }}>Muziekvideo van de aankomst van Sint Nicolaas op <strong>13 november</strong> 2021</h3>
+            <p style={{ textAlign: 'center', margin: '-15px 0 40px' }}>Dans je mee?</p>
             <VimeoVideo title="Stichting Intocht Sint Nicolaas Huizen Intocht 2021" url="https://player.vimeo.com/video/650779183?h=8770fcab97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" />
           </div>
         </section>

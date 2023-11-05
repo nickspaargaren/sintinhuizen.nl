@@ -14,6 +14,7 @@ const StyledButton = styled.a`
   font-family: 'Alfa Slab One';
   letter-spacing: .05em;
   line-height: normal;
+  margin: 0 10px 10px 0;
   padding: 10px 13px;
   text-align: center;
   text-decoration: none;
