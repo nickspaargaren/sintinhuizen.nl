@@ -110,7 +110,10 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
                   <strong>Huizen</strong>
                 </h1>
                 <p>Verderop kun je hier alles over lezen!<br />Hij brengt ook een Glutenvrije Piet mee!</p>
-
+              </div>
+              <div style={{ marginTop: "auto" }}>
+                <h3>Dag kinderen,</h3>
+                <p>Sint Nicolaas komt met 28 strooipieten die builtjes met pepernoten en snoepjes uitdelen. Zijn vraag is of jullie de lege builtjes en ander afval mee naar huis willen nemen of in de kliko&apos;s willen gooien die  op het haventerrein staan. Daarmee sparen we de natuur, zegt de Sint en natuurlijk zijn we dat met hem eens!</p>
               </div>
             </div>
             <div className="illustration">
