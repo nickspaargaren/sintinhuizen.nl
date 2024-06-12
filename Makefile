@@ -96,6 +96,11 @@ do-frontend-lint:
 	@echo "Starting frontend codestyle check.."
 	@docker-compose exec frontend sh -c "yarn lint"
 
+
+do-frontend-typescript:
+	@echo "Starting frontend TypeScript check.."
+	@docker-compose exec frontend sh -c "yarn typescript"
+
 do-shell-backend:
 	@docker-compose exec backend sh
 
