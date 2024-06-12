@@ -11,7 +11,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "npx cypress run",
-    "lint": "eslint '**/*.{ts,tsx}'"
+    "lint": "eslint '**/*.{ts,tsx}'",
+    "typescript": "tsc --noEmit"
   },
   "dependencies": {
     "gatsby": "^5.12.9",
