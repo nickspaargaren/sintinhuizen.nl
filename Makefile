@@ -5,10 +5,10 @@ info:
 build: ## Build the project images.
 	@make do-install-dependencies
 	@echo ""
-	@docker-compose build
+	@docker compose build
 
 start: ## Start the project containers.
-	@docker-compose up -d
+	@docker compose up -d
 	@echo ""
 	@echo "  The frontend is running on http://localhost:3000/."
 	@echo "  The backend  is running on http://localhost:3333/."
@@ -16,10 +16,10 @@ start: ## Start the project containers.
 	@echo ""
 
 stop: ## Stop the project containers.
-	@docker-compose stop
+	@docker compose stop
 
 dev: ## Start the project containers including dev output.
-	@docker-compose up
+	@docker compose up
 
 test: ## Run the project end-to-end tests.
 	@make start
@@ -43,7 +43,7 @@ shell-frontend: ## Exec into frontend container
 reset: ## Reset the project containers, volumes, local dependencies and cache files.
 	@make do-remove-nodemodules
 	@make do-remove-cache
-	@docker-compose down -v
+	@docker compose down -v
 
 # Installing dependencies
 do-install-dependencies:
@@ -94,15 +94,15 @@ do-frontend-tests:
 
 do-frontend-lint:
 	@echo "Starting frontend codestyle check.."
-	@docker-compose exec frontend sh -c "yarn lint"
+	@docker compose exec frontend sh -c "yarn lint"
 
 
 do-frontend-typescript:
 	@echo "Starting frontend TypeScript check.."
-	@docker-compose exec frontend sh -c "yarn typescript"
+	@docker compose exec frontend sh -c "yarn typescript"
 
 do-shell-backend:
-	@docker-compose exec backend sh
+	@docker compose exec backend sh
 
 do-shell-frontend:
-	@docker-compose exec frontend sh
+	@docker compose exec frontend sh
