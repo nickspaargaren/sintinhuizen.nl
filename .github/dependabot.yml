@@ -6,3 +6,5 @@ updates:
     - "/backend"
   schedule:
     interval: "weekly"
+  allow:
+    - dependency-type: "production"
