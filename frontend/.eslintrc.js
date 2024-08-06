@@ -20,7 +20,6 @@ module.exports = {
     'react',
     '@typescript-eslint',
     'simple-import-sort',
-    'better-styled-components',
   ],
   rules: {
     'react/jsx-filename-extension': [ 1, { extensions: [ '.tsx', '.ts' ] } ],
@@ -31,7 +30,6 @@ module.exports = {
     'simple-import-sort/imports': 'error',
     'array-bracket-spacing': [ 'error', 'always' ],
     'object-curly-spacing': [ 'error', 'always' ],
-    'better-styled-components/sort-declarations-alphabetically': 2,
     'indent': [ 'error', 2 ],
     'no-multi-spaces': [ 'error' ],
     'no-multiple-empty-lines': [ 'error', { max: 1, maxBOF: 0, maxEOF: 0 } ],
