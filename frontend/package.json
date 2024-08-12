@@ -15,7 +15,7 @@
     "typescript": "tsc --noEmit"
   },
   "dependencies": {
-    "gatsby": "^5.12.9",
+    "gatsby": "^5.13.7",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^3.12.3",
     "gatsby-plugin-sharp": "^5.12.3",
