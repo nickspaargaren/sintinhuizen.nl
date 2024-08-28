@@ -8,3 +8,9 @@ updates:
     interval: "weekly"
   allow:
     - dependency-type: "production"
+  groups:
+    sanity:
+      applies-to: version-updates
+      patterns:
+        - "sanity"
+        - "@sanity/*"
