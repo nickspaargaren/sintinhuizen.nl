@@ -20,7 +20,7 @@ jobs:
       - name: Build project & generate types
         run: yarn build
       - name: Run TypeScript Check
-        run: tsc --noEmit
+        run: yarn check-types
   backend:
     runs-on: ubuntu-latest
     defaults:
@@ -38,4 +38,4 @@ jobs:
       - name: Run ESLint
         run: yarn lint
       - name: Run TypeScript Check
-        run: tsc --noEmit
+        run: yarn check-types
