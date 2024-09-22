@@ -12,7 +12,7 @@
     "clean": "gatsby clean",
     "test": "cypress run",
     "lint": "eslint --ignore-pattern '**/.cache/**' '**/*.{ts,tsx}'",
-    "typescript": "tsc --noEmit"
+    "check-types": "tsc --noEmit"
   },
   "dependencies": {
     "gatsby": "^5.13.7",
