@@ -12,7 +12,7 @@ jobs:
         with:
           node-version: 20
           cache: 'yarn'
-          cache-dependency-path: 'yarn.lock'
+          cache-dependency-path: 'frontend/yarn.lock'
       - name: Install modules
         run: yarn install
       - name: Run ESLint
