@@ -15,10 +15,10 @@ const StyledVimeoVideo = styled.div`
   }
 `;
 
-interface VimeoVideoProps {
+type VimeoVideoProps = {
   title: string;
   url: string;
-}
+};
 
 const VimeoVideo = ({ title, url }: VimeoVideoProps): ReactElement => (
   <StyledVimeoVideo>

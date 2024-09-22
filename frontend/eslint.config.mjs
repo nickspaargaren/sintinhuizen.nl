@@ -37,6 +37,7 @@ export default tseslint.config(
       ],
       "space-in-parens": ["error", "never"],
       "@typescript-eslint/no-explicit-any": "warn",
+      "@typescript-eslint/consistent-type-definitions": ["error", "type"],
     },
   },
 );

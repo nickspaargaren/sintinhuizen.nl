@@ -27,10 +27,10 @@ const StyledButton = styled.a`
   }
 `;
 
-interface ButtonProps {
+type ButtonProps = {
   title: string;
   url: string;
-}
+};
 
 const Button = ({ title, url }: ButtonProps) => (
   <StyledButton as={Link} to={url} className="button">
