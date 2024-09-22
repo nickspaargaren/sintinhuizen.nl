@@ -6,8 +6,6 @@ updates:
     - "/backend"
   schedule:
     interval: "weekly"
-  allow:
-    - dependency-type: "production"
   groups:
     sanity:
       applies-to: version-updates
