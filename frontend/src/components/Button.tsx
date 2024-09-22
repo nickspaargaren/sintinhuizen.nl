@@ -1,16 +1,16 @@
-import { Link } from 'gatsby';
-import React from 'react';
-import styled from 'styled-components';
+import { Link } from "gatsby";
+import React from "react";
+import styled from "styled-components";
 
 const StyledButton = styled.a`
   background-color: #c32c2b;
   border-radius: 3px;
-  box-shadow: 0px 2px 0px rgba(0,0,0,.15);
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.15);
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Alfa Slab One';
-  letter-spacing: .05em;
+  font-family: "Alfa Slab One";
+  letter-spacing: 0.05em;
   line-height: normal;
   margin: 0 10px 10px 0;
   padding: 10px 13px;
@@ -23,18 +23,16 @@ const StyledButton = styled.a`
   }
 
   @media screen and (max-width: 768px) {
-      display: block;
+    display: block;
   }
 `;
 
 type ButtonProps = {
   title: string;
   url: string;
-}
+};
 
-const Button = ({
-  title, url,
-}: ButtonProps) => (
+const Button = ({ title, url }: ButtonProps) => (
   <StyledButton as={Link} to={url} className="button">
     {title}
   </StyledButton>
