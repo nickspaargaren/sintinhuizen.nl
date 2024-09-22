@@ -1,7 +1,7 @@
-import React, { ReactElement } from 'react';
-import styled from 'styled-components';
+import React, { ReactElement } from "react";
+import styled from "styled-components";
 
-import Layout from '../components/Layout';
+import Layout from "../components/Layout";
 
 const StyledNotfound = styled.div`
   bottom: 0;
@@ -11,7 +11,10 @@ const StyledNotfound = styled.div`
   right: 0;
   top: 0;
 
-  > div {margin: auto; text-align: center;}
+  > div {
+    margin: auto;
+    text-align: center;
+  }
 `;
 
 const Notfound = (): ReactElement => (

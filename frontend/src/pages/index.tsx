@@ -105,7 +105,7 @@ export const pageQuery = graphql`
 `;
 
 const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
-  const [ photos2023, photos2022, drawings ] = usePhotoGallery();
+  const [photos2023, photos2022, drawings] = usePhotoGallery();
 
   const { berichtsint, terugblik } = data;
 

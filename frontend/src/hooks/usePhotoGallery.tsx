@@ -60,7 +60,7 @@ const PhotoGalleryData = () => {
       }
     `);
 
-  return [ photos2023.nodes, photos2022.nodes, drawings.nodes ];
+  return [photos2023.nodes, photos2022.nodes, drawings.nodes];
 };
 
 export default PhotoGalleryData;
