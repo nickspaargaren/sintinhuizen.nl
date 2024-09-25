@@ -30,10 +30,6 @@ lint: ## Run the project codestyle check.
 	@make do-frontend-lint
 	@make do-frontend-typescript
 
-update: ## Update all dependencies in root, frontend and backend folders.
-	@make do-update-frontend-dependencies
-	@make do-update-backend-dependencies
-
 shell-backend: ## Exec into backend container
 	@make do-shell-backend
 
@@ -59,17 +55,6 @@ do-install-backend-dependencies:
 	@echo ""
 	@echo "Installing local dependencies for backend.."
 	@cd backend && yarn install
-
-# Upgrade dependencies
-do-update-frontend-dependencies:
-	@echo ""
-	@echo "Updating dependencies for frontend.."
-	@cd frontend && yarn upgrade-interactive --latest
-
-do-update-backend-dependencies:
-	@echo ""
-	@echo "Updating dependencies for backend.."
-	@cd backend && yarn upgrade-interactive --latest
 
 # Remove dependencies & cache
 do-remove-nodemodules:
