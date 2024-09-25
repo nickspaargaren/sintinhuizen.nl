@@ -12,3 +12,8 @@ updates:
       patterns:
         - "sanity"
         - "@sanity/*"
+    development-dependencies:
+      dependency-type: "development"
+      update-types:
+        - "patch"
+        - "minor"
