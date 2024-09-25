@@ -13,7 +13,6 @@ stop            Stop the project containers.
 dev             Start the project containers including dev output.
 test            Run the project end-to-end tests.
 lint            Run the project codestyle check.
-update          Update all dependencies in root, frontend and backend folders.
 reset           Reset the project containers, volumes, local dependencies and cache files.
 ```
 
