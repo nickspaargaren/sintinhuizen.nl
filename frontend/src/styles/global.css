@@ -3,44 +3,36 @@
 @tailwind utilities;
 
 body {
-  margin: 0;
   background: #c32c2b;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
-  font-size: 16px;
   color: #fff;
-  line-height: 1.5em;
   background-image: url("../assets/images/bg.jpg");
   background-repeat: repeat;
 }
 
-h1, h2, h3 {line-height: 1.25em; margin: 30px 0 15px; text-shadow: 0px 2px 0px rgba(0,0,0,.15);}
+h1, h2, h3 {
+  margin: 30px 0 15px;
+  letter-spacing: .05em;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 0px rgba(0,0,0,.15);
+}
 
 h1 {
   font-family: 'Alfa Slab One';
   font-size: 42px;
-  letter-spacing: .05em;
-  font-weight: normal;
-  text-transform: uppercase;
   line-height: 1.1em;
 }
 
 h2 {
   font-family: 'Alfa Slab One';
   font-size: 22px;
-  letter-spacing: .05em;
-  font-weight: normal;
-  text-transform: uppercase;
 }
 
 h3 {
   font-family: 'Alfa Slab One';
   font-size: 22px;
-  letter-spacing: .05em;
-  font-weight: normal;
-  text-transform: uppercase;
 }
 
-h1 span, h2 span {white-space: nowrap;}
 h1 small, h2 small {font-size: 60%;}
 h1 strong {font-weight: normal; color: #dc1f26;}
 h2 strong {font-weight: normal; color: #f1cb19;}
@@ -94,23 +86,9 @@ main section {
 
 main section > div {margin: auto; max-width: 1600px; width: 100%; padding: 50px;}
 
-main section.sponsors {background: #fff; min-height: 0;}
 main section.sponsors > div {padding: 20px 50px;}
 main section.sponsors > div h3 {margin-top: 0; color: #c32c2b;}
 main section.sponsors > div p {color: #333;}
-
-
-/* Grid Templates */
-div[class*="grid"] {display: grid; grid-gap: 30px; box-sizing: border-box;}
-div[class*="grid"].vertical-align-middle > div {margin: auto 0;}
-div[class*="grid"] img {max-width: 100%; height: auto !important;}
-.grid-2x {grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));}
-.grid-3x {grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));}
-.grid-4x {grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));}
-/* End Grid Templates */
-
-footer {background: #b72322; text-align: center; padding: 20px;}
-
 
 @media screen and (max-width: 768px) {
   h1 span, h2 span {white-space: normal;}
