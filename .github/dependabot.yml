@@ -1,19 +1,23 @@
 version: 2
 updates:
-- package-ecosystem: "npm"
-  directories:
-    - "/frontend"
-    - "/backend"
-  schedule:
-    interval: "weekly"
-  groups:
-    sanity:
-      applies-to: version-updates
-      patterns:
-        - "sanity"
-        - "@sanity/*"
-    development-dependencies:
-      dependency-type: "development"
-      update-types:
-        - "patch"
-        - "minor"
+  - package-ecosystem: "npm"
+    directories:
+      - "/frontend"
+      - "/backend"
+    schedule:
+      interval: "weekly"
+    groups:
+      sanity:
+        applies-to: version-updates
+        patterns:
+          - "sanity"
+          - "@sanity/*"
+      development-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "patch"
+          - "minor"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
