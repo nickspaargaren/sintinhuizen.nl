@@ -7,7 +7,7 @@ describe("PhotoGallery", () => {
 
   it("Can open and navigate the images in the photo gallery", () => {
     cy.wait(1000);
-    cy.get("[data-cy=photogallery]").first().find(".item").first().click();
+    cy.get("[data-cy=photogallery]").first().find("[data-cy=image-1]").click();
 
     cy.wait(1000);
     cy.get(".pswp__button--arrow--next").click();

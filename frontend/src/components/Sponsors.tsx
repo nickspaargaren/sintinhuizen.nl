@@ -1,28 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import React, { ReactElement } from "react";
-import styled from "styled-components";
-
-const Styledsponsors = styled.div`
-  display: flex;
-  margin: auto 0;
-  width: 100%;
-  a.item {
-    display: flex;
-    flex: 1;
-    width: 100%;
-    padding: 0 5px;
-    position: relative;
-  }
-  a.item > div {
-    width: 100%;
-    margin: auto 0;
-    max-height: 80px;
-  }
-  a.item > div img {
-    object-fit: contain !important;
-  }
-`;
 
 const Sponsors = (): ReactElement => {
   const { sponsors } = useStaticQuery<Queries.sponsorsQuery>(graphql`
@@ -43,14 +21,14 @@ const Sponsors = (): ReactElement => {
   `);
 
   return (
-    <Styledsponsors>
+    <div className="flex items-center gap-2">
       {sponsors.nodes.map((item) => {
         if (!item.logo?.asset?.gatsbyImageData) return;
 
         return (
           <a
             key={item.id}
-            className="item"
+            className="item w-full"
             rel="noopener noreferrer"
             href={item.url || ""}
             target="_blank"
@@ -58,11 +36,13 @@ const Sponsors = (): ReactElement => {
             <GatsbyImage
               image={item.logo.asset.gatsbyImageData}
               alt={item.title || ""}
+              className="w-full"
+              objectFit="contain"
             />
           </a>
         );
       })}
-    </Styledsponsors>
+    </div>
   );
 };
 

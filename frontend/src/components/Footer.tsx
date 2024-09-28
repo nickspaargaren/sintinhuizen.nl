@@ -5,16 +5,16 @@ import Sponsors from "./Sponsors";
 
 const Footer = (): ReactElement => (
   <>
-    <section className="sponsors">
+    <section className="sponsors bg-white min-h-0">
       <div>
-        <h3 style={{ textAlign: "center" }}>Onze sponsoren</h3>
-        <p style={{ textAlign: "center", margin: "-15px 0px 25px" }}>
+        <h3 className="text-center">Onze sponsoren</h3>
+        <p className="text-center -mt-4 mb-8">
           Klik op een logo voor meer informatie
         </p>
         <Sponsors />
       </div>
     </section>
-    <footer>
+    <footer className="bg-red p-5 text-center">
       <p>
         De jaarlijkse intocht van de Sint in Huizen wordt georganiseerd door de
         St. Intocht Sint Nicolaas Huizen
@@ -30,7 +30,7 @@ const Footer = (): ReactElement => (
       <StaticImage
         alt="mijter"
         src="../assets/images/mijter.png"
-        style={{ height: "35px", width: "30px", verticalAlign: "middle" }}
+        className="w-7"
       />
     </footer>
   </>
