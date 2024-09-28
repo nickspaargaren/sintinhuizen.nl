@@ -18,7 +18,7 @@ const PhotoGallery = ({
     className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 my-auto mx-0"
   >
     <Gallery>
-      {images.map((item) => {
+      {images.map((item, index) => {
         return (
           <div key={item.id} className="bg-white/75 p-1 shadow-lg -rotate-2">
             <Item
@@ -31,7 +31,7 @@ const PhotoGallery = ({
                 if (!item.childImageSharp?.gatsbyImageData) return <></>;
 
                 return (
-                  <button ref={ref} onClick={open}>
+                  <button ref={ref} onClick={open} data-cy={`image-${index}`}>
                     <GatsbyImage
                       image={item.childImageSharp.gatsbyImageData}
                       alt={item.relativePath}
