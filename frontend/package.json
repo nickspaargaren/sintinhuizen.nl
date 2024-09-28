@@ -15,8 +15,9 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
+    "@fontsource/alfa-slab-one": "^5.1.0",
+    "@fontsource/courgette": "^5.1.0",
     "gatsby": "^5.13.7",
-    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^3.12.3",
     "gatsby-plugin-sharp": "^5.12.3",
     "gatsby-plugin-styled-components": "^6.12.0",

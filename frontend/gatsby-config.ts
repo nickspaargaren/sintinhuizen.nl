@@ -35,13 +35,6 @@ const config: GatsbyConfig = {
       },
     },
     {
-      resolve: "gatsby-plugin-google-fonts",
-      options: {
-        fonts: ["Alfa Slab One", "Courgette"],
-        display: "swap",
-      },
-    },
-    {
       resolve: "gatsby-plugin-styled-components",
     },
   ],
