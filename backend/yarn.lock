@@ -1884,6 +1884,11 @@
     "@sanity/ui" "^2.8.9"
     lodash.startcase "^4.4.0"
 
+"@sanity/locale-nl-nl@^1.1.14":
+  version "1.1.14"
+  resolved "https://registry.yarnpkg.com/@sanity/locale-nl-nl/-/locale-nl-nl-1.1.14.tgz#c901613fd86dc5aeba766d69b01e037ede0a8d70"
+  integrity sha512-xTcWiwkfZd/6Vt5sOWOXIfjmUEsEiDoqfO3Ae6XH4x/beZAmByOPKiCtr8s718Zs4IxzagPvSP44gjOOOXwYig==
+
 "@sanity/logos@^2.1.4":
   version "2.1.13"
   resolved "https://registry.yarnpkg.com/@sanity/logos/-/logos-2.1.13.tgz#aab9da2c2a4ec6d72debf481ff477520ed9cc2cf"
