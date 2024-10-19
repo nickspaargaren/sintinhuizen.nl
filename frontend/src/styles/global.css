@@ -78,22 +78,22 @@ table tr td:first-child {
   font-variant-numeric: tabular-nums;
 }
 
-main section {
+section {
   min-height: 100vh;
   display: flex;
   justify-content: center;
 }
 
-main section > div {margin: auto; max-width: 1600px; width: 100%; padding: 50px;}
+section > div {margin: auto; max-width: 1600px; width: 100%; padding: 50px;}
 
-main section.sponsors > div {padding: 20px 50px;}
-main section.sponsors > div h3 {margin-top: 0; color: #c32c2b;}
-main section.sponsors > div p {color: #333;}
+section.sponsors > div {padding: 20px 50px;}
+section.sponsors > div h3 {margin-top: 0; color: #c32c2b;}
+section.sponsors > div p {color: #333;}
 
 @media screen and (max-width: 768px) {
   h1 span, h2 span {white-space: normal;}
   h1 {font-size: 34px;}
   h2 {font-size: 22px;}
 
-  main section > div {padding: 15px;}
+  section > div {padding: 15px;}
 }
