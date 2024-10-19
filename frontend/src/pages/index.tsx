@@ -73,15 +73,24 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
                   Sint Nicolaas
                 </strong>{" "}
                 <small>komt</small>{" "}
-                <span className="whitespace-nowrap">18 november 2023</span>{" "}
+                <span className="whitespace-nowrap">16 november 2024</span>{" "}
                 <small>aan in</small> <strong>Huizen</strong>
               </h1>
+              <p>
+                De Stichting Intocht Sint Nicolaas Huizen heeft daarom een
+                feestprogramma georganiseerd!
+              </p>
               <p>
                 Verderop kun je hier alles over lezen!
                 <br />
                 Hij brengt ook een Glutenvrije Piet mee!
               </p>
             </div>
+            <StaticImage
+              alt="mijter"
+              src="../assets/images/poster-2024.jpg"
+              className="w-72"
+            />
             <div className="mt-auto">
               <h3>Dag kinderen,</h3>
               <p>
@@ -101,9 +110,7 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
             />
             <h3>
               <strong>Sint Niclolaas</strong> kijkt in het grote boek waarin
-              staat welke cadeautjes de kinderen gevraagd hebben. Hij is erg
-              zuinig op <strong>het boek</strong>, want als het kwijtraakt, weet
-              hij niet waar de <strong>cadeautjes</strong> naartoe moeten!
+              staat welke cadeautjes de kinderen gevraagd hebben.
             </h3>
           </div>
         </StyledHeader>
