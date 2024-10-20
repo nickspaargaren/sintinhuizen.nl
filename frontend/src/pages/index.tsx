@@ -50,7 +50,19 @@ export const pageQuery = graphql`
     ) {
       html
     }
-    terugblik: markdownRemark(fileAbsolutePath: { regex: "/terugblik.md/" }) {
+    programHaven: markdownRemark(
+      fileAbsolutePath: { regex: "/program/haven.md/" }
+    ) {
+      html
+    }
+    programParade: markdownRemark(
+      fileAbsolutePath: { regex: "/program/parade.md/" }
+    ) {
+      html
+    }
+    programKrachtcentrale: markdownRemark(
+      fileAbsolutePath: { regex: "/program/krachtcentrale.md/" }
+    ) {
       html
     }
   }
@@ -59,7 +71,8 @@ export const pageQuery = graphql`
 const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
   const [photos2023, photos2022, drawings] = usePhotoGallery();
 
-  const { berichtsint, terugblik } = data;
+  const { berichtsint, programHaven, programKrachtcentrale, programParade } =
+    data;
 
   return (
     <>
@@ -117,6 +130,33 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
       </section>
 
       <section className="bericht">
+        <div>
+          <h2 className="text-center mb-8">
+            Feestprogramma <strong>16 november</strong>
+          </h2>
+          <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+            <Letter>
+              <div
+                dangerouslySetInnerHTML={{ __html: programHaven?.html || "" }}
+              />
+            </Letter>
+            <Letter>
+              <div
+                dangerouslySetInnerHTML={{ __html: programParade?.html || "" }}
+              />
+            </Letter>
+            <Letter>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: programKrachtcentrale?.html || "",
+                }}
+              />
+            </Letter>
+          </div>
+        </div>
+      </section>
+
+      <section className="bericht">
         <div className="grid gap-8 lg:grid-cols-2">
           <div dangerouslySetInnerHTML={{ __html: berichtsint?.html || "" }} />
 
@@ -139,13 +179,7 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
           </h2>
 
           <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-            <div>
-              <Letter>
-                <div
-                  dangerouslySetInnerHTML={{ __html: terugblik?.html || "" }}
-                />
-              </Letter>
-            </div>
+            <div>Niks</div>
             <div>
               <div className="rotatedImage">
                 <StaticImage
