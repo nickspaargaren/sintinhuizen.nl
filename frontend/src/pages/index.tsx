@@ -171,21 +171,21 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
             </div>
             <div className="md:col-span-1">
               <Letter>
-                <h3>Als je hier op klikt, kun je de
-                  kleurplaat downloaden voor de
-                  kleurplatenwedstrijd!</h3>
-                <p>De sleutelpiet heeft het
-                  ontvangstcomité gebeld met een
-                  vervelend bericht. De sleutelpiet is
-                  de sleutel van de kamer van
-                  Sinterklaas kwijt… Help jij de
-                  sleutelpiet zoeken naar de sleutel
-                  bij de intocht van Sinterklaas?</p>
-                <p>Wil jij ook kans maken op een
-                  cadeautje van de Sint? Download
-                  dan deze tekening uit en lever hem
-                  ingekleurd uiterlijk op 13 november
-                  in bij de Krachtcentrale!</p>
+                <h3>
+                  Als je hier op klikt, kun je de kleurplaat downloaden voor de
+                  kleurplatenwedstrijd!
+                </h3>
+                <p>
+                  De sleutelpiet heeft het ontvangstcomité gebeld met een
+                  vervelend bericht. De sleutelpiet is de sleutel van de kamer
+                  van Sinterklaas kwijt… Help jij de sleutelpiet zoeken naar de
+                  sleutel bij de intocht van Sinterklaas?
+                </p>
+                <p>
+                  Wil jij ook kans maken op een cadeautje van de Sint? Download
+                  dan deze tekening uit en lever hem ingekleurd uiterlijk op 13
+                  november in bij de Krachtcentrale!
+                </p>
               </Letter>
             </div>
           </div>
@@ -217,23 +217,20 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
           <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
             <div>
               <Letter>
-                <p>De Sint komt 16 november
-                  aan in Huizen met zijn
-                  hoofdpiet en 29 hulppieten.</p>
-                <p>Je kunt hem zien bij de
-                  aankomst in de Werkhaven
-                  (14.00 uur), tijdens de
-                  optocht in de Havenstraat
-                  (15.30 uur) en bij de
-                  Krachtcentrale (16.00 uur).</p>
-                <p>De twee daaropvolgende
-                  twee weken gaan Sint en
-                  Pieten naar winkelcentrum
-                  Oostermeent en
-                  winkelcentrum Hart van
-                  Huizen.</p>
-                <p>Je ziet, je hebt veel
-                  keus de Sint te zien!</p>
+                <p>
+                  De Sint komt 16 november aan in Huizen met zijn hoofdpiet en
+                  29 hulppieten.
+                </p>
+                <p>
+                  Je kunt hem zien bij de aankomst in de Werkhaven (14.00 uur),
+                  tijdens de optocht in de Havenstraat (15.30 uur) en bij de
+                  Krachtcentrale (16.00 uur).
+                </p>
+                <p>
+                  De twee daaropvolgende twee weken gaan Sint en Pieten naar
+                  winkelcentrum Oostermeent en winkelcentrum Hart van Huizen.
+                </p>
+                <p>Je ziet, je hebt veel keus de Sint te zien!</p>
               </Letter>
             </div>
             <div>
