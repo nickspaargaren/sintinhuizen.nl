@@ -1,6 +1,6 @@
 import { graphql, PageProps } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import React, { ReactElement } from "react";
+import React, { ReactElement, useRef } from "react";
 import styled from "styled-components";
 
 import gebouwen from "../assets/images/gebouwen.svg";
@@ -73,6 +73,8 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
 
   const { berichtsint, programHaven, programKrachtcentrale, programParade } =
     data;
+
+  const downloadsRef = useRef<HTMLElement | null>(null);
 
   return (
     <>
@@ -172,7 +174,21 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
             <div className="md:col-span-1">
               <Letter>
                 <h3>
-                  Als je hier op klikt, kun je de kleurplaat downloaden voor de
+                  Als je{" "}
+                  <button
+                    className="uppercase underline"
+                    onClick={() => {
+                      if (!downloadsRef.current) return;
+
+                      downloadsRef.current.scrollIntoView({
+                        behavior: "smooth",
+                      });
+                    }}
+                    title="Naar downloads"
+                  >
+                    hier
+                  </button>{" "}
+                  op klikt, kun je de kleurplaat downloaden voor de
                   kleurplatenwedstrijd!
                 </h3>
                 <p>
@@ -396,10 +412,10 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
         </div>
       </section>
 
-      <section>
+      <section ref={downloadsRef}>
         <div>
           <h3>Downloads</h3>
-          <ul>
+          <ul className="list-disc">
             <li>
               <a href="/downloads/kleurplaat-sint-2024-website.pdf" download>
                 Kleurplaat voor de kleurwedstrijd
