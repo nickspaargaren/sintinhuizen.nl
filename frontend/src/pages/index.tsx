@@ -396,6 +396,37 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
         </div>
       </section>
 
+      <section>
+        <div>
+          <h3>Downloads</h3>
+          <ul>
+            <li>
+              <a href="/downloads/kleurplaat-sint-2024-website.pdf" download>
+                Kleurplaat voor de kleurwedstrijd
+              </a>
+            </li>
+            <li>
+              <a
+                href="/downloads/brief-aan-omwonenden-mbt-verkeerssituatie-16-nov-2024.pdf"
+                download
+              >
+                Brief aan omwonenden m.b.t. verkeerssituatie 16 november 2024
+              </a>
+            </li>
+            <li>
+              <a href="/downloads/omschrijving-van-het-evenement.pdf" download>
+                Beschrijving van het evenement
+              </a>
+            </li>
+            <li>
+              <a href="/downloads/poster.pdf" download>
+                Poster
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <Footer />
     </>
   );
