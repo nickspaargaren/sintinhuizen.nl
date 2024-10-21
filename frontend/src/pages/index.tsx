@@ -69,7 +69,7 @@ export const pageQuery = graphql`
 `;
 
 const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
-  const [photos2023, photos2022, drawings] = usePhotoGallery();
+  const [photos2023, drawings] = usePhotoGallery();
 
   const { berichtsint, programHaven, programKrachtcentrale, programParade } =
     data;
@@ -362,44 +362,6 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
             Klik op de foto voor een vergroting
           </p>
           <PhotoGallery images={photos2023} />
-        </div>
-      </section>
-
-      <section>
-        <div>
-          <h3 className="text-center">
-            Foto&apos;s van de aankomst op <strong>12 november</strong> 2022
-          </h3>
-          <p className="text-center mt-4 mb-8">
-            Klik op de foto voor een vergroting
-          </p>
-          <PhotoGallery images={photos2022} />
-        </div>
-      </section>
-
-      <section>
-        <div>
-          <h3 className="text-center mb-8">
-            Video&apos;s van de aankomst op <strong>12 november</strong> 2022
-          </h3>
-          <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-            <div>
-              <VimeoVideo
-                title="Korte impressie activiteiten op de kade"
-                url="https://player.vimeo.com/video/772979203?h=f7b3963557"
-              />
-            </div>
-            <div>
-              <VimeoVideo
-                title="Sint en burgemeester bezoeken de asielboot"
-                url="https://player.vimeo.com/video/772979322?h=c10ed4027a"
-              />
-            </div>
-            <VimeoVideo
-              title="Het verleggen van de Asielboot 12 november 07.30 in de mist om de kade vrij te maken voor de aankomst van de Sint"
-              url="https://player.vimeo.com/video/772980541?h=f6013edb27"
-            />
-          </div>
         </div>
       </section>
 
