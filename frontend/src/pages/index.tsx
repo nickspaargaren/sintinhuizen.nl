@@ -129,7 +129,7 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
         </StyledHeader>
       </section>
 
-      <section className="bericht">
+      <section>
         <div>
           <h2 className="text-center mb-8">
             Feestprogramma <strong>16 november</strong>
@@ -152,6 +152,42 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
                 }}
               />
             </Letter>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <h2 className="text-center mb-8">
+            <strong>Kleurplatenwedstrijd</strong> Sinterklaas intocht 2024
+          </h2>
+          <div className="grid gap-8 md:grid-cols-3">
+            <div className="md:col-span-2">
+              <StaticImage
+                className="w-full"
+                src="../assets/images/kleurplaat.jpg"
+                alt="Kleurplaat"
+              />
+            </div>
+            <div className="md:col-span-1">
+              <Letter>
+                <h3>Als je hier op klikt, kun je de
+                  kleurplaat downloaden voor de
+                  kleurplatenwedstrijd!</h3>
+                <p>De sleutelpiet heeft het
+                  ontvangstcomité gebeld met een
+                  vervelend bericht. De sleutelpiet is
+                  de sleutel van de kamer van
+                  Sinterklaas kwijt… Help jij de
+                  sleutelpiet zoeken naar de sleutel
+                  bij de intocht van Sinterklaas?</p>
+                <p>Wil jij ook kans maken op een
+                  cadeautje van de Sint? Download
+                  dan deze tekening uit en lever hem
+                  ingekleurd uiterlijk op 13 november
+                  in bij de Krachtcentrale!</p>
+              </Letter>
+            </div>
           </div>
         </div>
       </section>
