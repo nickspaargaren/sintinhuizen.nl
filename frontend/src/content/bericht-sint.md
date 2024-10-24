@@ -1,6 +1,6 @@
 **Sinterklaas stuurde ons een brief. Hij ziet er naar uit om weer naar Huizen te komen. Hieronder staat de brief.**
 
-Madrid, 1 november 2023
+Madrid, 30 oktober 2024
 
 ### Lieve kinderen van Huizen,
 
@@ -16,6 +16,8 @@ Kijk snel verder op de site hoe je hieraan mee kan doen!
 Wij hebben er al enorm veel zin in en ik hoop alle kinderen 16 november in Huizen te zien!
 
 Wij gaan onze reis verder voortzetten naar Nederland en zien jullie snel!
+
+Ik kom met mijn hoofdpiet, 28 strooipieten en 15 muziekpieten.
 
 Hartelijke groet,
 <p class="signature">Sint Nicolaas</p>

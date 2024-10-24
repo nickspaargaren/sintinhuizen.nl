@@ -1,6 +1,6 @@
 import { graphql, PageProps } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import React, { ReactElement, useRef } from "react";
+import React, { ReactElement } from "react";
 import styled from "styled-components";
 
 import gebouwen from "../assets/images/gebouwen.svg";
@@ -74,8 +74,6 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
   const { berichtsint, programHaven, programKrachtcentrale, programParade } =
     data;
 
-  const downloadsRef = useRef<HTMLElement | null>(null);
-
   return (
     <>
       <section>
@@ -87,8 +85,7 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
                 <strong className="whitespace-nowrap">
                   Sint Nicolaas
                 </strong>{" "}
-                <small>komt</small>{" "}
-                <span className="whitespace-nowrap">16 november 2024</span>{" "}
+                <small>komt</small> <span>16 november 2024</span>{" "}
                 <small>aan in</small> <strong>Huizen</strong>
               </h1>
               <p>
@@ -153,6 +150,11 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
                   __html: programKrachtcentrale?.html || "",
                 }}
               />
+              <p className="text-xl font-bold text-red">
+                Doe je mee met de kleurplatenwedstrijd?
+                <br />
+                Zie verder!
+              </p>
             </Letter>
           </div>
         </div>
@@ -161,7 +163,10 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
       <section>
         <div>
           <h2 className="text-center mb-8">
-            <strong>Kleurplatenwedstrijd</strong> Sinterklaas intocht 2024
+            <strong className="break-words hyphens-auto">
+              Kleurplatenwedstrijd
+            </strong>{" "}
+            Sinterklaas intocht 2024
           </h2>
           <div className="grid gap-8 md:grid-cols-3">
             <div className="md:col-span-2">
@@ -175,21 +180,16 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
               <Letter>
                 <h3>
                   Als je{" "}
-                  <button
-                    className="uppercase underline"
-                    onClick={() => {
-                      if (!downloadsRef.current) return;
-
-                      downloadsRef.current.scrollIntoView({
-                        behavior: "smooth",
-                      });
-                    }}
-                    title="Naar downloads"
+                  <a
+                    href="/downloads/kleurplaat-sint-2024-website.pdf"
+                    download
                   >
                     hier
-                  </button>{" "}
-                  op klikt, kun je de kleurplaat downloaden voor de
-                  kleurplatenwedstrijd!
+                  </a>{" "}
+                  op klikt, kun je de kleurplaat downloaden voor de{" "}
+                  <span className="break-all hyphens-auto">
+                    kleurplatenwedstrijd!
+                  </span>
                 </h3>
                 <p>
                   De sleutelpiet heeft het ontvangstcomité gebeld met een
@@ -227,7 +227,7 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
       <section>
         <StyledAankomst>
           <h2 className="text-center mb-8">
-            Activiteiten Sint Nicolaas <strong>2023</strong> in Huizen
+            Activiteiten Sint Nicolaas <strong>2024</strong> in Huizen
           </h2>
 
           <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
@@ -250,12 +250,30 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
               </Letter>
             </div>
             <div>
-              <div className="rotatedImage">
-                <StaticImage
-                  src="../assets/images/poster-sinterklaas-hart-van-huizen.jpg"
-                  alt="Sinterklaas Hart van Huizen.jpg"
-                />
-              </div>
+              <Letter>
+                Hier komt binnenkort de poster met informatie over de
+                Sintactiviteiten in winkelcentrum Oostermeent. Alvast: zaterdag
+                23 nov. komt de Sint aan in de Oostemeent.
+              </Letter>
+              <Letter>
+                De Sint bezoekt ook het winkelcentrum Oostermeent. Voor meer
+                informatie zie de website{" "}
+                <a
+                  href="https://www.winkelcentrumoostermeent.nl"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Winkelcentrumoostermeent.nl
+                </a>
+              </Letter>
+            </div>
+            <div>
+              <Letter>
+                Hier komt binnenkort de poster met informatie over de
+                Sintactiviteiten in winkelcentrum het Hart van Huizen. Alvast:
+                vrijdagavond 29 nov. en zaterdag 30 nov. is de sint daar
+                aanwezig.
+              </Letter>
               <Letter>
                 <strong>De activiteiten van Hart van Huizen:</strong>
                 <br />
@@ -268,25 +286,6 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
                   HartvanHuizen.nl
                 </a>{" "}
                 kun je hier alles over lezen.
-              </Letter>
-            </div>
-            <div>
-              <div className="rotatedImage">
-                <StaticImage
-                  src="../assets/images/poster-sinterklaas-oostermeent.jpg"
-                  alt="Sint op de kade in de haven van Huizen"
-                />
-              </div>
-              <Letter>
-                De Sint bezoekt ook het winkelcentrum Oostermeent. Voor meer
-                informatie zie de website{" "}
-                <a
-                  href="https://www.winkelcentrumoostermeent.nl"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Winkelcentrumoostermeent.nl
-                </a>
               </Letter>
             </div>
           </div>
@@ -412,15 +411,10 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
         </div>
       </section>
 
-      <section ref={downloadsRef}>
+      <section>
         <div>
           <h3>Downloads</h3>
           <ul className="list-disc">
-            <li>
-              <a href="/downloads/kleurplaat-sint-2024-website.pdf" download>
-                Kleurplaat voor de kleurwedstrijd
-              </a>
-            </li>
             <li>
               <a
                 href="/downloads/brief-aan-omwonenden-mbt-verkeerssituatie-16-nov-2024.pdf"
