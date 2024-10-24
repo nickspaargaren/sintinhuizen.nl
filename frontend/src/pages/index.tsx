@@ -50,16 +50,29 @@ export const pageQuery = graphql`
     ) {
       html
     }
-    terugblik: markdownRemark(fileAbsolutePath: { regex: "/terugblik.md/" }) {
+    programHaven: markdownRemark(
+      fileAbsolutePath: { regex: "/program/haven.md/" }
+    ) {
+      html
+    }
+    programParade: markdownRemark(
+      fileAbsolutePath: { regex: "/program/parade.md/" }
+    ) {
+      html
+    }
+    programKrachtcentrale: markdownRemark(
+      fileAbsolutePath: { regex: "/program/krachtcentrale.md/" }
+    ) {
       html
     }
   }
 `;
 
 const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
-  const [photos2023, photos2022, drawings] = usePhotoGallery();
+  const [photos2023, drawings] = usePhotoGallery();
 
-  const { berichtsint, terugblik } = data;
+  const { berichtsint, programHaven, programKrachtcentrale, programParade } =
+    data;
 
   return (
     <>
@@ -72,16 +85,24 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
                 <strong className="whitespace-nowrap">
                   Sint Nicolaas
                 </strong>{" "}
-                <small>komt</small>{" "}
-                <span className="whitespace-nowrap">18 november 2023</span>{" "}
+                <small>komt</small> <span>16 november 2024</span>{" "}
                 <small>aan in</small> <strong>Huizen</strong>
               </h1>
+              <p>
+                De Stichting Intocht Sint Nicolaas Huizen heeft daarom een
+                feestprogramma georganiseerd!
+              </p>
               <p>
                 Verderop kun je hier alles over lezen!
                 <br />
                 Hij brengt ook een Glutenvrije Piet mee!
               </p>
             </div>
+            <StaticImage
+              alt="mijter"
+              src="../assets/images/poster-2024.jpg"
+              className="w-72"
+            />
             <div className="mt-auto">
               <h3>Dag kinderen,</h3>
               <p>
@@ -101,12 +122,91 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
             />
             <h3>
               <strong>Sint Niclolaas</strong> kijkt in het grote boek waarin
-              staat welke cadeautjes de kinderen gevraagd hebben. Hij is erg
-              zuinig op <strong>het boek</strong>, want als het kwijtraakt, weet
-              hij niet waar de <strong>cadeautjes</strong> naartoe moeten!
+              staat welke cadeautjes de kinderen gevraagd hebben.
             </h3>
           </div>
         </StyledHeader>
+      </section>
+
+      <section>
+        <div>
+          <h2 className="text-center mb-8">
+            Feestprogramma <strong>16 november</strong>
+          </h2>
+          <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+            <Letter>
+              <div
+                dangerouslySetInnerHTML={{ __html: programHaven?.html || "" }}
+              />
+            </Letter>
+            <Letter>
+              <div
+                dangerouslySetInnerHTML={{ __html: programParade?.html || "" }}
+              />
+            </Letter>
+            <Letter>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: programKrachtcentrale?.html || "",
+                }}
+              />
+              <p className="text-xl font-bold text-red">
+                Doe je mee met de kleurplatenwedstrijd?
+                <br />
+                Zie verder!
+              </p>
+            </Letter>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <h2 className="text-center mb-8">
+            <strong className="break-words hyphens-auto">
+              Kleurplatenwedstrijd
+            </strong>{" "}
+            Sinterklaas intocht 2024
+          </h2>
+          <div className="grid gap-8 md:grid-cols-3">
+            <div className="md:col-span-2">
+              <StaticImage
+                className="w-full"
+                src="../assets/images/kleurplaat.jpg"
+                alt="Kleurplaat"
+              />
+            </div>
+            <div className="md:col-span-1">
+              <Letter>
+                <h3>
+                  Als je{" "}
+                  <a
+                    href="/downloads/kleurplaat-sint-2024-website.pdf"
+                    download
+                    className="text-red"
+                  >
+                    hier
+                  </a>{" "}
+                  op klikt, kun je de kleurplaat downloaden voor de{" "}
+                  <span className="break-all hyphens-auto">
+                    kleurplatenwedstrijd!
+                  </span>
+                </h3>
+                <p>
+                  De sleutelpiet heeft het ontvangstcomité gebeld met een
+                  vervelend bericht. De sleutelpiet is de sleutel van de kamer
+                  van Sinterklaas kwijt… Help jij de sleutelpiet zoeken naar de
+                  sleutel bij de intocht van Sinterklaas?
+                </p>
+                <p>
+                  Wil jij ook kans maken op een cadeautje van de Sint? Download
+                  dan deze tekening uit en lever hem ingekleurd uiterlijk op 13
+                  november in bij de Krachtcentrale!
+                </p>
+              </Letter>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className="bericht">
@@ -128,24 +228,53 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
       <section>
         <StyledAankomst>
           <h2 className="text-center mb-8">
-            Activiteiten Sint Nicolaas <strong>2023</strong> in Huizen
+            Activiteiten Sint Nicolaas <strong>2024</strong> in Huizen
           </h2>
 
           <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
             <div>
               <Letter>
-                <div
-                  dangerouslySetInnerHTML={{ __html: terugblik?.html || "" }}
-                />
+                <p>
+                  De Sint komt 16 november aan in Huizen met zijn hoofdpiet en
+                  29 hulppieten.
+                </p>
+                <p>
+                  Je kunt hem zien bij de aankomst in de Werkhaven (14.00 uur),
+                  tijdens de optocht in de Havenstraat (15.30 uur) en bij de
+                  Krachtcentrale (16.00 uur).
+                </p>
+                <p>
+                  De twee daaropvolgende twee weken gaan Sint en Pieten naar
+                  winkelcentrum Oostermeent en winkelcentrum Hart van Huizen.
+                </p>
+                <p>Je ziet, je hebt veel keus de Sint te zien!</p>
               </Letter>
             </div>
             <div>
-              <div className="rotatedImage">
-                <StaticImage
-                  src="../assets/images/poster-sinterklaas-hart-van-huizen.jpg"
-                  alt="Sinterklaas Hart van Huizen.jpg"
-                />
-              </div>
+              <Letter>
+                Hier komt binnenkort de poster met informatie over de
+                Sintactiviteiten in winkelcentrum Oostermeent. Alvast: zaterdag
+                23 nov. komt de Sint aan in de Oostemeent.
+              </Letter>
+              <Letter>
+                De Sint bezoekt ook het winkelcentrum Oostermeent. Voor meer
+                informatie zie de website{" "}
+                <a
+                  href="https://www.winkelcentrumoostermeent.nl"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Winkelcentrumoostermeent.nl
+                </a>
+              </Letter>
+            </div>
+            <div>
+              <Letter>
+                Hier komt binnenkort de poster met informatie over de
+                Sintactiviteiten in winkelcentrum het Hart van Huizen. Alvast:
+                vrijdagavond 29 nov. en zaterdag 30 nov. is de sint daar
+                aanwezig.
+              </Letter>
               <Letter>
                 <strong>De activiteiten van Hart van Huizen:</strong>
                 <br />
@@ -158,25 +287,6 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
                   HartvanHuizen.nl
                 </a>{" "}
                 kun je hier alles over lezen.
-              </Letter>
-            </div>
-            <div>
-              <div className="rotatedImage">
-                <StaticImage
-                  src="../assets/images/poster-sinterklaas-oostermeent.jpg"
-                  alt="Sint op de kade in de haven van Huizen"
-                />
-              </div>
-              <Letter>
-                De Sint bezoekt ook het winkelcentrum Oostermeent. Voor meer
-                informatie zie de website{" "}
-                <a
-                  href="https://www.winkelcentrumoostermeent.nl"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Winkelcentrumoostermeent.nl
-                </a>
               </Letter>
             </div>
           </div>
@@ -274,55 +384,23 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
       <section>
         <div>
           <h3 className="text-center">
-            Foto&apos;s van de aankomst op <strong>12 november</strong> 2022
-          </h3>
-          <p className="text-center mt-4 mb-8">
-            Klik op de foto voor een vergroting
-          </p>
-          <PhotoGallery images={photos2022} />
-        </div>
-      </section>
-
-      <section>
-        <div>
-          <h3 className="text-center mb-8">
-            Video&apos;s van de aankomst op <strong>12 november</strong> 2022
-          </h3>
-          <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-            <div>
-              <VimeoVideo
-                title="Korte impressie activiteiten op de kade"
-                url="https://player.vimeo.com/video/772979203?h=f7b3963557"
-              />
-            </div>
-            <div>
-              <VimeoVideo
-                title="Sint en burgemeester bezoeken de asielboot"
-                url="https://player.vimeo.com/video/772979322?h=c10ed4027a"
-              />
-            </div>
-            <VimeoVideo
-              title="Het verleggen van de Asielboot 12 november 07.30 in de mist om de kade vrij te maken voor de aankomst van de Sint"
-              url="https://player.vimeo.com/video/772980541?h=f6013edb27"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div>
-          <h3 className="text-center">
             Bedankt kinderen voor deze <strong>prachtige tekeningen</strong>!
           </h3>
           <p className="text-center mt-4 mb-8">
             Klik op de foto voor een vergroting
           </p>
           <PhotoGallery images={drawings} />
-          <StaticImage
-            className="block w-full max-w-2xl mx-auto mt-8"
-            src="../assets/images/bedankt-sint.jpeg"
-            alt="Sint bedankt"
-          />
+
+          <div className="mt-8 grid gap-8 lg:grid-cols-2">
+            <StaticImage
+              src="../assets/images/bedankt-sint.jpeg"
+              alt="Sint bedankt"
+            />
+            <StaticImage
+              src="../assets/images/groep-pieten.jpeg"
+              alt="Groep pieten"
+            />
+          </div>
         </div>
       </section>
 
@@ -337,6 +415,32 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
             title="Stichting Intocht Sint Nicolaas Huizen Intocht 2021"
             url="https://player.vimeo.com/video/650779183?h=8770fcab97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
           />
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <h3>Downloads</h3>
+          <ul className="list-disc">
+            <li>
+              <a
+                href="/downloads/brief-aan-omwonenden-mbt-verkeerssituatie-16-nov-2024.pdf"
+                download
+              >
+                Brief aan omwonenden m.b.t. verkeerssituatie 16 november 2024
+              </a>
+            </li>
+            <li>
+              <a href="/downloads/omschrijving-van-het-evenement.pdf" download>
+                Beschrijving van het evenement
+              </a>
+            </li>
+            <li>
+              <a href="/downloads/poster.pdf" download>
+                Poster
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
 
