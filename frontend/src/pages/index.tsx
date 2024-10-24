@@ -183,6 +183,7 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
                   <a
                     href="/downloads/kleurplaat-sint-2024-website.pdf"
                     download
+                    className="text-red"
                   >
                     hier
                   </a>{" "}
@@ -389,11 +390,17 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
             Klik op de foto voor een vergroting
           </p>
           <PhotoGallery images={drawings} />
-          <StaticImage
-            className="block w-full max-w-2xl mx-auto mt-8"
-            src="../assets/images/bedankt-sint.jpeg"
-            alt="Sint bedankt"
-          />
+
+          <div className="mt-8 grid gap-8 lg:grid-cols-2">
+            <StaticImage
+              src="../assets/images/bedankt-sint.jpeg"
+              alt="Sint bedankt"
+            />
+            <StaticImage
+              src="../assets/images/groep-pieten.jpeg"
+              alt="Groep pieten"
+            />
+          </div>
         </div>
       </section>
 
