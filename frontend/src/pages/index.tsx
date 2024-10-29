@@ -1,47 +1,13 @@
 import { graphql, PageProps } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React, { ReactElement } from "react";
-import styled from "styled-components";
 
-import gebouwen from "../assets/images/gebouwen.svg";
 import Button from "../components/Button";
 import Footer from "../components/Footer";
 import Letter from "../components/Letter";
 import PhotoGallery from "../components/PhotoGallery";
 import VimeoVideo from "../components/VimeoVideo";
 import usePhotoGallery from "../hooks/usePhotoGallery";
-
-const StyledHeader = styled.div`
-  background-image: url(${gebouwen});
-  background-size: 825px 175px;
-  min-height: inherit;
-
-  .headerintro > div {
-    margin-bottom: 20px;
-  }
-
-  .illustration img {
-    margin: auto auto 0 auto;
-    max-height: 80vh;
-    width: auto;
-  }
-`;
-
-const StyledAankomst = styled.div`
-  .rotatedImage {
-    background: rgba(255, 255, 255, 0.7);
-    box-shadow: 0 10px 39px -5px rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-    line-height: 0;
-    margin: 0 0 30px;
-    overflow: hidden;
-    padding: 3px;
-    position: relative;
-    text-align: center;
-    transform: rotate(-2deg);
-    width: 100%;
-  }
-`;
 
 export const pageQuery = graphql`
   query markdown {
@@ -77,7 +43,9 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
   return (
     <>
       <section>
-        <StyledHeader className="bg-purple grid gap-8 lg:grid-cols-2 bg-bottom bg-repeat-x max-w-full">
+        <div
+          className={`bg-purple bg-[url('/images/buildings.svg')] grid gap-8 lg:grid-cols-2 bg-bottom bg-repeat-x max-w-full`}
+        >
           <div className="headerintro flex flex-col">
             <div>
               <h1>
@@ -125,7 +93,7 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
               staat welke cadeautjes de kinderen gevraagd hebben.
             </h3>
           </div>
-        </StyledHeader>
+        </div>
       </section>
 
       <section>
@@ -226,7 +194,7 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
       </section>
 
       <section>
-        <StyledAankomst>
+        <div>
           <h2 className="text-center mb-8">
             Activiteiten Sint Nicolaas <strong>2024</strong> in Huizen
           </h2>
@@ -291,11 +259,11 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
               </Letter>
             </div>
           </div>
-        </StyledAankomst>
+        </div>
       </section>
 
       <section>
-        <StyledAankomst>
+        <div>
           <h3 className="text-center mb-8">
             <strong>Glutenvrije</strong> Piet & kruidnoten
           </h3>
@@ -367,7 +335,7 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
               </div>
             </div>
           </div>
-        </StyledAankomst>
+        </div>
       </section>
 
       <section>
