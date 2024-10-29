@@ -84,7 +84,7 @@ do-frontend-lint:
 
 do-frontend-typescript:
 	@echo "Starting frontend TypeScript check.."
-	@docker compose exec frontend sh -c "yarn typescript"
+	@docker compose exec frontend sh -c "yarn check-types"
 
 do-shell-backend:
 	@docker compose exec backend sh
