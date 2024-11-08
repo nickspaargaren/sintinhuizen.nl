@@ -121,7 +121,7 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
               alt="Sinterklaas"
             />
             <h3>
-              <strong>Sint Niclolaas</strong> kijkt in het grote boek waarin
+              <strong>Sint Nicolaas</strong> kijkt in het grote boek waarin
               staat welke cadeautjes de kinderen gevraagd hebben.
             </h3>
           </div>
@@ -254,7 +254,7 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
               <Letter>
                 Hier komt binnenkort de poster met informatie over de
                 Sintactiviteiten in winkelcentrum Oostermeent. Alvast: zaterdag
-                23 nov. komt de Sint aan in de Oostemeent.
+                23 nov. komt de Sint aan in de Oostermeent.
               </Letter>
               <Letter>
                 De Sint bezoekt ook het winkelcentrum Oostermeent. Voor meer
