@@ -16,15 +16,15 @@
       "headers": [
         {
           "key": "Report-To",
-          "value": "{\"group\":\"default\",\"max_age\":10886400,\"endpoints\":[{\"url\":\"https://myreports.uriports.com/reports\"}],\"include_subdomains\":true}"
+          "value": "{\"group\":\"default\",\"max_age\":10886400,\"endpoints\":[{\"url\":\"https://urireports.uriports.com/reports\"}],\"include_subdomains\":true}"
         },
         {
           "key": "Reporting-Endpoints",
-          "value": "default=\"https://myreports.uriports.com/reports\""
+          "value": "default=\"https://urireports.uriports.com/reports\""
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; font-src 'self' data:; img-src 'self' cdn.sanity.io data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; frame-ancestors 'self'; frame-src 'self' player.vimeo.com; report-uri https://myreports.uriports.com/reports/report; report-to default"
+          "value": "default-src 'self'; font-src 'self' data:; img-src 'self' cdn.sanity.io data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; frame-ancestors 'self'; frame-src 'self' player.vimeo.com; report-uri https://urireports.uriports.com/reports/report; report-to default"
         },
         {
           "key": "NEL",
@@ -32,7 +32,7 @@
         },
         {
           "key": "Expect-CT",
-          "value": "max-age=86400,report-uri=\"https://myreports.uriports.com/reports/report\""
+          "value": "max-age=86400,report-uri=\"https://urireports.uriports.com/reports/report\""
         },
         {
           "key": "Permissions-Policy",
