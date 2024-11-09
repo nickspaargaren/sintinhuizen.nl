@@ -1,4 +1,4 @@
-import React, { PropsWithChildren, ReactElement } from "react";
+import React, { HTMLAttributes, PropsWithChildren, ReactElement } from "react";
 import styled from "styled-components";
 
 const StyledLetter = styled.div`
@@ -9,8 +9,13 @@ const StyledLetter = styled.div`
   }
 `;
 
-const Letter = ({ children }: PropsWithChildren): ReactElement => (
-  <StyledLetter className="bg-white p-4 border-2 border-yellow shadow-lg text-gray-900 mb-4">
+const Letter = ({
+  children,
+  ...props
+}: PropsWithChildren<HTMLAttributes<HTMLDivElement>>): ReactElement => (
+  <StyledLetter
+    className={`bg-white p-4 border-2 border-yellow shadow-lg text-gray-900 mb-4 ${props.className}`}
+  >
     {children}
   </StyledLetter>
 );
