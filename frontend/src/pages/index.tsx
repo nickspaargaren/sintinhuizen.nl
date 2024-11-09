@@ -251,10 +251,11 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
               </Letter>
             </div>
             <div>
-              <Letter>
-                Hier komt binnenkort de poster met informatie over de
-                Sintactiviteiten in winkelcentrum Oostermeent. Alvast: zaterdag
-                23 nov. komt de Sint aan in de Oostermeent.
+              <Letter className="p-[0] border-none">
+                <StaticImage
+                  alt="Sinterklaas Zaterdag 23 November om 15.00 uur in het haventje van Oostermeent!"
+                  src="../assets/images/poster-oostermeent.jpg"
+                />
               </Letter>
               <Letter>
                 De Sint bezoekt ook het winkelcentrum Oostermeent. Voor meer
