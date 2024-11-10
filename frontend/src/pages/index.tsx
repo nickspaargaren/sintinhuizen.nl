@@ -69,7 +69,7 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
                 </p>
               </div>
               <StaticImage
-                alt="mijter"
+                alt="Poster Sint Nicolaas intocht 2024 op 16 november"
                 src="../assets/images/poster-2024.jpg"
                 className="w-72"
               />
