@@ -2,98 +2,118 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background: #c32c2b;
-  color: #fff;
-  background-image: url("../assets/images/bg.jpg");
-  background-repeat: repeat;
-}
+@layer base {
+  body {
+    @apply bg-red text-white bg-repeat;
+    background-image: url("../assets/images/bg.jpg");
+  }
 
-h1, h2, h3 {
-  margin: 0 0 15px;
-  letter-spacing: .05em;
-  font-weight: normal;
-  text-transform: uppercase;
-  text-shadow: 0px 2px 0px rgba(0,0,0,.15);
-}
+  h1,
+  h2,
+  h3 {
+    @apply font-alfaSlabOne uppercase tracking-wider mb-3 drop-shadow-line;
+  }
 
-h1 {
-  font-family: 'Alfa Slab One';
-  font-size: 42px;
-  line-height: 1.1em;
-}
+  h1 {
+    @apply text-4xl;
+  }
 
-h2 {
-  font-family: 'Alfa Slab One';
-  font-size: 22px;
-}
+  h2 {
+    @apply text-xl;
+  }
 
-h3 {
-  font-family: 'Alfa Slab One';
-  font-size: 22px;
-}
+  h3 {
+    @apply text-xl;
+  }
 
-h1 small, h2 small {font-size: 60%;}
-h1 strong {font-weight: normal; color: #dc1f26;}
-h2 strong {font-weight: normal; color: #f1cb19;}
-h3 strong {font-weight: normal; color: #f1cb19;}
+  h1 small,
+  h2 small {
+    font-size: 60%;
+  }
 
-a {color: inherit;}
-p {
-  margin: 0 0 20px 0;
-}
+  h1 strong {
+    @apply text-red font-normal;
+  }
 
-p.signature {
-  font-family: 'Courgette';
-  font-size: 25px;
-  line-height: 1.25em;
-}
+  h2 strong {
+    @apply text-yellow font-normal;
+  }
 
-ul {
-  padding-left: 15px;
-}
+  h3 strong {
+    @apply text-yellow font-normal;
+  }
 
-ul li {
-  margin-bottom: 5px;
-}
+  a {
+    color: inherit;
+  }
 
-table {
-  border-spacing: 0;
-  margin: 0 0 20px 0;
-}
+  p {
+    @apply mb-4;
+  }
 
-table tr td {
-  padding: 5px 10px;
-  vertical-align: top;
-  border-top: 1px solid #eee;
-}
+  p.signature {
+    @apply font-courgette text-2xl;
+  }
 
-table tr:first-child td {
-  border-top: 0;
-}
+  .rotatedImage {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 10px 39px -5px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    line-height: 0;
+    margin: 0 0 30px;
+    overflow: hidden;
+    padding: 3px;
+    position: relative;
+    text-align: center;
+    transform: rotate(-2deg);
+    width: 100%;
+  }
 
-table tr td:first-child {
-  font-weight: bold;
-  color: #dc1f26;
-  font-variant-numeric: tabular-nums;
-}
+  .headerintro>div {
+    @apply mb-4;
+  }
 
-section {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-}
+  ul {
+    @apply pl-4;
+  }
 
-section > div {margin: auto; max-width: 1600px; width: 100%; padding: 50px;}
+  ul li {
+    @apply mb-2;
+  }
 
-section.sponsors > div {padding: 20px 50px;}
-section.sponsors > div h3 {margin-top: 0; color: #c32c2b;}
-section.sponsors > div p {color: #333;}
+  table {
+    @apply mb-4 border-spacing-0;
+  }
 
-@media screen and (max-width: 768px) {
-  h1 span, h2 span {white-space: normal;}
-  h1 {font-size: 34px;}
-  h2 {font-size: 22px;}
+  table tr td {
+    @apply align-top p-2 border-t;
+  }
 
-  section > div {padding: 15px;}
+  table tr:first-child td {
+    @apply border-t-0;
+  }
+
+  table tr td:first-child {
+    @apply text-red font-bold tabular-nums;
+  }
+
+  section.sponsors>div {
+    padding: 20px 50px;
+  }
+
+  section.sponsors>div h3 {
+    @apply text-red mt-0;
+  }
+
+  section.sponsors>div p {
+    color: #333;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    h1 span,
+    h2 span {
+      @apply whitespace-normal;
+    }
+  }
 }
