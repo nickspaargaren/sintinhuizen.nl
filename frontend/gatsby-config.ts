@@ -35,9 +35,6 @@ const config: GatsbyConfig = {
         path: `${__dirname}/src/content`,
       },
     },
-    {
-      resolve: "gatsby-plugin-styled-components",
-    },
   ],
 };
 
