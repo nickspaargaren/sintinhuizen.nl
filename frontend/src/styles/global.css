@@ -30,12 +30,15 @@
   h2 small {
     font-size: 60%;
   }
+
   h1 strong {
     @apply text-red font-normal;
   }
+
   h2 strong {
     @apply text-yellow font-normal;
   }
+
   h3 strong {
     @apply text-yellow font-normal;
   }
@@ -45,7 +48,7 @@
   }
 
   p {
-    margin: 0 0 20px 0;
+    @apply mb-4;
   }
 
   p.signature {
@@ -66,78 +69,51 @@
     width: 100%;
   }
 
-  .headerintro > div {
-    margin-bottom: 20px;
-  }
-
-  .illustration img {
-    margin: auto auto 0 auto;
-    max-height: 80vh;
-    width: auto;
+  .headerintro>div {
+    @apply mb-4;
   }
 
   ul {
-    padding-left: 15px;
+    @apply pl-4;
   }
 
   ul li {
-    margin-bottom: 5px;
+    @apply mb-2;
   }
 
   table {
-    border-spacing: 0;
-    margin: 0 0 20px 0;
+    @apply mb-4 border-spacing-0;
   }
 
   table tr td {
-    padding: 5px 10px;
-    vertical-align: top;
-    border-top: 1px solid #eee;
+    @apply align-top p-2 border-t;
   }
 
   table tr:first-child td {
-    border-top: 0;
+    @apply border-t-0;
   }
 
   table tr td:first-child {
     @apply text-red font-bold tabular-nums;
   }
 
-  section {
-    @apply flex min-h-screen justify-center;
-  }
-
-  section > div {
-    margin: auto;
-    max-width: 1600px;
-    width: 100%;
-    padding: 50px;
-  }
-
-  section.sponsors > div {
+  section.sponsors>div {
     padding: 20px 50px;
   }
-  section.sponsors > div h3 {
+
+  section.sponsors>div h3 {
     @apply text-red mt-0;
   }
-  section.sponsors > div p {
+
+  section.sponsors>div p {
     color: #333;
   }
 
   @media screen and (max-width: 768px) {
+
     h1 span,
     h2 span {
       @apply whitespace-normal;
-    }
-    h1 {
-      font-size: 34px;
-    }
-    h2 {
-      font-size: 22px;
-    }
-
-    section > div {
-      padding: 15px;
     }
   }
 }

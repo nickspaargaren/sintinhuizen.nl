@@ -7,6 +7,10 @@ export default {
     "./src/content/**/*.md",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "1rem",
+    },
     extend: {
       fontFamily: {
         alfaSlabOne: ["Alfa Slab One", "sans-serif"],
