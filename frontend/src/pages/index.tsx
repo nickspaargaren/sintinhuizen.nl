@@ -238,10 +238,11 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
             </Letter>
           </div>
           <div>
-            <Letter>
-              Hier komt binnenkort de poster met informatie over de
-              Sintactiviteiten in winkelcentrum het Hart van Huizen. Alvast:
-              vrijdagavond 29 nov. en zaterdag 30 nov. is de sint daar aanwezig.
+            <Letter className="p-[0] border-none">
+              <StaticImage
+                alt="Sintactiviteiten in winkelcentrum het Hart van Huizen. Vrijdagavond 29 november en zaterdag 30 november is de sint daar aanwezig."
+                src="../assets/images/poster-sinterklaas-hvh.jpg"
+              />
             </Letter>
             <Letter>
               <strong>De activiteiten van Hart van Huizen:</strong>
