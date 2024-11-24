@@ -36,7 +36,7 @@ export const pageQuery = graphql`
 `;
 
 const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
-  const [photos2023, drawings] = usePhotoGallery();
+  const [photos2023, photos2024, drawings] = usePhotoGallery();
 
   const { berichtsint, programHaven, programKrachtcentrale, programParade } =
     data;
@@ -331,6 +331,18 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
               />
             </div>
           </div>
+        </div>
+      </Section>
+
+      <Section>
+        <div>
+          <h3 className="text-center">
+            Foto&apos;s van de aankomst op <strong>16 november</strong> 2024
+          </h3>
+          <p className="text-center mt-4 mb-8">
+            Klik op de foto voor een vergroting
+          </p>
+          <PhotoGallery images={photos2024} />
         </div>
       </Section>
 
