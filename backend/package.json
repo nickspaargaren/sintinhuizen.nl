@@ -11,7 +11,7 @@
     "build": "sanity build",
     "deploy": "sanity deploy",
     "deploy-graphql": "sanity graphql deploy",
-    "lint": "eslint '**/*.{ts,tsx}'",
+    "lint": "eslint .",
     "check-types": "tsc --noEmit"
   },
   "keywords": [
@@ -27,7 +27,7 @@
   "devDependencies": {
     "@sanity/eslint-config-studio": "^5.0.0",
     "@types/react": "^18.3.12",
-    "eslint": "^8.57.1",
+    "eslint": "^9.17.0",
     "prettier": "^3.4.2",
     "typescript": "^5.7.2"
   },
