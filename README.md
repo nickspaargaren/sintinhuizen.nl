@@ -17,5 +17,7 @@ reset           Reset the project containers, volumes, local dependencies and ca
 ```
 
 ### Requirements
+- Node
+- Yarn
 - Docker
 - Make
