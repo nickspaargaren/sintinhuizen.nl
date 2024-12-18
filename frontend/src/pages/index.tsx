@@ -369,6 +369,10 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
 
         <div className="mt-8 grid gap-8 lg:grid-cols-2">
           <StaticImage
+            src="../assets/images/kleurplatenwedstrijd-sint-2024.jpg"
+            alt="Kleurplatenwedstrijd 2024"
+          />
+          <StaticImage
             src="../assets/images/bedankt-sint.jpeg"
             alt="Sint bedankt"
           />
