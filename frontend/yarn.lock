@@ -1268,10 +1268,10 @@
   dependencies:
     levn "^0.4.1"
 
-"@fontsource/alfa-slab-one@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@fontsource/alfa-slab-one/-/alfa-slab-one-5.1.0.tgz#08511f325b9f0f6ede7d39cc77eebdece7cabfc9"
-  integrity sha512-T09ivi5TYl6wzLiZRQgGXxCIugjMG7jaw6RIfHwrEVdd5XLJGkjnZRIsI+3CDjJrIdIJGe1Wef6+FEKehJXI6g==
+"@fontsource/alfa-slab-one@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/alfa-slab-one/-/alfa-slab-one-5.1.1.tgz#60fadee3807727071964be32330c6acb061a5cc0"
+  integrity sha512-uSb1i1ievb91jhMp4nlXKJVljYwnBluc3BvCobuJMltu1/wQfJLTe+O7ItwNOCSMH47RrthigcWUCrKfe5Y6JA==
 
 "@fontsource/courgette@^5.1.1":
   version "5.1.1"
