@@ -1273,10 +1273,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/alfa-slab-one/-/alfa-slab-one-5.1.0.tgz#08511f325b9f0f6ede7d39cc77eebdece7cabfc9"
   integrity sha512-T09ivi5TYl6wzLiZRQgGXxCIugjMG7jaw6RIfHwrEVdd5XLJGkjnZRIsI+3CDjJrIdIJGe1Wef6+FEKehJXI6g==
 
-"@fontsource/courgette@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@fontsource/courgette/-/courgette-5.1.0.tgz#f127da021c70966c80acc898712f0a5be4adae01"
-  integrity sha512-EIJz97i14aFPV/cNBBDGaCuLWS3dSAEtsLVOSejbnU155yfJ4E2eOaV2R3xCF+2Nliu5C4M+4RTFK83GDVLLbg==
+"@fontsource/courgette@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/courgette/-/courgette-5.1.1.tgz#1931badb9942ac7ff474fe4477ef6458c8a39123"
+  integrity sha512-TfjG/OqIn7tY9PSSfLSOL0oKtK6FZrpwIuNprZ/+L2brs7831DMhS+udUDImv30+9K2OSEuH/28+f0KRq3tDgQ==
 
 "@gatsbyjs/parcel-namer-relative-to-cwd@2.14.0":
   version "2.14.0"
