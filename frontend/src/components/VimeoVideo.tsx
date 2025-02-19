@@ -10,7 +10,6 @@ export const VimeoVideo = ({ title, url }: VimeoVideoProps): ReactElement => (
     className="w-full aspect-video"
     src={url}
     allow="autoplay; fullscreen; picture-in-picture"
-    frameBorder="0"
     title={title}
   />
 );
