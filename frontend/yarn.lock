@@ -9973,10 +9973,10 @@ react-is@^16.13.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-photoswipe-gallery@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/react-photoswipe-gallery/-/react-photoswipe-gallery-3.1.0.tgz#d10b5e6908266a7c6e916d7951910ea7a5bb8bb6"
-  integrity sha512-xzfKtiYWYbXKCshNc3wgF3Ew5jdQs/GRkq7f9q8vc73W80k5ojaKZxt0gpIJ+qd7pnyfHPoXMSzkEm6/xkhjIA==
+react-photoswipe-gallery@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/react-photoswipe-gallery/-/react-photoswipe-gallery-3.1.1.tgz#060e3e04816c314783f3db0aae8ad0c290f9f004"
+  integrity sha512-2hQkUkELwGDSnxdXeOGCySOLiK5vlUFZn9HhwmCXZz0jTqQwG6zy09M6M/JypYFa3md9zd/XW0aUD39dqltzsw==
 
 react-refresh@^0.14.0:
   version "0.14.2"
