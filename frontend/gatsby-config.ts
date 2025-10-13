@@ -1,10 +1,22 @@
+import "dayjs/locale/nl";
+
+import dayjs from "dayjs";
 import type { GatsbyConfig } from "gatsby";
+
+dayjs.locale("nl");
+
+const siteMetadata: {
+  arrivalDate: string;
+} = {
+  arrivalDate: dayjs(new Date("2025-11-15")).format("dddd D MMMM YYYY"),
+};
 
 const config: GatsbyConfig = {
   trailingSlash: "never",
   graphqlTypegen: {
     generateOnBuild: true,
   },
+  siteMetadata,
   plugins: [
     {
       resolve: "gatsby-source-sanity",

@@ -11,7 +11,12 @@ import VimeoVideo from "../components/VimeoVideo";
 import usePhotoGallery from "../hooks/usePhotoGallery";
 
 export const pageQuery = graphql`
-  query markdown {
+  query IndexPage {
+    site {
+      siteMetadata {
+        arrivalDate
+      }
+    }
     berichtsint: markdownRemark(
       fileAbsolutePath: { regex: "/bericht-sint.md/" }
     ) {
@@ -35,11 +40,16 @@ export const pageQuery = graphql`
   }
 `;
 
-const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
+const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
   const [photos2023, photos2024, drawings] = usePhotoGallery();
 
-  const { berichtsint, programHaven, programKrachtcentrale, programParade } =
-    data;
+  const {
+    berichtsint,
+    programHaven,
+    programKrachtcentrale,
+    programParade,
+    site,
+  } = data;
 
   return (
     <>
@@ -55,7 +65,8 @@ const Home = ({ data }: PageProps<Queries.markdownQuery>): ReactElement => {
                   <strong className="whitespace-nowrap">
                     Sint Nicolaas
                   </strong>{" "}
-                  <small>komt</small> <span>16 november 2024</span>{" "}
+                  <small>komt</small>{" "}
+                  <span>{site?.siteMetadata?.arrivalDate}</span>{" "}
                   <small>aan in</small> <strong>Huizen</strong>
                 </h1>
                 <p>
