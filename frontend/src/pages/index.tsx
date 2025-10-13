@@ -87,12 +87,11 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
               <div className="mt-auto">
                 <h3>Dag kinderen,</h3>
                 <p>
-                  Sint Nicolaas komt met 28 strooipieten die builtjes met
+                  Sint Nicolaas komt met 29 strooipieten die builtjes met
                   pepernoten en snoepjes uitdelen. Zijn vraag is of jullie de
                   lege builtjes en ander afval mee naar huis willen nemen of in
-                  de kliko&apos;s willen gooien die op het haventerrein staan.
-                  Daarmee sparen we de natuur, zegt de Sint en natuurlijk zijn
-                  we dat met hem eens!
+                  de kliko&apos;s willen gooien. Daarmee sparen we de natuur,
+                  zegt de Sint en natuurlijk zijn we dat met hem eens!
                 </p>
               </div>
             </div>
