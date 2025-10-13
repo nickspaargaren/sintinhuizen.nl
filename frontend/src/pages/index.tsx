@@ -80,8 +80,8 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
                 </p>
               </div>
               <StaticImage
-                alt="Poster Sint Nicolaas intocht 2024 op 16 november"
-                src="../assets/images/poster-2024.jpg"
+                alt={`Poster Sint Nicolaas intocht ${site?.siteMetadata?.arrivalDate}`}
+                src="../assets/images/poster-2025.jpg"
                 className="w-72"
               />
               <div className="mt-auto">
