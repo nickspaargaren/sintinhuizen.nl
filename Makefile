@@ -30,6 +30,10 @@ lint: ## Run the project codestyle check.
 	@make do-frontend-lint
 	@make do-frontend-typescript
 
+lint-fix: ## Run the project codestyle fix.
+	@make start
+	@make do-frontend-lint-fix
+
 shell-backend: ## Exec into backend container
 	@make do-shell-backend
 
@@ -81,6 +85,9 @@ do-frontend-lint:
 	@echo "Starting frontend codestyle check.."
 	@docker compose exec frontend sh -c "yarn lint"
 
+do-frontend-lint-fix:
+	@echo "Starting frontend codestyle fix.."
+	@docker compose exec frontend sh -c "yarn lint:fix"
 
 do-frontend-typescript:
 	@echo "Starting frontend TypeScript check.."
