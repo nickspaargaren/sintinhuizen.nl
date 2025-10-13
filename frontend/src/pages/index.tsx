@@ -113,7 +113,7 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
 
       <Section>
         <h2 className="text-center mb-8">
-          Feestprogramma <strong>16 november</strong>
+          Feestprogramma <strong>{site?.siteMetadata?.arrivalDate}</strong>
         </h2>
         <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
           <Letter>
@@ -213,8 +213,8 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
           <div>
             <Letter>
               <p>
-                De Sint komt 16 november aan in Huizen met zijn hoofdpiet en 29
-                hulppieten.
+                De Sint komt {site?.siteMetadata?.arrivalDate} aan in Huizen met
+                zijn hoofdpiet en 29 hulppieten.
               </p>
               <p>
                 Je kunt hem zien bij de aankomst in de Werkhaven (14.00 uur),

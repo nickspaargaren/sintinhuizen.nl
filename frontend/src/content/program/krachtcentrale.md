@@ -1,7 +1,6 @@
-### Krachtcentrale
+## Naast de Krachtcentrale – Feest met Sint en Pieten
 
-|        |                                                                           |
-|--------|---------------------------------------------------------------------------|
-| 16:00  | Feestprogramma op buitenpodium. Onder andere prijsuitreiking kleurplatenwedstrijd en diverse optredens |
-| 17:00  | Einde programma. Sint vertrekt naar hotel en gaat uitrusten               |
-
+|       |                                                             |
+|-------|-------------------------------------------------------------|
+| 16:10 | Feestprogramma op buitenpodium, met diverse optredens.      |
+| 17:00 | Einde programma. Sint vertrekt naar hotel en gaat uitrusten.|
