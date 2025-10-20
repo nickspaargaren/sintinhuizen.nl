@@ -345,21 +345,15 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
         <h3>Downloads</h3>
         <ul className="list-disc">
           <li>
-            <a
-              href="/downloads/brief-aan-omwonenden-mbt-verkeerssituatie-16-nov-2024.pdf"
-              download
-            >
-              Brief aan omwonenden m.b.t. verkeerssituatie 16 november 2024
+            <a href="/downloads/brief-aan-omwonenden-2025.pdf" download>
+              Brief aan omwonenden m.b.t. de verkeerssituatie{" "}
+              {site?.siteMetadata?.arrivalDate}
             </a>
           </li>
           <li>
-            <a href="/downloads/omschrijving-van-het-evenement.pdf" download>
-              Beschrijving van het evenement
-            </a>
-          </li>
-          <li>
-            <a href="/downloads/poster.pdf" download>
-              Poster
+            <a href="/downloads/draaiboek-sinterklaas-2025.pdf" download>
+              Draaiboek 2025. Met een kleurrijk draaiboek wordt een kijkje
+              gegeven in de organisatie van de feestelijkheden.
             </a>
           </li>
         </ul>
