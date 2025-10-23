@@ -13,7 +13,7 @@ Dat is nog best een uitdaging maar ik vertrouw er op dat de reispiet dat zoals a
 Ik begreep van het ontvangstcomité dat het weer een spetterende middag beloofd te worden met de burgermeester, dansacts, muziek en een optocht! Ik kan dus ook nog naar jullie zwaaien als ik naar de Krachtcentrale rij, in de vrolijke stoet! Ook bij de Krachtcentrale zal er feest zijn hoorde ik.
 Wij hebben er al enorm veel zin in en ik hoop alle kinderen 15 november in Huizen te zien!
 
-En voor ik het vergeet: jullie burgemeester gaat stoppen. 1 november zal ik hem voor de zevende keer en laatste keer op de kade ontmoeten! Ik denk nog na over een mooi cadeautje!
+En voor ik het vergeet: jullie burgemeester gaat stoppen. 15 november zal ik hem voor de zevende keer en laatste keer op de kade ontmoeten! Ik denk nog na over een mooi cadeautje!
  
 Harteljke groet,
 <p class="signature">Sint Nicolaas</p>
