@@ -293,6 +293,28 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
       </Section>
 
       <Section>
+        <h2 className="text-center mb-8">
+          Het <strong>Huizer Museum</strong> is dit jaar het Gooisch{" "}
+          <strong>Sinterklaashuis</strong>.
+        </h2>
+
+        <div className="grid gap-8 md:grid-cols-2">
+          <div className="rotatedImage">
+            <StaticImage
+              src="../assets/images/sint-in-huizer-museum-deel-1.jpg"
+              alt="Sint in Huizer Museum deel 1"
+            />
+          </div>
+          <div className="rotatedImage">
+            <StaticImage
+              src="../assets/images/sint-in-huizer-museum-deel-2.jpg"
+              alt="Sint in Huizer Museum deel 2"
+            />
+          </div>
+        </div>
+      </Section>
+
+      <Section>
         <div>
           <h3 className="text-center">
             Foto&apos;s van de aankomst op <strong>16 november</strong> 2024
