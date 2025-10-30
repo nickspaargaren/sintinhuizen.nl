@@ -1,4 +1,4 @@
-import { graphql, PageProps } from "gatsby";
+import { graphql, Link, PageProps } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React, { ReactElement } from "react";
 
@@ -154,7 +154,7 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
 
       <Section>
         <h2 className="text-center mb-8">
-          Activiteiten Sint Nicolaas <strong>2024</strong> in Huizen
+          Activiteiten Sint Nicolaas <strong>2025</strong> in Huizen
         </h2>
 
         <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
@@ -162,58 +162,40 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
             <Letter>
               <p>
                 De Sint komt {site?.siteMetadata?.arrivalDate} aan in Huizen met
-                zijn hoofdpiet en 29 hulppieten.
+                zijn Pieten.
               </p>
               <p>
-                Je kunt hem zien bij de aankomst in de Werkhaven (14.00 uur),
-                tijdens de optocht in de Havenstraat (15.30 uur) en bij de
-                Krachtcentrale (16.00 uur).
+                Je kunt hem zien bij de aankomst in de werkhaven (14:00 uur), de
+                optocht in de Havenstraat (15:30 uur) en bij de Krachtcentrale
+                (16:00 uur)
               </p>
               <p>
-                De twee daaropvolgende twee weken gaan Sint en Pieten naar
-                winkelcentrum Oostermeent en winkelcentrum Hart van Huizen.
+                De daaropvolgende weken gaan Sint en Pieten naar Winkelcentrum
+                Oostermeent en winkelcentrum Hart van Huizen.
               </p>
-              <p>Je ziet, je hebt veel keus de Sint te zien!</p>
+              <p>
+                Van 15 november tot 5 december is het Huizer Museum ’t Gooisch
+                Sinterklaashuis. Zie elders op deze website en{" "}
+                <Link to="https://gooisch-sinterklaashuis.nl" target="_blank">
+                  gooisch-sinterklaashuis.nl
+                </Link>
+              </p>
             </Letter>
           </div>
           <div>
             <Letter className="p-[0] border-none">
               <StaticImage
-                alt="Sinterklaas Zaterdag 23 November om 15.00 uur in het haventje van Oostermeent!"
-                src="../assets/images/poster-oostermeent.jpg"
+                alt="Sinterklaas Zaterdag 29 November om 15.00 uur in het haventje van Oostermeent!"
+                src="../assets/images/poster-oostermeent-2025.jpg"
               />
-            </Letter>
-            <Letter>
-              De Sint bezoekt ook het winkelcentrum Oostermeent. Voor meer
-              informatie zie de website{" "}
-              <a
-                href="https://www.winkelcentrumoostermeent.nl"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Winkelcentrumoostermeent.nl
-              </a>
             </Letter>
           </div>
           <div>
             <Letter className="p-[0] border-none">
               <StaticImage
-                alt="Sintactiviteiten in winkelcentrum het Hart van Huizen. Vrijdagavond 29 november en zaterdag 30 november is de sint daar aanwezig."
-                src="../assets/images/poster-sinterklaas-hvh.jpg"
+                alt="Sintactiviteiten in winkelcentrum het Hart van Huizen. Woensdag 3 december en vrijdag 5 december is de sint daar aanwezig."
+                src="../assets/images/poster-sinterklaas-hart-van-huizen-2025.jpg"
               />
-            </Letter>
-            <Letter>
-              <strong>De activiteiten van Hart van Huizen:</strong>
-              <br />
-              Op de website{" "}
-              <a
-                href="https://hartvanhuizen.nl/activiteiten/sint-in-het-oude-dorp/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                HartvanHuizen.nl
-              </a>{" "}
-              kun je hier alles over lezen.
             </Letter>
           </div>
         </div>
