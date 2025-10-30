@@ -191,18 +191,11 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
             </Letter>
           </div>
           <div>
-            <Letter>
-              <p>
-                Activiteiten van de Sint bij het winkelcentrum Hart van Huizen
-                kun je lezen op{" "}
-                <a
-                  href="https://hartvanhuizen.nl/activiteiten/sint-in-het-oude-dorp/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  HartvanHuizen.nl
-                </a>
-              </p>
+            <Letter className="p-[0] border-none">
+              <StaticImage
+                alt="Sintactiviteiten in winkelcentrum het Hart van Huizen. Woensdag 3 december en vrijdag 5 december is de sint daar aanwezig."
+                src="../assets/images/poster-sinterklaas-hart-van-huizen-2025.jpg"
+              />
             </Letter>
           </div>
         </div>
