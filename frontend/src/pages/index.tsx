@@ -2,13 +2,13 @@ import { graphql, Link, PageProps } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React, { ReactElement } from "react";
 
-import Button from "../components/Button";
-import Footer from "../components/Footer";
-import Letter from "../components/Letter";
-import PhotoGallery from "../components/PhotoGallery";
-import Section from "../components/Section";
-import VimeoVideo from "../components/VimeoVideo";
-import usePhotoGallery from "../hooks/usePhotoGallery";
+import { Button } from "../components/Button";
+import { Footer } from "../components/Footer";
+import { Letter } from "../components/Letter";
+import { PhotoGallery } from "../components/PhotoGallery";
+import { Section } from "../components/Section";
+import { VimeoVideo } from "../components/VimeoVideo";
+import { usePhotoGallery } from "../hooks/usePhotoGallery";
 
 export const pageQuery = graphql`
   query IndexPage {

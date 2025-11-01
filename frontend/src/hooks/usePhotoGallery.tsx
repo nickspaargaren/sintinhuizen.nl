@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby";
 
-const PhotoGalleryData = () => {
+export const usePhotoGallery = () => {
   const { photos2024, drawings } = useStaticQuery<Queries.photoGalleryQuery>(
     graphql`
       query photoGallery {
@@ -45,5 +45,3 @@ const PhotoGalleryData = () => {
 
   return [photos2024.nodes, drawings.nodes];
 };
-
-export default PhotoGalleryData;
