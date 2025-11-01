@@ -34,12 +34,6 @@ lint-fix: ## Run the project codestyle fix.
 	@make start
 	@make do-frontend-lint-fix
 
-shell-backend: ## Exec into backend container
-	@make do-shell-backend
-
-shell-frontend: ## Exec into frontend container
-	@make do-shell-frontend
-
 reset: ## Reset the project containers, volumes, local dependencies and cache files.
 	@make do-remove-nodemodules
 	@make do-remove-cache
@@ -92,9 +86,3 @@ do-frontend-lint-fix:
 do-frontend-typescript:
 	@echo "Starting frontend TypeScript check.."
 	@docker compose exec frontend sh -c "yarn check-types"
-
-do-shell-backend:
-	@docker compose exec backend sh
-
-do-shell-frontend:
-	@docker compose exec frontend sh
