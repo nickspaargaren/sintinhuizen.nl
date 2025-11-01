@@ -11,3 +11,7 @@
 | 14:45   | Sint, hoofdpiet en burgemeester beginnen rondgang langs de kinderen.                                  |
 | 14:45   | Diverse optredens                                                                                     |
 | 15:20   | Einde rondgang.                                                                                       |
+
+**Speciale plaatsen voor invaliden**
+
+Voor mensen in een rolstoel of scootmobiel zijn er op de kade speciale plaatsen. Deze mensen kunnen opzij van de geluidstent naar binnen en daar gaan staan. Let op: er mag maximaal één begeleider mee.
