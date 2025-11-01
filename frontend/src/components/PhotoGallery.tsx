@@ -8,7 +8,7 @@ type PhotoGalleryProps =
   | Queries.photoGalleryQuery["photos2024"]["nodes"]
   | Queries.photoGalleryQuery["drawings"]["nodes"];
 
-const PhotoGallery = ({
+export const PhotoGallery = ({
   images,
 }: {
   images: PhotoGalleryProps;
@@ -46,5 +46,3 @@ const PhotoGallery = ({
     </Gallery>
   </div>
 );
-
-export default PhotoGallery;

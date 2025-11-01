@@ -3,7 +3,7 @@ import React, { ReactElement } from "react";
 
 import Sponsors from "./Sponsors";
 
-const Footer = (): ReactElement => (
+export const Footer = (): ReactElement => (
   <>
     <section className="sponsors bg-white min-h-0">
       <div>
@@ -35,5 +35,3 @@ const Footer = (): ReactElement => (
     </footer>
   </>
 );
-
-export default Footer;

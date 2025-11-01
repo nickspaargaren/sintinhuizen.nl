@@ -5,7 +5,7 @@ type VimeoVideoProps = {
   url: string;
 };
 
-const VimeoVideo = ({ title, url }: VimeoVideoProps): ReactElement => (
+export const VimeoVideo = ({ title, url }: VimeoVideoProps): ReactElement => (
   <iframe
     className="w-full aspect-video"
     src={url}
@@ -14,5 +14,3 @@ const VimeoVideo = ({ title, url }: VimeoVideoProps): ReactElement => (
     title={title}
   />
 );
-
-export default VimeoVideo;

@@ -1,6 +1,6 @@
 import React, { HTMLAttributes, PropsWithChildren, ReactElement } from "react";
 
-const Letter = ({
+export const Letter = ({
   children,
   ...props
 }: PropsWithChildren<HTMLAttributes<HTMLDivElement>>): ReactElement => (
@@ -10,5 +10,3 @@ const Letter = ({
     {children}
   </div>
 );
-
-export default Letter;
