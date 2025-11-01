@@ -8,15 +8,15 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: 22
-          cache: "yarn"
-          cache-dependency-path: "frontend/yarn.lock"
+          cache: "npm"
+          cache-dependency-path: "frontend/package-lock.json"
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
           working-directory: frontend
           browser: chrome
-          build: yarn build
-          start: yarn serve --port 3000
+          build: npm build
+          start: npm serve --port 3000
 
   sanity-build:
     runs-on: ubuntu-latest
@@ -28,9 +28,9 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: 22
-          cache: "yarn"
-          cache-dependency-path: "backend/yarn.lock"
+          cache: "npm"
+          cache-dependency-path: "backend/package-lock.json"
       - name: Install modules
-        run: yarn install
+        run: npm install
       - name: Build Sanity Studio
-        run: yarn build
+        run: npm build

@@ -47,12 +47,12 @@ do-install-dependencies:
 do-install-frontend-dependencies:
 	@echo ""
 	@echo "Installing local dependencies for frontend.."
-	@cd frontend && yarn install
+	@cd frontend && npm install
 
 do-install-backend-dependencies:
 	@echo ""
 	@echo "Installing local dependencies for backend.."
-	@cd backend && yarn install
+	@cd backend && npm install
 
 # Remove dependencies & cache
 do-remove-nodemodules:
@@ -73,16 +73,16 @@ do-remove-cache:
 
 do-frontend-tests:
 	@echo "Starting frontend tests.."
-	cd frontend && yarn test
+	cd frontend && npm test
 
 do-frontend-lint:
 	@echo "Starting frontend codestyle check.."
-	@docker compose exec frontend sh -c "yarn lint"
+	@docker compose exec frontend sh -c "npm lint"
 
 do-frontend-lint-fix:
 	@echo "Starting frontend codestyle fix.."
-	@docker compose exec frontend sh -c "yarn lint:fix"
+	@docker compose exec frontend sh -c "npm lint:fix"
 
 do-frontend-typescript:
 	@echo "Starting frontend TypeScript check.."
-	@docker compose exec frontend sh -c "yarn check-types"
+	@docker compose exec frontend sh -c "npm check-types"
