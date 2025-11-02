@@ -1,9 +1,4 @@
 {
-  "name": "sintinhuizennl",
-  "private": true,
-  "version": "1.0.0",
-  "main": "package.json",
-  "author": "Nick Spaargaren <nickspaargaren@users.noreply.github.com>",
   "license": "UNLICENSED",
   "scripts": {
     "dev": "sanity dev --host=0.0.0.0",
@@ -14,9 +9,6 @@
     "lint": "eslint .",
     "check-types": "tsc --noEmit"
   },
-  "keywords": [
-    "sanity"
-  ],
   "dependencies": {
     "@sanity/locale-nl-nl": "^1.1.29",
     "react": "^18.3.1",
