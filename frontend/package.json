@@ -1,5 +1,5 @@
 {
-  "license": "0BSD",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop -H 0.0.0.0",

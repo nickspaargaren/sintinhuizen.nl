@@ -1,5 +1,5 @@
 {
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "dev": "sanity dev --host=0.0.0.0",
     "start": "sanity start",
