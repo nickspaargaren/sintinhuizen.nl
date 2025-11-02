@@ -1,8 +1,4 @@
 {
-  "name": "sintinhuizen.nl",
-  "private": true,
-  "description": "De website voor de intocht van Sinterklaas in Huizen",
-  "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
@@ -44,13 +40,6 @@
     "tailwindcss": "^3.4.18",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.46.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nickspaargaren/sintinhuizen.nl"
-  },
-  "bugs": {
-    "url": "https://github.com/nickspaargaren/sintinhuizen.nl/issues"
   },
   "engines": {
     "node": "22"
