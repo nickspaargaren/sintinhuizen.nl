@@ -1,12 +1,15 @@
 version: 2
 updates:
   - package-ecosystem: "npm"
-    directories:
-      - "/frontend"
-      - "/backend"
+    directory: "/frontend"
     schedule:
       interval: "weekly"
     groups:
+      development-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "major"
+          - "minor"
       react:
         applies-to: version-updates
         patterns:
@@ -14,25 +17,33 @@ updates:
           - "react-dom"
           - "@types/react"
           - "@types/react-dom"
-        update-types:
-          - "major"
-          - "minor"
-          - "patch"
       gatsby:
         applies-to: version-updates
         patterns:
           - "gatsby"
           - "gatsby-*"
+  - package-ecosystem: "npm"
+    directory: "/backend"
+    schedule:
+      interval: "weekly"
+    groups:
+      development-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "major"
+          - "minor"
+      react:
+        applies-to: version-updates
+        patterns:
+          - "react"
+          - "react-dom"
+          - "@types/react"
+          - "@types/react-dom"
       sanity:
         applies-to: version-updates
         patterns:
           - "sanity"
           - "@sanity/*"
-      development-dependencies:
-        dependency-type: "development"
-        update-types:
-          - "patch"
-          - "minor"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
