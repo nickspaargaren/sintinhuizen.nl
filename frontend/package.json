@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@fontsource/alfa-slab-one": "^5.2.8",
-    "@fontsource/courgette": "^5.2.6",
+    "@fontsource/courgette": "^5.2.7",
     "dayjs": "^1.11.19",
     "gatsby": "^5.15.0",
     "gatsby-plugin-image": "^3.15.0",
