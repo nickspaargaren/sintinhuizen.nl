@@ -29,9 +29,14 @@ export const PhotoGallery = ({
             >
               {({ ref, open }) => {
                 if (!item.childImageSharp?.gatsbyImageData) return <></>;
-
                 return (
-                  <button ref={ref} onClick={open} data-cy={`image-${index}`}>
+                  <button
+                    type="button"
+                    ref={ref}
+                    onClick={open}
+                    data-cy={`image-${index}`}
+                    aria-label={`Vergroot foto ${item.relativePath}`}
+                  >
                     <GatsbyImage
                       image={item.childImageSharp.gatsbyImageData}
                       alt={item.relativePath}

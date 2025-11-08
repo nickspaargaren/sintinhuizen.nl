@@ -32,6 +32,7 @@ const Sponsors = (): ReactElement => {
             rel="noopener noreferrer"
             href={item.url || ""}
             target="_blank"
+            aria-label={`Bezoek de website van sponsor ${item.title}`}
           >
             <GatsbyImage
               image={item.logo.asset.gatsbyImageData}
