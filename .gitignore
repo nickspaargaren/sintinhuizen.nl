@@ -7,6 +7,9 @@ yarn-error.log*
 # Dependency directories
 node_modules/
 
+# Turborepo
+.turbo
+
 # dotenv environment variable files
 .env*
 
