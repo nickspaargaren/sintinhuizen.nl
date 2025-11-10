@@ -3,8 +3,13 @@ on: push
 jobs:
   cypress:
     runs-on: ubuntu-latest
+    env:
+      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      TURBO_TEAM: ${{ vars.TURBO_TEAM }}
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 2
       - uses: actions/setup-node@v6
         with:
           node-version: 22
@@ -16,21 +21,4 @@ jobs:
           working-directory: frontend
           browser: chrome
           build: yarn build
-          start: yarn serve --port 3000
-
-  sanity-build:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./backend
-    steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-node@v6
-        with:
-          node-version: 22
-          cache: "yarn"
-          cache-dependency-path: "backend/yarn.lock"
-      - name: Install modules
-        run: yarn install
-      - name: Build Sanity Studio
-        run: yarn build
+          start: yarn serve

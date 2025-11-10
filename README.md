@@ -1,24 +1,22 @@
 # Sintinhuizen.nl
+
 🇳🇱 De website voor de jaarlijkse intocht van Sinterklaas in de gemeente Huizen. In opdracht van St. Intocht Sint Nicolaas Huizen.
 
-## Local Development
-Clone this repository and run `make`.
-
-### Commands
+## Local Development (commands)
 
 ```
-build           Build the project images.
-start           Start the project containers.
-stop            Stop the project containers.
-dev             Start the project containers including dev output.
-test            Run the project end-to-end tests.
-lint            Run the project codestyle check.
-reset           Reset the project containers, volumes, local dependencies and cache files.
+yarn install         Install the dependencies.
+yarn dev             Start the project including dev output.
+yarn build           Build the project for production.
+yarn clean           Delete the .cache and public directories.
+yarn test            Run the project end-to-end tests.
+yarn lint            Run the project codestyle check.
+yarn lint:fix        Run the project codestyle fix.
+yarn check-types     Run the project typescript check.
 ```
 
 ### Requirements
+
 - Git
 - Node
 - Yarn
-- Docker
-- Make
