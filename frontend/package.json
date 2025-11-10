@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "dev": "gatsby develop -H 0.0.0.0",
+    "dev": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "start-server-and-test serve http://localhost:9000 'cypress run'",
