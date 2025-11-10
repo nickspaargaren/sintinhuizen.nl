@@ -15,6 +15,8 @@ yarn lint:fix        Run the project codestyle fix.
 yarn check-types     Run the project typescript check.
 ```
 
+After running `yarn install` and `yarn dev`, the frontend will be available at `http://localhost:8000` and the backend at `http://localhost:3333`.
+
 ### Requirements
 
 - Git
