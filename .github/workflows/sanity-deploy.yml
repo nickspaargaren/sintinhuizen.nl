@@ -5,18 +5,23 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      TURBO_TEAM: ${{ vars.TURBO_TEAM }}
     defaults:
       run:
         working-directory: ./backend
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 2
       - uses: actions/setup-node@v6
         with:
           node-version: 22
           cache: "yarn"
           cache-dependency-path: "backend/yarn.lock"
       - name: Install modules
-        run: yarn install
+        run: yarn install --frozen-lockfile
       - name: Deploy Sanity
         env:
           SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
