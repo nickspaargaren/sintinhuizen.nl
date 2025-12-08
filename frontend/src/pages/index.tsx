@@ -41,7 +41,7 @@ export const pageQuery = graphql`
 `;
 
 const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
-  const [photos2024, drawings] = usePhotoGallery();
+  const [photos2024, photos2025, drawings] = usePhotoGallery();
 
   const {
     berichtsint,
@@ -293,6 +293,18 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
               alt="Sint in Huizer Museum deel 2"
             />
           </div>
+        </div>
+      </Section>
+
+      <Section>
+        <div>
+          <h3 className="text-center">
+            Foto&apos;s van de aankomst op <strong>15 november</strong> 2025
+          </h3>
+          <p className="text-center mt-4 mb-8">
+            Klik op de foto voor een vergroting
+          </p>
+          <PhotoGallery images={photos2025} />
         </div>
       </Section>
 
