@@ -33,7 +33,7 @@
     "singleQuote": true
   },
   "engines": {
-    "node": "22"
+    "node": "24"
   },
   "packageManager": "yarn@4.11.0"
 }
