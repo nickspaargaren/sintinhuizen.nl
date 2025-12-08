@@ -6,6 +6,7 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 
 type PhotoGalleryProps =
   | Queries.photoGalleryQuery["photos2024"]["nodes"]
+  | Queries.photoGalleryQuery["photos2025"]["nodes"]
   | Queries.photoGalleryQuery["drawings"]["nodes"];
 
 export const PhotoGallery = ({
