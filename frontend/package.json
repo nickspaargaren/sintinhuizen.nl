@@ -8,8 +8,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "start-server-and-test serve http://localhost:9000 'cypress run'",
-    "lint": "eslint --ignore-pattern '**/.cache/**' '**/*.{ts,tsx}'",
-    "lint:fix": "eslint --ignore-pattern '**/.cache/**' '**/*.{ts,tsx}' --fix",
+    "lint": "eslint --flag unstable_native_nodejs_ts_config --ignore-pattern '**/.cache/**' '**/*.{ts,tsx}'",
+    "lint:fix": "eslint --flag unstable_native_nodejs_ts_config --ignore-pattern '**/.cache/**' '**/*.{ts,tsx}' --fix",
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
@@ -49,7 +49,7 @@
     "typescript-eslint": "^8.46.2"
   },
   "engines": {
-    "node": "24"
+    "node": "^24.12.0"
   },
   "packageManager": "yarn@4.11.0"
 }
