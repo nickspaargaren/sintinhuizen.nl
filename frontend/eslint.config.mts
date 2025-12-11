@@ -1,9 +1,10 @@
+import { defineConfig } from "eslint/config";
 import eslint from "@eslint/js";
 import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import tseslint from "typescript-eslint";
 
-export default tseslint.config(
+export default defineConfig(
   eslint.configs.recommended,
   ...tseslint.configs.strict,
   ...tseslint.configs.stylistic,
@@ -38,5 +39,5 @@ export default tseslint.config(
       "space-in-parens": ["error", "never"],
       "@typescript-eslint/consistent-type-definitions": ["error", "type"],
     },
-  },
+  }
 );

@@ -1,4 +1,4 @@
-import alfaSlabOneWoff2 from "@fontsource/alfa-slab-one/files/alfa-slab-one-latin-400-normal.woff?url";
+import alfaSlabOneWoff2 from "@fontsource/alfa-slab-one/files/alfa-slab-one-latin-400-normal.woff2?url";
 import courgetteWoff2 from "@fontsource/courgette/files/courgette-latin-400-normal.woff2?url";
 import type { GatsbySSR } from "gatsby";
 import React from "react";
