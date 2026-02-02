@@ -11,6 +11,7 @@ export default defineConfig({
           "element-permitted-content": "off",
           "valid-id": "off",
           "attr-case": "off",
+          "void-content": "off",
         },
       });
     },
