@@ -16,7 +16,7 @@
     "@fontsource/alfa-slab-one": "^5.2.8",
     "@fontsource/courgette": "^5.2.7",
     "dayjs": "^1.11.19",
-    "gatsby": "^5.16.0",
+    "gatsby": "^5.16.1",
     "gatsby-plugin-image": "^3.16.0",
     "gatsby-plugin-sharp": "^5.16.0",
     "gatsby-source-filesystem": "^5.16.0",
