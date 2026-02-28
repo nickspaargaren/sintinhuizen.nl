@@ -25,6 +25,14 @@ updates:
         patterns:
           - "gatsby"
           - "gatsby-*"
+      eslint:
+        patterns:
+          - "eslint"
+          - "eslint-config-*"
+          - "eslint-plugin-*"
+          - "@eslint/js"
+          - "@sanity/eslint-config-studio"
+          - "typescript-eslint"
   - package-ecosystem: "npm"
     directory: "/backend"
     schedule:
