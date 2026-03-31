@@ -2,11 +2,11 @@
 
 🇳🇱 De website voor de jaarlijkse intocht van Sinterklaas in de gemeente Huizen. In opdracht van St. Intocht Sint Nicolaas Huizen.
 
-## How to Help
+## How to contribute
 
-This website is open source and welcomes contributions! You need a [GitHub account](https://github.com/signup) to help.
+This website is open source and welcomes contributions. You need a [GitHub account](https://github.com/signup) to contribute.
 
-### Edit Content (Text & Images)
+### Edit Content
 
 No technical setup needed. Perfect for updating information on the website.
 
