@@ -8,7 +8,7 @@ This website is open source and welcomes contributions. You need a [GitHub accou
 
 ### For everyone
 
-No technical setup needed. Perfect for updating information on the website.
+No technical setup needed - for updating information on the website.
 
 👉 **[Content Editing Guide](docs/content-editing.md)**
 

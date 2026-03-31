@@ -2,7 +2,7 @@
 
 Update text, images, and other content without installing anything on your computer.
 
-## Option 1: Edit on GitHub
+## Edit on GitHub
 
 1. Find the file you want to edit on [GitHub](https://github.com/nickspaargaren/sintinhuizen.nl)
 2. Click the pencil icon and make your changes
@@ -13,9 +13,9 @@ Update text, images, and other content without installing anything on your compu
 
 Your changes will be reviewed and added to the website once approved.
 
-## Option 2: Use Sanity CMS
+## Use Sanity CMS
 
-The easiest way to edit content. Contact the project maintainers for access to the content editor.
+Contact the project maintainers for access to the content editor.
 
 ## Need Help?
 
