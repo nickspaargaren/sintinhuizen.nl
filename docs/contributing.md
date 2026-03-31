@@ -36,6 +36,30 @@ If you're making code changes:
 6. Commit your changes with a clear message
 7. Push to your fork and submit a pull request
 
+## Automated Checks
+
+When you submit a pull request, GitHub will automatically run several quality checks on your code. These are called [GitHub Actions](https://docs.github.com/en/actions) - automated tests that help ensure the code works correctly and follows the project's standards.
+
+You'll see these checks running at the bottom of your pull request. They need to show green checkmarks before your changes can be merged. If any checks fail (red X), don't worry! You can click on the failed check to see what went wrong and fix it.
+
+All pull requests must pass the following [automated workflows](https://github.com/nickspaargaren/sintinhuizen.nl/tree/master/.github/workflows):
+
+### CI Workflow
+
+This checks code quality and ensures the project builds correctly:
+
+- **ESLint** - Checks code style and catches common errors (`yarn lint`)
+- **TypeScript** - Verifies type safety (`yarn check-types`)
+- **Build** - Makes sure the project builds without errors (`yarn build`)
+
+### Tests Workflow
+
+This runs automated tests to verify everything works:
+
+- **Cypress** - Tests the website functionality automatically (`yarn test`)
+
+**Tip:** You can run these checks locally before submitting your pull request to catch issues early and ensure they will pass.
+
 ## Questions?
 
 If you have questions, feel free to open an issue for discussion.
