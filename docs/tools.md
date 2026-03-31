@@ -29,6 +29,7 @@ Tools used to build and maintain the project:
 - **[Node.js](https://nodejs.org/)** - Runs JavaScript code on your computer
 - **[ESLint](https://eslint.org/)** - Checks code style and catches common errors
 - **[Prettier](https://prettier.io/)** - Automatically formats code consistently
+- **[Dependabot](https://docs.github.com/en/code-security/tutorials/secure-your-dependencies/dependabot-quickstart-guide)** - Automatically updates dependencies and security patches
 
 ## Project Structure
 
