@@ -6,6 +6,7 @@ Welcome to the Sintinhuizen.nl documentation.
 
 - **[Setup](setup.md)** - Installation requirements and initial setup
 - **[Development](development.md)** - Local development commands and workflow
+- **[Tools & Technologies](tools.md)** - Tech stack and dependencies
 - **[Contributing](contributing.md)** - How to contribute to the project
 
 ## Quick Links

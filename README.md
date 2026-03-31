@@ -6,6 +6,7 @@
 
 - **[Setup](docs/setup.md)** - Installation and requirements
 - **[Development](docs/development.md)** - Development commands and workflow
+- **[Tools & Technologies](docs/tools.md)** - Tech stack and dependencies
 - **[Contributing](docs/contributing.md)** - How to contribute
 
 For complete documentation, see the [docs](docs/) folder.
