@@ -6,13 +6,13 @@
 
 This website is open source and welcomes contributions. You need a [GitHub account](https://github.com/signup) to contribute.
 
-### Edit Content
+### For everyone
 
 No technical setup needed. Perfect for updating information on the website.
 
 👉 **[Content Editing Guide](docs/content-editing.md)**
 
-### Make Code Changes
+### For developers
 
 For developers who want to improve the website's design or functionality.
 
