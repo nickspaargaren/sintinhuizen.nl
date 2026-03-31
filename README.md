@@ -4,7 +4,7 @@
 
 ## How to contribute
 
-This website is open source, which means that anyone can suggest changes and contribute improvements. You need a [GitHub account](https://github.com/signup) to get started.
+This website is open source, meaning anyone can propose changes, contribute improvements, and help identify potential security issues in the code. You need a [GitHub account](https://github.com/signup) to get started.
 
 ### For everyone
 
