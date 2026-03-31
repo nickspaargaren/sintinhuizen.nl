@@ -4,7 +4,7 @@
 
 ## How to contribute
 
-This website is open source and welcomes contributions. You need a [GitHub account](https://github.com/signup) to contribute.
+This website is open source, which means that anyone can suggest changes and contribute improvements. You need a [GitHub account](https://github.com/signup) to get started.
 
 ### For everyone
 
