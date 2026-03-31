@@ -2,27 +2,20 @@
 
 🇳🇱 De website voor de jaarlijkse intocht van Sinterklaas in de gemeente Huizen. In opdracht van St. Intocht Sint Nicolaas Huizen.
 
-## Local Development (commands)
+## How to contribute
 
-```
-yarn install         Install the dependencies.
-yarn dev             Start the project including dev output.
-yarn build           Build the project for production.
-yarn clean           Delete the .cache and public directories.
-yarn test            Run the project end-to-end tests.
-yarn lint            Run the project codestyle check.
-yarn lint:fix        Run the project codestyle fix.
-yarn check-types     Run the project typescript check.
-```
+This website is open source and welcomes contributions. You need a [GitHub account](https://github.com/signup) to contribute.
 
-After running `yarn install` and `yarn dev`, the frontend will be available at `http://localhost:8000` and the backend at `http://localhost:3333`.
+### For everyone
 
-### Requirements
+No technical setup needed - for updating information on the website.
 
-- Git
-- Node
-- Yarn
+👉 **[Content Editing Guide](docs/content-editing.md)**
 
-## Contributing
+### For developers
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+For developers who want to improve the website's design or functionality.
+
+- **[Contributing Guide](docs/contributing.md)** - How to submit code changes
+- **[Setup Guide](docs/setup.md)** - Getting started on your computer
+- **[Technologies Used](docs/tools.md)** - What this website is built with
