@@ -22,3 +22,7 @@ After running `yarn install` and `yarn dev`, the frontend will be available at `
 - Git
 - Node
 - Yarn
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
