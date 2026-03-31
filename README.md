@@ -2,20 +2,20 @@
 
 🇳🇱 De website voor de jaarlijkse intocht van Sinterklaas in de gemeente Huizen. In opdracht van St. Intocht Sint Nicolaas Huizen.
 
-## Documentation
+## How to Help
 
-- **[Setup](docs/setup.md)** - Installation and requirements
-- **[Development](docs/development.md)** - Development commands and workflow
-- **[Tools & Technologies](docs/tools.md)** - Tech stack and dependencies
-- **[Contributing](docs/contributing.md)** - How to contribute
+This website is open source and welcomes contributions! You need a [GitHub account](https://github.com/signup) to help.
 
-For complete documentation, see the [docs](docs/) folder.
+### Edit Content (Text & Images)
 
-## Quick Start
+No technical setup needed. Perfect for updating information on the website.
 
-```bash
-yarn install
-yarn dev
-```
+👉 **[Content Editing Guide](docs/content-editing.md)**
 
-The frontend will be available at `http://localhost:8000` and the backend at `http://localhost:3333`.
+### Make Code Changes
+
+For developers who want to improve the website's design or functionality.
+
+- **[Contributing Guide](docs/contributing.md)** - How to submit code changes
+- **[Setup Guide](docs/setup.md)** - Getting started on your computer
+- **[Technologies Used](docs/tools.md)** - What this website is built with

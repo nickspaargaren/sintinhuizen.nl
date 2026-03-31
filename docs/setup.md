@@ -1,17 +1,55 @@
-# Setup
+# Setup Guide
 
-## Requirements
+Get the project running on your computer to make code changes.
 
-- Git
-- Node
-- Yarn
+## What You Need
 
-## Installation
+Install these first:
 
-Install the project dependencies:
+- **Git** - To download and track changes
+- **Node.js** - To run the website
+- **Yarn** - To install dependencies
+
+## Getting Started
+
+1. Download the code:
+
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/sintinhuizen.nl.git
+   cd sintinhuizen.nl
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   yarn install
+   ```
+
+3. Start the website:
+   ```bash
+   yarn dev
+   ```
+
+The website will open at `http://localhost:8000`
+
+## Useful Commands
 
 ```bash
-yarn install
+yarn dev             # Start the website locally
+yarn lint            # Check code style
+yarn check-types     # Check for errors
+yarn test            # Run tests
+yarn build           # Build for production
+yarn lint:fix        # Auto-fix code style
 ```
 
-After running `yarn install`, you can start the development server with `yarn dev`. The frontend will be available at `http://localhost:8000` and the backend at `http://localhost:3333`.
+## Before Submitting Changes
+
+Run these to make sure everything works:
+
+```bash
+yarn lint
+yarn check-types
+yarn test
+yarn build
+```

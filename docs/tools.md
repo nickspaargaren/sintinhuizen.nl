@@ -1,51 +1,40 @@
 # Tools & Technologies
 
-## Frontend
+This page provides an overview of the technologies used in this project. You don't need to understand all of this to contribute - this is primarily for developers who want to understand the technical stack.
 
-### Core Framework
+## What You See (Frontend)
 
-- **[Gatsby](https://www.gatsbyjs.com/)** - React-based static site generator
-- **[React](https://react.dev/)** - UI library
-- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript
-- **[TailwindCSS](https://tailwindcss.com/)** - Utility-first CSS framework
+The website that visitors see is built with:
 
-### Testing
+- **[Gatsby](https://www.gatsbyjs.com/)** - Framework that generates fast, static websites
+- **[React](https://react.dev/)** - Library for building user interfaces
+- **[TypeScript](https://www.typescriptlang.org/)** - JavaScript with type checking to catch errors
+- **[TailwindCSS](https://tailwindcss.com/)** - CSS framework for styling
+- **[Cypress](https://www.cypress.io/)** - Automated testing tool
 
-- **[Cypress](https://www.cypress.io/)** - End-to-end testing
+## Where Content Lives (Backend)
 
-## Backend
+Content is managed through:
 
-### CMS
-
-- **[Sanity](https://www.sanity.io/)** - Headless CMS
-- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript
+- **[Sanity](https://www.sanity.io/)** - Content management system (CMS) where editors can update text, images, and other content
+- **[TypeScript](https://www.typescriptlang.org/)** - JavaScript with type checking
 
 ## Development Tools
 
-### Package Management
+Tools used to build and maintain the project:
 
-- **[Yarn](https://yarnpkg.com/)** - Package manager
-- **[Turbo](https://turbo.build/)** - Monorepo build system
+- **[Yarn](https://yarnpkg.com/)** - Manages project dependencies (required files and tools)
+- **[Turbo](https://turbo.build/)** - Coordinates builds across multiple project parts
+- **[Git](https://git-scm.com/)** - Tracks changes to the code
+- **[Node.js](https://nodejs.org/)** - Runs JavaScript code on your computer
+- **[ESLint](https://eslint.org/)** - Checks code style and catches common errors
+- **[Prettier](https://prettier.io/)** - Automatically formats code consistently
 
-### Version Control
+## Project Structure
 
-- **[Git](https://git-scm.com/)** - Source control
+This project uses a monorepo structure (project with multiple parts):
 
-### Runtime
+- **`frontend/`** - The Gatsby-based website that visitors see
+- **`backend/`** - The Sanity CMS studio where content is managed
 
-- **[Node.js](https://nodejs.org/)** - JavaScript runtime
-
-### Code Quality
-
-- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript
-- **[ESLint](https://eslint.org/)** - Code linting
-- **[Prettier](https://prettier.io/)** - Code formatting
-
-## Architecture
-
-This project uses a **monorepo structure** with two main packages:
-
-- **`frontend/`** - Gatsby-based website
-- **`backend/`** - Sanity CMS studio
-
-Content is managed in Sanity CMS and consumed by the Gatsby frontend via the GraphQL API.
+Content is managed in Sanity CMS and automatically appears on the Gatsby website.
