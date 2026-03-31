@@ -6,9 +6,16 @@ Get the project running on your computer to make code changes.
 
 Install these first:
 
-- **Git** - To download and track changes
-- **Node.js** - To run the website
-- **Yarn** - To install dependencies
+- **[Git](https://git-scm.com/downloads)** - To download and track changes
+- **[Node.js](https://nodejs.org/)** (version 24) - To run the website
+- **[Yarn](https://yarnpkg.com/getting-started/install)** - To install dependencies
+
+**Recommended:** Use [Homebrew](https://brew.sh/) to install Git and Node.js on macOS/Linux, then enable Yarn via [Corepack](https://nodejs.org/api/corepack.html) (included with Node.js 24+):
+
+```bash
+brew install node
+corepack enable
+```
 
 ## Getting Started
 
