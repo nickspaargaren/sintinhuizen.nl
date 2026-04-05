@@ -17,6 +17,8 @@ jobs:
         run: corepack enable
       - name: Install modules
         run: yarn install --immutable
+      - name: Check dependencies that could be deduplicated
+        run: yarn dedupe --check
       - name: Run ESLint
         run: yarn lint
       - name: Build project & generate types
