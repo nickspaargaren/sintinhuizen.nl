@@ -13,7 +13,7 @@
       "@/*": ["./src/*"],
       "@/static/*": ["./static/*"]
     },
-    "types": ["node"],
+    "types": ["node", "cypress"],
     "noUncheckedSideEffectImports": false
   },
   "exclude": ["node_modules"]
