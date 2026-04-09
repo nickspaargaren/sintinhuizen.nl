@@ -19,6 +19,8 @@ jobs:
         run: yarn install --immutable
       - name: Check dependencies that could be deduplicated
         run: yarn dedupe --check
+      - name: Check package manager constraints
+        run: yarn constraints
       - name: Run ESLint
         run: yarn lint
       - name: Build project & generate types

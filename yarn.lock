@@ -6837,6 +6837,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@yarnpkg/types@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "@yarnpkg/types@npm:4.0.1"
+  dependencies:
+    tslib: "npm:^2.4.0"
+  checksum: 10c0/90226789475680ba599833571dd76c0718dd5b4c5022481263ef309d6a628f6246671cd6ca86e49c966ddefa7aca6ccef82240dc1476d2cea702ea5bee2a6b72
+  languageName: node
+  linkType: hard
+
 "abbrev@npm:^3.0.0":
   version: 3.0.1
   resolution: "abbrev@npm:3.0.1"
@@ -20519,6 +20528,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sintinhuizen.nl@workspace:."
   dependencies:
+    "@yarnpkg/types": "npm:^4.0.1"
     turbo: "npm:^2.3.3"
   languageName: unknown
   linkType: soft
