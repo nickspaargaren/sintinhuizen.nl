@@ -19,6 +19,13 @@ Content is managed through:
 - **[Sanity](https://www.sanity.io/)** - Content management system (CMS) where editors can update text, images, and other content
 - **[TypeScript](https://www.typescriptlang.org/)** - JavaScript with type checking
 
+## Hosting
+
+The website and content management system are hosted on:
+
+- **[Vercel](https://vercel.com/)** - Cloud platform for deploying and hosting the website
+- **[Sanity](https://www.sanity.io/)** - Hosts the Sanity Studio (content management interface)
+
 ## Development Tools
 
 Tools used to build and maintain the project:
