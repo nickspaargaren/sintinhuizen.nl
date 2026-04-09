@@ -8,11 +8,6 @@ updates:
       - dependency-name: "tailwindcss"
         update-types: ["version-update:semver-major"]
     groups:
-      development-dependencies:
-        dependency-type: "development"
-        update-types:
-          - "major"
-          - "minor"
       react:
         applies-to: version-updates
         patterns:
@@ -38,11 +33,6 @@ updates:
     schedule:
       interval: "weekly"
     groups:
-      development-dependencies:
-        dependency-type: "development"
-        update-types:
-          - "major"
-          - "minor"
       react:
         applies-to: version-updates
         patterns:
