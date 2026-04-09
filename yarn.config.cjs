@@ -23,7 +23,7 @@ const enforceConsistentTypeScriptVersion = (Yarn) => {
     if (workspace.manifest.name === "sintinhuizen.nl") {
       continue;
     }
-    workspace.set("devDependencies.typescript", `^5.9.3`);
+    workspace.set("devDependencies.typescript", `^6.0.2`);
   }
 };
 
