@@ -16,7 +16,7 @@ No technical setup needed - for updating information on the website.
 
 ## Automated Quality Checks
 
-When you submit changes, GitHub automatically tests your code to make sure:
+When you submit changes, GitHub Actions automatically tests your code to make sure:
 
 - The code follows the project style
 - Everything builds without errors
