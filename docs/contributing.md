@@ -10,7 +10,7 @@ No technical setup needed - for updating information on the website.
 
 ## For developers
 
-1. Download your copy to your computer (see [Setup Guide](setup.md))
+1. Follow the [Setup Guide](setup.md)
 2. Make your changes and test them with `yarn dev`
 3. Submit your changes (create a "pull request")
 
