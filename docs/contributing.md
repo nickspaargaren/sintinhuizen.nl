@@ -12,7 +12,8 @@ No technical setup needed - for updating information on the website.
 
 1. Follow the [Setup Guide](setup.md)
 2. Make your changes and test them with `yarn dev`
-3. Submit your changes (create a "pull request")
+3. Push your changes to your fork
+4. Submit your changes (create a "pull request")
 
 ## Automated Quality Checks
 
