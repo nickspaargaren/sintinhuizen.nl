@@ -19,20 +19,21 @@ corepack enable
 
 ## Getting Started
 
-1. Download the code:
+1. Make a copy of the project on GitHub (click "Fork")
+2. Download the code:
 
    ```bash
    git clone https://github.com/YOUR-USERNAME/sintinhuizen.nl.git
    cd sintinhuizen.nl
    ```
 
-2. Install dependencies:
+3. Install dependencies:
 
    ```bash
    yarn install
    ```
 
-3. Start the website:
+4. Start the website:
    ```bash
    yarn dev
    ```
