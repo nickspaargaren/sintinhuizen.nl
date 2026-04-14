@@ -19,25 +19,29 @@ corepack enable
 
 ## Getting Started
 
-1. Download the code:
+1. Make a copy of the project: https://github.com/nickspaargaren/sintinhuizen.nl/fork
+2. Use the terminal to download the source code:
 
    ```bash
    git clone https://github.com/YOUR-USERNAME/sintinhuizen.nl.git
+   ```
+
+   ```bash
    cd sintinhuizen.nl
    ```
 
-2. Install dependencies:
+3. Install dependencies:
 
    ```bash
    yarn install
    ```
 
-3. Start the website:
+4. Start the website:
    ```bash
    yarn dev
    ```
 
-The website will open at `http://localhost:8000`
+The website will open at `http://localhost:8000` and Sanity Studio at `http://localhost:3333`
 
 ## Useful Commands
 

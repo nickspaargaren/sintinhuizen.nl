@@ -1,17 +1,23 @@
-# Contributing Guide
+# How to contribute
 
-For code changes to the website. If you only want to edit content, see the [Content Editing Guide](content-editing.md).
+[sintinhuizen.nl](https://www.sintinhuizen.nl) is open source, meaning anyone can propose changes, contribute improvements, and help identify potential security issues in the code. You need a [GitHub account](https://github.com/signup) to get started.
 
-## How to Contribute Code
+## For everyone
 
-1. Make a copy of the project on GitHub (click "Fork")
-2. Download your copy to your computer (see [Setup Guide](setup.md))
-3. Make your changes and test them with `yarn dev`
+No technical setup needed - for updating information on the website.
+
+**[Content Editing Guide](content-editing.md)**
+
+## For developers
+
+1. Follow the [Setup Guide](setup.md)
+2. Make your changes and test them with `yarn dev`
+3. Push your changes to your fork
 4. Submit your changes (create a "pull request")
 
 ## Automated Quality Checks
 
-When you submit changes, GitHub automatically tests your code to make sure:
+When you submit changes, GitHub Actions automatically tests your code to make sure:
 
 - The code follows the project style
 - Everything builds without errors
