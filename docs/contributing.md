@@ -6,11 +6,11 @@
 
 No technical setup needed - for updating information on the website.
 
-**[Content Editing Guide](content-editing.md)**
+**[Content Editing Guide](/docs/content-editing.md)**
 
 ## For developers
 
-1. Follow the [Setup Guide](setup.md)
+1. Follow the [Setup Guide](/docs/setup.md)
 2. Make your changes and test them with `yarn dev`
 3. Push your changes to your fork
 4. Submit your changes (create a "pull request")
