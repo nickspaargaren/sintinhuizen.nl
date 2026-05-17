@@ -20497,6 +20497,9 @@ __metadata:
   dependencies:
     "@yarnpkg/types": "npm:^4.0.1"
     turbo: "npm:^2.9.6"
+  dependenciesMeta:
+    sharp:
+      built: true
   languageName: unknown
   linkType: soft
 
