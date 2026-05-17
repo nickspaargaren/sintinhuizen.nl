@@ -12185,11 +12185,6 @@ __metadata:
     tailwindcss: "npm:^3.4.19"
     typescript: "npm:^5.9.3"
     typescript-eslint: "npm:^8.46.2"
-  dependenciesMeta:
-    cypress:
-      built: true
-    sharp:
-      built: true
   languageName: unknown
   linkType: soft
 
@@ -20502,6 +20497,29 @@ __metadata:
   dependencies:
     "@yarnpkg/types": "npm:^4.0.1"
     turbo: "npm:^2.9.6"
+  dependenciesMeta:
+    "@parcel/watcher":
+      built: true
+    core-js:
+      built: true
+    core-js-pure:
+      built: true
+    cypress:
+      built: true
+    es5-ext:
+      built: true
+    esbuild:
+      built: true
+    gatsby:
+      built: true
+    gatsby-cli:
+      built: true
+    lmdb:
+      built: true
+    msgpackr-extract:
+      built: true
+    sharp:
+      built: true
   languageName: unknown
   linkType: soft
 
