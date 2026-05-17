@@ -23,10 +23,10 @@
     "node": "^24.12.0"
   },
   "dependenciesMeta": {
-    "sharp": {
+    "cypress": {
       "built": true
     },
-    "cypress": {
+    "sharp": {
       "built": true
     }
   },

@@ -20498,6 +20498,8 @@ __metadata:
     "@yarnpkg/types": "npm:^4.0.1"
     turbo: "npm:^2.9.6"
   dependenciesMeta:
+    cypress:
+      built: true
     sharp:
       built: true
   languageName: unknown
