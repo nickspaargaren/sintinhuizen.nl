@@ -40,7 +40,7 @@
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "gatsby-plugin-postcss": "^6.16.0",
-    "html-validate": "^10.3.0",
+    "html-validate": "^11.1.0",
     "postcss": "^8.5.13",
     "prettier": "^3.6.2",
     "start-server-and-test": "^3.0.0",
