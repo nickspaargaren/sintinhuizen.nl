@@ -15,10 +15,14 @@ jobs:
           node-version: 24
       - name: Enable Corepack
         run: corepack enable
+      - name: Install dependencies
+        run: yarn --immutable
+      - name: Build app
+        run: yarn build
       - name: Cypress run
         uses: cypress-io/github-action@v7
         with:
           browser: chrome
-          build: yarn build
           start: yarn serve
-          install-command: yarn --immutable
+          install: false
+          working-directory: frontend
