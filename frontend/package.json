@@ -48,6 +48,14 @@
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.46.2"
   },
+  "dependenciesMeta": {
+    "cypress": {
+      "built": true
+    },
+    "sharp": {
+      "built": true
+    }
+  },
   "engines": {
     "node": "^24.12.0"
   }
