@@ -33,7 +33,7 @@
     "@types/react": "^19.2.10",
     "@types/react-dom": "^19.2.3",
     "autoprefixer": "^10.4.21",
-    "cypress": "15.15.0",
+    "cypress": "15.17.0",
     "cypress-html-validate": "^9.0.0",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
