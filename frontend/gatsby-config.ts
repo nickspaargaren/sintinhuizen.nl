@@ -8,7 +8,7 @@ dayjs.locale("nl");
 const siteMetadata: {
   arrivalDate: string;
 } = {
-  arrivalDate: dayjs(new Date("2025-11-15")).format("dddd D MMMM YYYY"),
+  arrivalDate: dayjs(new Date("2026-11-14")).format("dddd D MMMM YYYY"),
 };
 
 const config: GatsbyConfig = {
