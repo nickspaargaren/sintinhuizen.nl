@@ -6955,9 +6955,9 @@ __metadata:
   linkType: hard
 
 "adm-zip@npm:^0.5.16":
-  version: 0.5.16
-  resolution: "adm-zip@npm:0.5.16"
-  checksum: 10c0/6f10119d4570c7ba76dcf428abb8d3f69e63f92e51f700a542b43d4c0130373dd2ddfc8f85059f12d4a843703a90c3970cfd17876844b4f3f48bf042bfa6b49f
+  version: 0.5.18
+  resolution: "adm-zip@npm:0.5.18"
+  checksum: 10c0/9b734aa7126a01913baec02bf495d086b5d7e63315522b7087620e3fc8279c8ebd65109da4d99f16fcf873d87522ae6ffd913aef65449fd22c68777b772685e9
   languageName: node
   linkType: hard
 
@@ -12133,7 +12133,7 @@ __metadata:
     gatsby-transformer-sharp: "npm:^5.16.0"
     html-validate: "npm:^11.1.0"
     photoswipe: "npm:^5.4.2"
-    postcss: "npm:^8.5.16"
+    postcss: "npm:^8.5.17"
     prettier: "npm:^3.6.2"
     react: "npm:^19.2.4"
     react-dom: "npm:^19.2.4"
@@ -18359,7 +18359,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.2.15, postcss@npm:^8.2.9, postcss@npm:^8.3.11, postcss@npm:^8.4.24, postcss@npm:^8.4.47, postcss@npm:^8.5.16, postcss@npm:^8.5.3, postcss@npm:^8.5.6":
+"postcss@npm:^8.2.15, postcss@npm:^8.2.9, postcss@npm:^8.3.11, postcss@npm:^8.4.24, postcss@npm:^8.4.47, postcss@npm:^8.5.3, postcss@npm:^8.5.6":
   version: 8.5.16
   resolution: "postcss@npm:8.5.16"
   dependencies:
@@ -18367,6 +18367,17 @@ __metadata:
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.1"
   checksum: 10c0/625de7a02f662f3a340964d14b487bd5097adf16f5f171e257d19005ba37aea8768ee446557500e88e91ca46b4d14d6cb4a0bf033c6ec0c8c0b660d85719f1ef
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.5.17":
+  version: 8.5.17
+  resolution: "postcss@npm:8.5.17"
+  dependencies:
+    nanoid: "npm:^3.3.12"
+    picocolors: "npm:^1.1.1"
+    source-map-js: "npm:^1.2.1"
+  checksum: 10c0/5ff97c377a34becb6dc51262eb3f892c474459c682506eff04bac3b65bc6af4451802b40341af4e69956c05665a4a298dec975ba12d75e1310dfa3d89b9f587d
   languageName: node
   linkType: hard
 
@@ -21373,11 +21384,11 @@ __metadata:
   linkType: hard
 
 "systeminformation@npm:^5.31.1":
-  version: 5.31.6
-  resolution: "systeminformation@npm:5.31.6"
+  version: 5.31.17
+  resolution: "systeminformation@npm:5.31.17"
   bin:
     systeminformation: lib/cli.js
-  checksum: 10c0/fb0c9dae20e47277d26f3dd374f14c846567adba15a2bf9715e0a871f912424d31b75f6c27e0c8b819abc3fcd285ae8c1f6468acd8a161f18a1a39b632a01923
+  checksum: 10c0/02da446c6125f07c2b22f37668adbbf589c9e29e99c91fd804b41badc22d5f13286d4a3728b7cf2aaf36346545f90a7180ff8fd64ddf9a57a066f3307c52e3ec
   conditions: (os=darwin | os=linux | os=win32 | os=freebsd | os=openbsd | os=netbsd | os=sunos | os=android)
   languageName: node
   linkType: hard
