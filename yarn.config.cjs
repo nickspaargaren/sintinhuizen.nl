@@ -20,7 +20,7 @@ const enforceConsistentNodeVersion = (Yarn) => {
  */
 const enforceConsistentPackageManagerVersion = (Yarn) => {
   for (const workspace of Yarn.workspaces()) {
-    workspace.set("packageManager", `yarn@4.13.0`);
+    workspace.set("packageManager", `yarn@4.17.1`);
   }
 };
 
