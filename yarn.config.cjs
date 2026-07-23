@@ -18,6 +18,15 @@ const enforceConsistentNodeVersion = (Yarn) => {
 /**
  * @param {Context['Yarn']} Yarn
  */
+const enforceConsistentPackageManagerVersion = (Yarn) => {
+  for (const workspace of Yarn.workspaces()) {
+    workspace.set("packageManager", `yarn@4.13.0`);
+  }
+};
+
+/**
+ * @param {Context['Yarn']} Yarn
+ */
 const enforceConsistentTypeScriptVersion = (Yarn) => {
   for (const workspace of Yarn.workspaces()) {
     if (workspace.manifest.name === "sintinhuizen.nl") {
@@ -33,6 +42,7 @@ module.exports = defineConfig({
    */
   async constraints({ Yarn }) {
     enforceConsistentNodeVersion(Yarn);
+    enforceConsistentPackageManagerVersion(Yarn);
     enforceConsistentTypeScriptVersion(Yarn);
   }
 });
