@@ -79,11 +79,6 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
                   Hij brengt ook een Glutenvrije Piet mee!
                 </p>
               </div>
-              <StaticImage
-                alt={`Poster Sint Nicolaas intocht ${site?.siteMetadata?.arrivalDate}`}
-                src="../assets/images/poster-2025.jpg"
-                className="w-72"
-              />
               <div className="mt-auto">
                 <h3>Dag kinderen,</h3>
                 <p>
