@@ -16,6 +16,5 @@ export default defineConfig({
     },
     supportFile: false,
     baseUrl: "http://localhost:9000/",
-    allowCypressEnv: false,
   },
 });
