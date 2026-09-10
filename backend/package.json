@@ -15,11 +15,11 @@
     "@sanity/locale-nl-nl": "^1.1.29",
     "react": "^19.2.2",
     "react-dom": "^19.2.2",
-    "sanity": "^5.0.1",
+    "sanity": "^6.10.1",
     "styled-components": "^6.1.19"
   },
   "devDependencies": {
-    "@sanity/eslint-config-studio": "6.0.0",
+    "@sanity/eslint-config-studio": "7.0.0",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "eslint": "^9.39.2",
