@@ -2,7 +2,7 @@
 
 |       |                                                             |
 |-------|-------------------------------------------------------------|
-| 16:10 | Feestprogramma op buitenpodium, met diverse optredens.      |
+| 16:10 | Meet & Greet met Sint en Piet, diverse optredens, spelletjes met de Pieten en verschillende foodtrucks.      |
 | 17:00 | Einde programma. Sint vertrekt naar hotel en gaat uitrusten.|
 
 **Speciale plaatsen voor invaliden**
