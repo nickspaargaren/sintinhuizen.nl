@@ -149,7 +149,7 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
 
       <Section>
         <h2 className="text-center mb-8">
-          Activiteiten Sint Nicolaas <strong>2025</strong> in Huizen
+          Activiteiten Sint Nicolaas <strong>2026</strong> in Huizen
         </h2>
 
         <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
