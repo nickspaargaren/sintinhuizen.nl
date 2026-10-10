@@ -12198,7 +12198,7 @@ __metadata:
     gatsby-transformer-sharp: "npm:^5.16.0"
     html-validate: "npm:^11.1.0"
     photoswipe: "npm:^5.4.2"
-    postcss: "npm:^8.5.27"
+    postcss: "npm:^8.5.28"
     prettier: "npm:^3.6.2"
     react: "npm:^19.2.4"
     react-dom: "npm:^19.2.4"
@@ -13816,9 +13816,9 @@ __metadata:
   linkType: hard
 
 "http-cache-semantics@npm:^4.0.0, http-cache-semantics@npm:^4.1.1":
-  version: 4.2.0
-  resolution: "http-cache-semantics@npm:4.2.0"
-  checksum: 10c0/45b66a945cf13ec2d1f29432277201313babf4a01d9e52f44b31ca923434083afeca03f18417f599c9ab3d0e7b618ceb21257542338b57c54b710463b4a53e37
+  version: 4.3.0
+  resolution: "http-cache-semantics@npm:4.3.0"
+  checksum: 10c0/b9668e271b4a99cba067bfa6f286b12eff1408a24e090ca16f0f5fa826ac07f67b4b8c7aa6e7458596d890683f3c172f647a00ca516a8f0158c80d7e4ebe0316
   languageName: node
   linkType: hard
 
@@ -18423,14 +18423,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.2.15, postcss@npm:^8.2.9, postcss@npm:^8.3.11, postcss@npm:^8.4.24, postcss@npm:^8.4.47, postcss@npm:^8.5.27, postcss@npm:^8.5.3, postcss@npm:^8.5.6":
-  version: 8.5.27
-  resolution: "postcss@npm:8.5.27"
+"postcss@npm:^8.2.15, postcss@npm:^8.2.9, postcss@npm:^8.3.11, postcss@npm:^8.4.24, postcss@npm:^8.4.47, postcss@npm:^8.5.28, postcss@npm:^8.5.3, postcss@npm:^8.5.6":
+  version: 8.5.28
+  resolution: "postcss@npm:8.5.28"
   dependencies:
     nanoid: "npm:^3.3.18"
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.1"
-  checksum: 10c0/3d269bd1a2990370771176740d9a331cbbe0df516539400547f51d656c2f778cbef974d6a63020f28b298d3c374e9055013a3ee3c48159c862e3c5b960796b63
+  checksum: 10c0/9fe44215a6628d89c8a75184b92f5b2f77e16f9e5b13b39b9009bb7e8e6eccddf82c8854bae922db1f17ace6ef3445073fe38abff513caeb03e5285b1b55620a
   languageName: node
   linkType: hard
 
@@ -22876,8 +22876,8 @@ __metadata:
   linkType: hard
 
 "vite@npm:^6.3.5":
-  version: 6.4.3
-  resolution: "vite@npm:6.4.3"
+  version: 6.4.4
+  resolution: "vite@npm:6.4.4"
   dependencies:
     esbuild: "npm:^0.25.0"
     fdir: "npm:^6.4.4"
@@ -22926,7 +22926,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10c0/23ce22e50d5c7a87321f04b155c5bc3cf915e34e6c40918975741ed5e8b0c257039a643f1bc1cd829ee814ad92a138704e82084b7ebe40b399a62d8effea630c
+  checksum: 10c0/47cdacbf7b370c7962326238bd0d206c9d56d72e1e7b14f9fb0edca369d3dfa8d0fd7f16eb3c0d448959eb7c6969ff33a126039be06f216b232c47e63c49ba9b
   languageName: node
   linkType: hard
 
