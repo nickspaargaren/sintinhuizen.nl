@@ -36,3 +36,6 @@ backend/dist/
 # Frontend test files
 /frontend/cypress/screenshots
 /frontend/cypress/videos
+
+# Vercel CLI
+.vercel/project.json
