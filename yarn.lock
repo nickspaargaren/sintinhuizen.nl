@@ -10043,14 +10043,14 @@ __metadata:
   linkType: hard
 
 "dompurify@npm:^3.2.6":
-  version: 3.4.16
-  resolution: "dompurify@npm:3.4.16"
+  version: 3.4.17
+  resolution: "dompurify@npm:3.4.17"
   dependencies:
     "@types/trusted-types": "npm:^2.0.7"
   dependenciesMeta:
     "@types/trusted-types":
       optional: true
-  checksum: 10c0/65a901c6b6d489d3e898f67223d81dac66d613cda48f5785f0ed52a4ae320c4b2745490a58c14161e29f0273080fea0a0cb234a9ef892650e1a9b2a7befa07a5
+  checksum: 10c0/6a12251ef5e700fc91b6d96d33e9f8b5fd590c55276f632cf42d182c5808e9f48d5bef435ab26eac235dfcc05ed8fe95e1c8308dcc502bf1050e561f14d0361a
   languageName: node
   linkType: hard
 
@@ -12025,12 +12025,12 @@ __metadata:
   linkType: hard
 
 "follow-redirects@npm:^1.14.9, follow-redirects@npm:^1.15.9, follow-redirects@npm:^1.16.0, follow-redirects@npm:^1.2.4":
-  version: 1.16.0
-  resolution: "follow-redirects@npm:1.16.0"
+  version: 1.16.1
+  resolution: "follow-redirects@npm:1.16.1"
   peerDependenciesMeta:
     debug:
       optional: true
-  checksum: 10c0/a1e2900163e6f1b4d1ed5c221b607f41decbab65534c63fe7e287e40a5d552a6496e7d9d7d976fa4ba77b4c51c11e5e9f683f10b43011ea11e442ff128d0e181
+  checksum: 10c0/544e24ccb93b7afb5dd5a2199bd556e167b84de2af7c13b2ced08494239677359d7883bae56ae43a9ca98ac5451e75cf4834a5fadd6fa79053b9248fac5447a4
   languageName: node
   linkType: hard
 
@@ -14172,9 +14172,9 @@ __metadata:
   linkType: hard
 
 "ip-address@npm:^10.0.1":
-  version: 10.7.2
-  resolution: "ip-address@npm:10.7.2"
-  checksum: 10c0/290b9c63289b2a89a442dac19eff88d919e65cd41d1a720fa963be736e126f3b0cf4f88f6056b06abbf4a95300dc9ce5362a773e012ef30e0400074d175b9d31
+  version: 10.7.4
+  resolution: "ip-address@npm:10.7.4"
+  checksum: 10c0/22401f5723acd96a8b261ff5b098857bee86a700f8f4f7e7afcf3645a5ddb74b961296577b03c53acbd3235c6424aab11087ff1da9dbce11a55e05af9dde5bbb
   languageName: node
   linkType: hard
 
@@ -15885,8 +15885,8 @@ __metadata:
   linkType: hard
 
 "markdown-it@npm:^14.1.0":
-  version: 14.3.2
-  resolution: "markdown-it@npm:14.3.2"
+  version: 14.3.3
+  resolution: "markdown-it@npm:14.3.3"
   dependencies:
     argparse: "npm:^2.0.1"
     entities: "npm:^4.5.0"
@@ -15896,7 +15896,7 @@ __metadata:
     uc.micro: "npm:^2.1.0"
   bin:
     markdown-it: bin/markdown-it.mjs
-  checksum: 10c0/51d03a244bbacc84aa7229fd784ccc16a76cb853cf93f668c4dfc1e9eb22d03138678e7743accac2304e03151a995068492fde56c7a9fbe6785b4169036cf590
+  checksum: 10c0/d6075ad320731d7fb9f127e496677f4e36cbdba839d7387dabf1f0d07b5c02bdffb46fb3969033817c04e60017e05d4269e4aa74bee58cc0a562a17cc0b6b8ff
   languageName: node
   linkType: hard
 
