@@ -152,7 +152,7 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
           Activiteiten Sint Nicolaas <strong>2026</strong> in Huizen
         </h2>
 
-        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2">
           <div>
             <Letter>
               <p>
@@ -179,18 +179,15 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
           </div>
           <div>
             <Letter className="p-[0] border-none">
-              <StaticImage
-                alt="Sinterklaas Zaterdag 29 November om 15.00 uur in het haventje van Oostermeent!"
-                src="../assets/images/poster-oostermeent-2025.jpg"
-              />
-            </Letter>
-          </div>
-          <div>
-            <Letter className="p-[0] border-none">
-              <StaticImage
-                alt="Sintactiviteiten in winkelcentrum het Hart van Huizen. Woensdag 3 december en vrijdag 5 december is de sint daar aanwezig."
-                src="../assets/images/poster-sinterklaas-hart-van-huizen-2025.jpg"
-              />
+              <a
+                href="/downloads/poster-sint-2026.pdf"
+                aria-label="Open de flyer voor de intocht van Sint Nicolaas op 14 november 2026"
+              >
+                <StaticImage
+                  alt="Flyer: 14 november 2026, 14:00 Nautisch Kwartier, 15:30 optocht Havenstraat, 16:00 Meet & Greet naast de Krachtcentrale"
+                  src="../assets/images/poster-sint-2026.jpg"
+                />
+              </a>
             </Letter>
           </div>
         </div>
@@ -270,28 +267,6 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
       </Section>
 
       <Section>
-        <h2 className="text-center mb-8">
-          Het <strong>Huizer Museum</strong> is dit jaar het Gooisch{" "}
-          <strong>Sinterklaashuis</strong>.
-        </h2>
-
-        <div className="grid gap-8 md:grid-cols-2">
-          <div className="rotatedImage">
-            <StaticImage
-              src="../assets/images/sint-in-huizer-museum-deel-1.jpg"
-              alt="Sint in Huizer Museum deel 1"
-            />
-          </div>
-          <div className="rotatedImage">
-            <StaticImage
-              src="../assets/images/sint-in-huizer-museum-deel-2.jpg"
-              alt="Sint in Huizer Museum deel 2"
-            />
-          </div>
-        </div>
-      </Section>
-
-      <Section>
         <div>
           <h3 className="text-center">
             Foto&apos;s van de aankomst op <strong>15 november</strong> 2025
@@ -356,14 +331,14 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
         <h3>Downloads</h3>
         <ul className="list-disc">
           <li>
-            <a href="/downloads/brief-aan-omwonenden-2025.pdf" download>
+            <a href="/downloads/brief-aan-omwonenden-2026.pdf" download>
               Brief aan omwonenden m.b.t. de verkeerssituatie{" "}
               {site?.siteMetadata?.arrivalDate}
             </a>
           </li>
           <li>
-            <a href="/downloads/draaiboek-sinterklaas-2025.pdf" download>
-              Draaiboek 2025. Met een kleurrijk draaiboek wordt een kijkje
+            <a href="/downloads/draaiboek-sinterklaas-2026.pdf" download>
+              Draaiboek 2026. Met een kleurrijk draaiboek wordt een kijkje
               gegeven in de organisatie van de feestelijkheden.
             </a>
           </li>
