@@ -331,14 +331,14 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
         <h3>Downloads</h3>
         <ul className="list-disc">
           <li>
-            <a href="/downloads/brief-aan-omwonenden-2025.pdf" download>
+            <a href="/downloads/brief-aan-omwonenden-2026.pdf" download>
               Brief aan omwonenden m.b.t. de verkeerssituatie{" "}
               {site?.siteMetadata?.arrivalDate}
             </a>
           </li>
           <li>
-            <a href="/downloads/draaiboek-sinterklaas-2025.pdf" download>
-              Draaiboek 2025. Met een kleurrijk draaiboek wordt een kijkje
+            <a href="/downloads/draaiboek-sinterklaas-2026.pdf" download>
+              Draaiboek 2026. Met een kleurrijk draaiboek wordt een kijkje
               gegeven in de organisatie van de feestelijkheden.
             </a>
           </li>
