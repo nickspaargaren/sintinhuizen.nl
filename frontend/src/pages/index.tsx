@@ -177,6 +177,19 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
               </p>
             </Letter>
           </div>
+          <div>
+            <Letter className="p-[0] border-none">
+              <a
+                href="/downloads/poster-sint-2026.pdf"
+                aria-label="Open de flyer voor de intocht van Sint Nicolaas op 14 november 2026"
+              >
+                <StaticImage
+                  alt="Flyer: 14 november 2026, 14:00 Nautisch Kwartier, 15:30 optocht Havenstraat, 16:00 Meet & Greet naast de Krachtcentrale"
+                  src="../assets/images/poster-sint-2026.jpg"
+                />
+              </a>
+            </Letter>
+          </div>
         </div>
       </Section>
 
