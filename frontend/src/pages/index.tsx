@@ -152,7 +152,7 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
           Activiteiten Sint Nicolaas <strong>2026</strong> in Huizen
         </h2>
 
-        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2">
           <div>
             <Letter>
               <p>
@@ -175,22 +175,6 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
                   gooisch-sinterklaashuis.nl
                 </Link>
               </p>
-            </Letter>
-          </div>
-          <div>
-            <Letter className="p-[0] border-none">
-              <StaticImage
-                alt="Sinterklaas Zaterdag 29 November om 15.00 uur in het haventje van Oostermeent!"
-                src="../assets/images/poster-oostermeent-2025.jpg"
-              />
-            </Letter>
-          </div>
-          <div>
-            <Letter className="p-[0] border-none">
-              <StaticImage
-                alt="Sintactiviteiten in winkelcentrum het Hart van Huizen. Woensdag 3 december en vrijdag 5 december is de sint daar aanwezig."
-                src="../assets/images/poster-sinterklaas-hart-van-huizen-2025.jpg"
-              />
             </Letter>
           </div>
         </div>
@@ -265,28 +249,6 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
                 alt="Zak glutenvrije pepernoten"
               />
             </div>
-          </div>
-        </div>
-      </Section>
-
-      <Section>
-        <h2 className="text-center mb-8">
-          Het <strong>Huizer Museum</strong> is dit jaar het Gooisch{" "}
-          <strong>Sinterklaashuis</strong>.
-        </h2>
-
-        <div className="grid gap-8 md:grid-cols-2">
-          <div className="rotatedImage">
-            <StaticImage
-              src="../assets/images/sint-in-huizer-museum-deel-1.jpg"
-              alt="Sint in Huizer Museum deel 1"
-            />
-          </div>
-          <div className="rotatedImage">
-            <StaticImage
-              src="../assets/images/sint-in-huizer-museum-deel-2.jpg"
-              alt="Sint in Huizer Museum deel 2"
-            />
           </div>
         </div>
       </Section>
