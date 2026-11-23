@@ -188,19 +188,13 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
                   src="../assets/images/poster-sint-2026.jpg"
                 />
               </a>
+              <StaticImage
+                className="mt-8"
+                alt="Poster: Sinterklaas in het Hart van Huizen op woensdag 2 december 2026 op het Oude Raadhuisplein, met programma, en De Grote Pietenband die op 2 en 5 december rondloopt"
+                src="../assets/images/poster-hart-van-huizen-2026.jpg"
+              />
             </Letter>
           </div>
-        </div>
-      </Section>
-
-      <Section>
-        <div className="max-w-md mx-auto">
-          <Letter className="p-[0] border-none">
-            <StaticImage
-              alt="Poster: Sinterklaas in het Hart van Huizen op woensdag 2 december 2026 op het Oude Raadhuisplein, met programma, en De Grote Pietenband die op 2 en 5 december rondloopt"
-              src="../assets/images/poster-hart-van-huizen-2026.jpg"
-            />
-          </Letter>
         </div>
       </Section>
 
