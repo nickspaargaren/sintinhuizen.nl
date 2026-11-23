@@ -194,6 +194,17 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
       </Section>
 
       <Section>
+        <div className="max-w-md mx-auto">
+          <Letter className="p-[0] border-none">
+            <StaticImage
+              alt="Poster: Sinterklaas in het Hart van Huizen op woensdag 2 december 2026 op het Oude Raadhuisplein, met programma, en De Grote Pietenband die op 2 en 5 december rondloopt"
+              src="../assets/images/poster-hart-van-huizen-2026.jpg"
+            />
+          </Letter>
+        </div>
+      </Section>
+
+      <Section>
         <h3 className="text-center mb-8">
           <strong>Glutenvrije</strong> Piet & kruidnoten
         </h3>
