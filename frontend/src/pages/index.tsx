@@ -176,12 +176,12 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
                 </Link>
               </p>
             </Letter>
-            <Letter className="p-[0] border-none">
+            <div className="rotatedImage">
               <StaticImage
                 alt="Poster: Sinterklaas in het Hart van Huizen op woensdag 2 december 2026 op het Oude Raadhuisplein, met programma, en De Grote Pietenband die op 2 en 5 december rondloopt"
                 src="../assets/images/poster-hart-van-huizen-2026.jpg"
               />
-            </Letter>
+            </div>
           </div>
           <div>
             <Letter className="p-[0] border-none">
