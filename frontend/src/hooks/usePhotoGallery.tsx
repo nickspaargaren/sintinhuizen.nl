@@ -1,9 +1,27 @@
 import { graphql, useStaticQuery } from "gatsby";
 
 export const usePhotoGallery = () => {
-  const { photos2024, photos2025, drawings } =
+  const { photos2024, photos2025, photos2026, drawings } =
     useStaticQuery<Queries.photoGalleryQuery>(graphql`
       query photoGallery {
+        photos2026: allFile(
+          filter: { relativeDirectory: { eq: "photos-2026" } }
+          sort: { relativePath: ASC }
+        ) {
+          nodes {
+            id
+            relativePath
+            publicURL
+            childImageSharp {
+              gatsbyImageData(width: 270, height: 200)
+              original {
+                height
+                width
+              }
+            }
+          }
+        }
+
         photos2024: allFile(
           filter: { relativeDirectory: { eq: "photos-2024" } }
           sort: { relativePath: ASC }
@@ -60,5 +78,5 @@ export const usePhotoGallery = () => {
       }
     `);
 
-  return [photos2024.nodes, photos2025.nodes, drawings.nodes];
+  return [photos2024.nodes, photos2025.nodes, photos2026.nodes, drawings.nodes];
 };

@@ -41,7 +41,7 @@ export const pageQuery = graphql`
 `;
 
 const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
-  const [photos2024, photos2025, drawings] = usePhotoGallery();
+  const [photos2024, photos2025, photos2026, drawings] = usePhotoGallery();
 
   const {
     berichtsint,
@@ -263,6 +263,19 @@ const Home = ({ data }: PageProps<Queries.IndexPageQuery>): ReactElement => {
               />
             </div>
           </div>
+        </div>
+      </Section>
+
+      <Section>
+        <div>
+          <h3 className="text-center">
+            Foto&apos;s van de aankomst op <strong>zaterdag 14 november</strong>{" "}
+            2026
+          </h3>
+          <p className="text-center mt-4 mb-8">
+            Klik op de foto voor een vergroting
+          </p>
+          <PhotoGallery images={photos2026} />
         </div>
       </Section>
 
