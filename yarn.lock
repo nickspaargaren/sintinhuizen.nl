@@ -9509,9 +9509,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:16.1.0":
-  version: 16.1.0
-  resolution: "cypress@npm:16.1.0"
+"cypress@npm:16.3.0":
+  version: 16.3.0
+  resolution: "cypress@npm:16.3.0"
   dependencies:
     "@cypress/request": "npm:^4.0.0"
     "@cypress/xvfb": "npm:^1.2.4"
@@ -9547,14 +9547,14 @@ __metadata:
     proxy-from-env: "npm:1.0.0"
     request-progress: "npm:^3.0.0"
     supports-color: "npm:^8.1.1"
-    systeminformation: "npm:^5.31.1"
+    systeminformation: "npm:^5.33.16"
     tmp: "npm:~0.2.4"
     tree-kill: "npm:1.2.2"
     untildify: "npm:^4.0.0"
     yauzl: "npm:^3.3.1"
   bin:
     cypress: bin/cypress
-  checksum: 10c0/8fe5311971273f38466d2fd4200b47beafbd6726bbb1d8235a528770951249ecef56e4fd67ed0574a3225ad60e28fdb7cc0e6937535ed8caa0c9805b3d01d898
+  checksum: 10c0/b655ece0f8f4e2456b1c829c06bddb366347f21f4a21e6ad5e882ff2e67a69fb325ccd54112dff4fcf666419edc295ae7e0aa46ce400c4e5642d04d5fd5f2f70
   languageName: node
   linkType: hard
 
@@ -12181,7 +12181,7 @@ __metadata:
     "@types/react": "npm:^19.2.10"
     "@types/react-dom": "npm:^19.2.3"
     autoprefixer: "npm:^10.4.21"
-    cypress: "npm:16.1.0"
+    cypress: "npm:16.3.0"
     cypress-html-validate: "npm:^9.0.0"
     dayjs: "npm:^1.11.19"
     eslint: "npm:^9.39.2"
@@ -21435,12 +21435,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"systeminformation@npm:^5.31.1":
-  version: 5.31.17
-  resolution: "systeminformation@npm:5.31.17"
+"systeminformation@npm:^5.33.16":
+  version: 5.33.26
+  resolution: "systeminformation@npm:5.33.26"
   bin:
     systeminformation: lib/cli.js
-  checksum: 10c0/02da446c6125f07c2b22f37668adbbf589c9e29e99c91fd804b41badc22d5f13286d4a3728b7cf2aaf36346545f90a7180ff8fd64ddf9a57a066f3307c52e3ec
+  checksum: 10c0/3ec58dadc14e1e6ca8d35beaff408d722770d4f155ad7a1367689793b3591dde8dd1c7f03531086e5975053de1a5afc31473f49260f65a8b46d6b695400f5686
   conditions: (os=darwin | os=linux | os=win32 | os=freebsd | os=openbsd | os=netbsd | os=sunos | os=android)
   languageName: node
   linkType: hard
